@@ -1,0 +1,42 @@
+namespace = denchapter
+
+# Enclave Remnants From The East
+country_event = {
+	id = denchapter.1
+	title = denchapter.1.title
+	desc = denchapter.1.desc
+    picture = BOS_WORKSHOP_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = VB1
+		
+	}
+	
+	
+	option = { # Settle them in Chicago 
+		name = denchapter.1.option.a
+		add_country_modifier = {
+			name = original_directive
+			duration = -1
+		}
+	}
+	
+	option = { #
+		name = denchapter.1.option.b
+		add_country_modifier = {
+			name = brotherhood_fascist_directive
+			duration = -1
+		}
+	}
+	
+	option = { # 
+		name = denchapter.1.option.c
+		add_country_modifier = {
+			name = brotherhood_peaceful_directive
+			duration = -1
+		}
+	}
+}
+

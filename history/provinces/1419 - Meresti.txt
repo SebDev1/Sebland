@@ -1,0 +1,18 @@
+# set_variable = { which = province_id value = 4044 }
+
+owner = FAM
+controller = FAM
+add_core = FAM
+
+is_city = yes
+
+base_tax = 4
+base_production = 3
+base_manpower = 6
+
+culture = wastelander
+religion = survivalist
+
+trade_goods = strange_meat 
+hre = no
+center_of_trade = 1

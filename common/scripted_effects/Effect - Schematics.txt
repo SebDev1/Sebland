@@ -1,0 +1,2399 @@
+#-----------------------------------
+# List of schematics:
+#-----------------------------------
+#-- Weapons
+# minigun
+# flamer
+# incinerator
+# laser_pistol
+# laser_rifle
+# laer
+# gatling_laser
+# recharger_rifle
+# plasma_rifle
+# plasma_caster
+# tesla_cannon
+# magnetic_rail_cannon
+
+#-- Armor
+# t51_power_armor
+# t45_power_armor
+# t60_power_armor # Discovered by default -> Lost Hills Chapter
+# t65_power_armor
+# x01_power_armor
+# tesla_power_armor
+# hellfire_power_armor # Discovered by default -> Enclave
+
+#-- Energy
+# fusion_cell
+# fusion_core
+# microfusion_cell
+# plasma_cartridge
+# poseidon_ultracite_generator
+# verdant_air_turbine
+# helios_solar_generator
+ 
+#-- Vehicles
+# atomic_v8
+# usaf_tank
+# megaloader
+# tugboat
+# vertibird
+# truck
+# forklift
+# apc
+# tractor
+
+#-- Medical
+# stimpak
+# auto_doc
+# buffout
+# mentats
+# psycho
+# jet
+
+#-- Robotic
+# protectron
+# mister_handy
+# assaultron
+# eyebot
+# mister_gutsy
+# robobrain
+# securitron # Discovered by default -> New Vegas
+# sentry_bot
+
+#-- Utility
+# stealth_boy
+# base_replicator_unit
+# hologram
+# molecular_relay # Discovered by default -> Institute
+
+#-----------------------------------
+# Schematic Core
+#-----------------------------------
+unlock_schematic = {
+    custom_tooltip = UNLOCK_schematic_$schematic$
+    
+    hidden_effect = {
+        set_country_flag = schematic_$schematic$
+        set_global_flag = discovered_schematic_$schematic$
+    }
+}
+
+remove_schematic = {
+    hidden_effect = {
+        clr_country_flag = schematic_$schematic$
+        clr_global_flag = discovered_schematic_$schematic$
+    }
+}
+
+steal_schematic = {
+    custom_tooltip = STEAL_schematic_$schematic$
+    
+    hidden_effect = {
+        set_country_flag = schematic_$schematic$
+        
+        event_target:schematic_heist_target = {
+            set_country_flag = schematic_$schematic$_stolen
+            clr_country_flag = schematic_$schematic$
+        }
+    }
+}
+
+transfer_schematics = {
+    transfer_schematic = { schematic = fusion_cell }
+    transfer_schematic = { schematic = fusion_core }
+    transfer_schematic = { schematic = microfusion_cell }
+    transfer_schematic = { schematic = plasma_cartridge }
+    transfer_schematic = { schematic = poseidon_ultracite_generator }
+    transfer_schematic = { schematic = verdant_air_turbine }
+    transfer_schematic = { schematic = helios_solar_generator }
+    transfer_schematic = { schematic = atomic_v8 }
+    transfer_schematic = { schematic = usaf_tank }
+    transfer_schematic = { schematic = megaloader }
+    transfer_schematic = { schematic = tugboat }
+    transfer_schematic = { schematic = vertibird }
+    transfer_schematic = { schematic = truck }
+    transfer_schematic = { schematic = forklift }
+    transfer_schematic = { schematic = apc }
+    transfer_schematic = { schematic = tractor }
+    transfer_schematic = { schematic = minigun }
+    transfer_schematic = { schematic = flamer }
+    transfer_schematic = { schematic = incinerator }
+    transfer_schematic = { schematic = laser_pistol }
+    transfer_schematic = { schematic = laser_rifle }
+    transfer_schematic = { schematic = laer }
+    transfer_schematic = { schematic = gatling_laser }
+    transfer_schematic = { schematic = recharger_rifle }
+    transfer_schematic = { schematic = plasma_rifle }
+    transfer_schematic = { schematic = plasma_caster }
+    transfer_schematic = { schematic = tesla_cannon }
+    transfer_schematic = { schematic = magnetic_rail_cannon }
+    transfer_schematic = { schematic = t51_power_armor }
+    transfer_schematic = { schematic = t45_power_armor }
+    transfer_schematic = { schematic = t60_power_armor }
+    transfer_schematic = { schematic = t65_power_armor }
+    transfer_schematic = { schematic = x01_power_armor }
+    transfer_schematic = { schematic = tesla_power_armor }
+    transfer_schematic = { schematic = hellfire_power_armor }
+    transfer_schematic = { schematic = stimpak }
+    transfer_schematic = { schematic = auto_doc }
+    transfer_schematic = { schematic = buffout }
+    transfer_schematic = { schematic = mentats }
+    transfer_schematic = { schematic = psycho }
+    transfer_schematic = { schematic = jet }
+    transfer_schematic = { schematic = protectron }
+    transfer_schematic = { schematic = mister_handy }
+    transfer_schematic = { schematic = assaultron }
+    transfer_schematic = { schematic = eyebot }
+    transfer_schematic = { schematic = mister_gutsy }
+    transfer_schematic = { schematic = robobrain }
+    transfer_schematic = { schematic = securitron }
+    transfer_schematic = { schematic = sentry_bot }
+    transfer_schematic = { schematic = stealth_boy }
+    transfer_schematic = { schematic = base_replicator_unit }
+    transfer_schematic = { schematic = hologram }
+    transfer_schematic = { schematic = molecular_relay }
+}
+
+transfer_schematic = {
+    hidden_effect = {
+        if = {
+            limit = {
+                FROM = {
+                    has_country_flag = schematic_$schematic$
+                }
+            }
+            set_country_flag = schematic_$schematic$
+            
+            FROM = {
+                clr_country_flag = schematic_$schematic$
+            }
+        }
+    }
+}
+
+save_schematic_location = {
+    if = {
+        limit = {
+            has_global_flag = discovered_schematic_$schematic$
+        }
+        every_country = {
+            limit = {
+                 has_country_flag = schematic_$schematic$
+            }
+            save_event_target_as = current_owner_$schematic$
+        }
+    }
+    else = {
+        REB = {
+            save_event_target_as = current_owner_$schematic$
+        }
+    }
+}
+ 
+reset_heist__raider = {
+    clr_country_flag = schematic_heist_active
+    
+    clr_country_flag = schematic_heist_setup_raider
+    clr_country_flag = heist_type_quick
+    clr_country_flag = heist_type_methodical
+}
+
+reset_heist__target = {
+    clr_country_flag = schematic_heist_setup_target
+    clr_country_flag = heist_defence_max
+    clr_country_flag = heist_defence_med
+    clr_country_flag = heist_defence_min
+    clr_country_flag = schematic_heist_target
+}
+
+#----------------------------------------
+# Scavenging
+#----------------------------------------
+schematic_focus_cost = {
+    # Primitive
+    if = {
+        limit = {
+            is_primitive_scavenger = yes
+        }
+        
+        add_treasury = -500
+    }
+    # Urban State
+    else_if = {
+        limit = {
+            is_urban_scavenger = yes
+        }
+        
+        add_treasury = -300
+    }
+    # Scientific State
+    else = {
+        add_treasury = -150
+    }
+    
+    custom_tooltip = SCHEMATIC_FOCUS_EFFECT
+}
+
+clear_schematic_focus = {
+    clr_country_flag = schematic_focus_random
+    clr_country_flag = schematic_focus_fusion_cell
+    clr_country_flag = schematic_focus_fusion_core
+    clr_country_flag = schematic_focus_microfusion_cell
+    clr_country_flag = schematic_focus_plasma_cartridge
+    clr_country_flag = schematic_focus_poseidon_ultracite_generator
+    clr_country_flag = schematic_focus_verdant_air_turbine
+    clr_country_flag = schematic_focus_helios_solar_generator
+    clr_country_flag = schematic_focus_atomic_v8
+    clr_country_flag = schematic_focus_usaf_tank
+    clr_country_flag = schematic_focus_megaloader
+    clr_country_flag = schematic_focus_tugboat
+    clr_country_flag = schematic_focus_vertibird
+    clr_country_flag = schematic_focus_truck
+    clr_country_flag = schematic_focus_forklift
+    clr_country_flag = schematic_focus_apc
+    clr_country_flag = schematic_focus_tractor
+    clr_country_flag = schematic_focus_minigun
+    clr_country_flag = schematic_focus_flamer
+    clr_country_flag = schematic_focus_incinerator
+    clr_country_flag = schematic_focus_laser_pistol
+    clr_country_flag = schematic_focus_laser_rifle
+    clr_country_flag = schematic_focus_laer
+    clr_country_flag = schematic_focus_gatling_laser
+    clr_country_flag = schematic_focus_recharger_rifle
+    clr_country_flag = schematic_focus_plasma_rifle
+    clr_country_flag = schematic_focus_plasma_caster
+    clr_country_flag = schematic_focus_tesla_cannon
+    clr_country_flag = schematic_focus_magnetic_rail_cannon
+    clr_country_flag = schematic_focus_t51_power_armor
+    clr_country_flag = schematic_focus_t45_power_armor
+    clr_country_flag = schematic_focus_t60_power_armor
+    clr_country_flag = schematic_focus_t65_power_armor
+    clr_country_flag = schematic_focus_x01_power_armor
+    clr_country_flag = schematic_focus_tesla_power_armor
+    clr_country_flag = schematic_focus_hellfire_power_armor
+    clr_country_flag = schematic_focus_stimpak
+    clr_country_flag = schematic_focus_auto_doc
+    clr_country_flag = schematic_focus_buffout
+    clr_country_flag = schematic_focus_mentats
+    clr_country_flag = schematic_focus_psycho
+    clr_country_flag = schematic_focus_jet
+    clr_country_flag = schematic_focus_protectron
+    clr_country_flag = schematic_focus_mister_handy
+    clr_country_flag = schematic_focus_assaultron
+    clr_country_flag = schematic_focus_eyebot
+    clr_country_flag = schematic_focus_mister_gutsy
+    clr_country_flag = schematic_focus_robobrain
+    clr_country_flag = schematic_focus_securitron
+    clr_country_flag = schematic_focus_sentry_bot
+    clr_country_flag = schematic_focus_stealth_boy
+    clr_country_flag = schematic_focus_base_replicator_unit
+    clr_country_flag = schematic_focus_hologram
+    clr_country_flag = schematic_focus_molecular_relay
+}
+
+reward_schematic = {
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_random
+        }
+        random_list = {
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_fusion_cell }
+                }
+                country_event = { id = fallout_schematic.1 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_fusion_core }
+                }
+                country_event = { id = fallout_schematic.2 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_microfusion_cell }
+                }
+                country_event = { id = fallout_schematic.3 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_plasma_cartridge }
+                }
+                country_event = { id = fallout_schematic.4 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_poseidon_ultracite_generator }
+                }
+                country_event = { id = fallout_schematic.5 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_verdant_air_turbine }
+                }
+                country_event = { id = fallout_schematic.6 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_helios_solar_generator }
+                }
+                country_event = { id = fallout_schematic.7 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_atomic_v8 }
+                }
+                country_event = { id = fallout_schematic.8 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_usaf_tank }
+                }
+                country_event = { id = fallout_schematic.9 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_megaloader }
+                }
+                country_event = { id = fallout_schematic.10 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_tugboat }
+                }
+                country_event = { id = fallout_schematic.11 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_vertibird }
+                }
+                country_event = { id = fallout_schematic.12 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_truck }
+                }
+                country_event = { id = fallout_schematic.13 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_forklift }
+                }
+                country_event = { id = fallout_schematic.51 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_apc }
+                }
+                country_event = { id = fallout_schematic.52 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_tractor }
+                }
+                country_event = { id = fallout_schematic.53 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_minigun }
+                }
+                country_event = { id = fallout_schematic.14 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_flamer }
+                }
+                country_event = { id = fallout_schematic.15 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_incinerator }
+                }
+                country_event = { id = fallout_schematic.16 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_laser_pistol }
+                }
+                country_event = { id = fallout_schematic.17 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_laser_rifle }
+                }
+                country_event = { id = fallout_schematic.18 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_laer }
+                }
+                country_event = { id = fallout_schematic.19 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_gatling_laser }
+                }
+                country_event = { id = fallout_schematic.20 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_recharger_rifle }
+                }
+                country_event = { id = fallout_schematic.21 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_plasma_rifle }
+                }
+                country_event = { id = fallout_schematic.22 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_plasma_caster }
+                }
+                country_event = { id = fallout_schematic.23 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_tesla_cannon }
+                }
+                country_event = { id = fallout_schematic.24 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_magnetic_rail_cannon }
+                }
+                country_event = { id = fallout_schematic.25 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_t51_power_armor }
+                }
+                country_event = { id = fallout_schematic.26 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_t45_power_armor }
+                }
+                country_event = { id = fallout_schematic.27 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_t60_power_armor }
+                }
+                country_event = { id = fallout_schematic.28 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_t65_power_armor }
+                }
+                country_event = { id = fallout_schematic.29 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_x01_power_armor }
+                }
+                country_event = { id = fallout_schematic.30 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_tesla_power_armor }
+                }
+                country_event = { id = fallout_schematic.31 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_hellfire_power_armor }
+                }
+                country_event = { id = fallout_schematic.32 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_stimpak }
+                }
+                country_event = { id = fallout_schematic.33 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_auto_doc }
+                }
+                country_event = { id = fallout_schematic.34 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_buffout }
+                }
+                country_event = { id = fallout_schematic.35 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_mentats }
+                }
+                country_event = { id = fallout_schematic.36 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_psycho }
+                }
+                country_event = { id = fallout_schematic.37 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_jet }
+                }
+                country_event = { id = fallout_schematic.38 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_protectron }
+                }
+                country_event = { id = fallout_schematic.39 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_mister_handy }
+                }
+                country_event = { id = fallout_schematic.40 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_assaultron }
+                }
+                country_event = { id = fallout_schematic.41 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_eyebot }
+                }
+                country_event = { id = fallout_schematic.42 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_mister_gutsy }
+                }
+                country_event = { id = fallout_schematic.43 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_robobrain }
+                }
+                country_event = { id = fallout_schematic.44 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_securitron }
+                }
+                country_event = { id = fallout_schematic.45 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_sentry_bot }
+                }
+                country_event = { id = fallout_schematic.46 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_stealth_boy }
+                }
+                country_event = { id = fallout_schematic.47 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_base_replicator_unit }
+                }
+                country_event = { id = fallout_schematic.48 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_hologram }
+                }
+                country_event = { id = fallout_schematic.49 }
+            }
+            1 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_molecular_relay }
+                }
+                country_event = { id = fallout_schematic.50 }
+            }
+            
+            # Minor Reward
+            20 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            15 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            10 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            8 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+            2 = {
+                country_event = { id = fallout_schematic.106 } # Riot Gear
+            }
+        }
+    }
+    
+    # Schematic Focus
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_fusion_cell
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_fusion_cell }
+                }
+                country_event = { id = fallout_schematic.1 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_fusion_core
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_fusion_core }
+                }
+                country_event = { id = fallout_schematic.2 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_microfusion_cell
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_microfusion_cell }
+                }
+                country_event = { id = fallout_schematic.3 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_plasma_cartridge
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_plasma_cartridge }
+                }
+                country_event = { id = fallout_schematic.4 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_poseidon_ultracite_generator
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_poseidon_ultracite_generator }
+                }
+                country_event = { id = fallout_schematic.5 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_verdant_air_turbine
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_verdant_air_turbine }
+                }
+                country_event = { id = fallout_schematic.6 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_helios_solar_generator
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_helios_solar_generator }
+                }
+                country_event = { id = fallout_schematic.7 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_atomic_v8
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_atomic_v8 }
+                }
+                country_event = { id = fallout_schematic.8 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_usaf_tank
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_usaf_tank }
+                }
+                country_event = { id = fallout_schematic.9 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_megaloader
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_megaloader }
+                }
+                country_event = { id = fallout_schematic.10 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_tugboat
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_tugboat }
+                }
+                country_event = { id = fallout_schematic.11 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_vertibird
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_vertibird }
+                }
+                country_event = { id = fallout_schematic.12 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_truck
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_truck }
+                }
+                country_event = { id = fallout_schematic.13 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_forklift
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_forklift }
+                }
+                country_event = { id = fallout_schematic.51 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_apc
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_apc }
+                }
+                country_event = { id = fallout_schematic.52 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_tractor
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_tractor }
+                }
+                country_event = { id = fallout_schematic.53 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_minigun
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_minigun }
+                }
+                country_event = { id = fallout_schematic.14 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_flamer
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_flamer }
+                }
+                country_event = { id = fallout_schematic.15 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_incinerator
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_incinerator }
+                }
+                country_event = { id = fallout_schematic.16 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_laser_pistol
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_laser_pistol }
+                }
+                country_event = { id = fallout_schematic.17 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_laser_rifle
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_laser_rifle }
+                }
+                country_event = { id = fallout_schematic.18 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_laer
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_laer }
+                }
+                country_event = { id = fallout_schematic.19 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_gatling_laser
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_gatling_laser }
+                }
+                country_event = { id = fallout_schematic.20 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_recharger_rifle
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_recharger_rifle }
+                }
+                country_event = { id = fallout_schematic.21 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_plasma_rifle
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_plasma_rifle }
+                }
+                country_event = { id = fallout_schematic.22 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_plasma_caster
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_plasma_caster }
+                }
+                country_event = { id = fallout_schematic.23 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_tesla_cannon
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_tesla_cannon }
+                }
+                country_event = { id = fallout_schematic.24 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_magnetic_rail_cannon
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_magnetic_rail_cannon }
+                }
+                country_event = { id = fallout_schematic.25 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_t51_power_armor
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_t51_power_armor }
+                }
+                country_event = { id = fallout_schematic.26 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_t45_power_armor
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_t45_power_armor }
+                }
+                country_event = { id = fallout_schematic.27 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_t60_power_armor
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_t60_power_armor }
+                }
+                country_event = { id = fallout_schematic.28 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_t65_power_armor
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_t65_power_armor }
+                }
+                country_event = { id = fallout_schematic.29 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_x01_power_armor
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_x01_power_armor }
+                }
+                country_event = { id = fallout_schematic.30 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_tesla_power_armor
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_tesla_power_armor }
+                }
+                country_event = { id = fallout_schematic.31 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_hellfire_power_armor
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_hellfire_power_armor }
+                }
+                country_event = { id = fallout_schematic.32 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_stimpak
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_stimpak }
+                }
+                country_event = { id = fallout_schematic.33 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_auto_doc
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_auto_doc }
+                }
+                country_event = { id = fallout_schematic.34 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_buffout
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_buffout }
+                }
+                country_event = { id = fallout_schematic.35 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_mentats
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_mentats }
+                }
+                country_event = { id = fallout_schematic.36 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_psycho
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_psycho }
+                }
+                country_event = { id = fallout_schematic.37 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_jet
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_jet }
+                }
+                country_event = { id = fallout_schematic.38 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_protectron
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_protectron }
+                }
+                country_event = { id = fallout_schematic.39 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_mister_handy
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_mister_handy }
+                }
+                country_event = { id = fallout_schematic.40 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_assaultron
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_assaultron }
+                }
+                country_event = { id = fallout_schematic.41 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_eyebot
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_eyebot }
+                }
+                country_event = { id = fallout_schematic.42 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_mister_gutsy
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_mister_gutsy }
+                }
+                country_event = { id = fallout_schematic.43 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_robobrain
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_robobrain }
+                }
+                country_event = { id = fallout_schematic.44 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_securitron
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_securitron }
+                }
+                country_event = { id = fallout_schematic.45 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_sentry_bot
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_sentry_bot }
+                }
+                country_event = { id = fallout_schematic.46 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_stealth_boy
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_stealth_boy }
+                }
+                country_event = { id = fallout_schematic.47 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_base_replicator_unit
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_base_replicator_unit }
+                }
+                country_event = { id = fallout_schematic.48 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_hologram
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_hologram }
+                }
+                country_event = { id = fallout_schematic.49 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    if = {
+        limit = {
+            has_country_flag = schematic_focus_molecular_relay
+        }
+
+        random_list = {
+            50 = {
+                trigger = {
+                    NOT = { has_global_flag = discovered_schematic_molecular_relay }
+                }
+                country_event = { id = fallout_schematic.50 }
+            }
+            # Minor Reward
+            15 = {
+                country_event = { id = fallout_schematic.100 } # Pipe Pistols
+            }
+            10 = {
+                country_event = { id = fallout_schematic.101 } # Ballistic Guns
+            }
+            10 = {
+                country_event = { id = fallout_schematic.102 } # Radiation Suits
+            }
+            5 = {
+                country_event = { id = fallout_schematic.103 } # Bottlecaps
+            }
+            5 = {
+                country_event = { id = fallout_schematic.104 } # Fission Batteries
+            }
+            5 = {
+                country_event = { id = fallout_schematic.105 } # Combat Armor
+            }
+        }
+    }
+    
+    
+}
+

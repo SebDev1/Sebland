@@ -1,0 +1,21 @@
+# set_variable = { which = province_id value = 3137  }
+
+owner = SNA
+controller = SNA
+add_core = SNA
+is_city = yes
+
+base_tax = 2
+base_production = 1
+base_manpower = 2
+
+culture = snajan
+religion = totemism
+
+trade_goods = unknown
+
+
+
+
+hre = no
+center_of_trade = 1

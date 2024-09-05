@@ -1,0 +1,50 @@
+# set_variable = { which = province_id value = 3038  }
+
+owner = SHT
+controller = SHT
+add_core = SHT
+is_city = yes
+
+base_tax = 2
+base_production = 2
+base_manpower = 2
+
+culture = shattered_eye
+religion = robotics
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

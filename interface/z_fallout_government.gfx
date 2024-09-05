@@ -1,0 +1,306 @@
+spriteTypes = {	
+    #----------------------------
+    # Tribal Unity
+    #----------------------------
+    spriteType = {
+		name = "GFX_tribal_unity_bg"
+		texturefile = "gfx//interface//government_mechanics//tribal_unity//tribal_unity_bg.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_tribal_unity_ability_1"
+		texturefile = "gfx//interface//government_mechanics//tribal_unity//tribal_unity_ability_1.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_tribal_unity_ability_2"
+		texturefile = "gfx//interface//government_mechanics//tribal_unity//tribal_unity_ability_2.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_tribal_unity_ability_3"
+		texturefile = "gfx//interface//government_mechanics//tribal_unity//tribal_unity_ability_3.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+    
+    #----------------------------
+    # Communal Harmony
+    #----------------------------
+    spriteType = {
+		name = "GFX_communal_harmony_bg"
+		texturefile = "gfx//interface//government_mechanics//communal_harmony//communal_harmony_bg.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_communal_harmony_ability_1"
+		texturefile = "gfx//interface//government_mechanics//communal_harmony//communal_harmony_ability_1.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_communal_harmony_ability_2"
+		texturefile = "gfx//interface//government_mechanics//communal_harmony//communal_harmony_ability_2.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_communal_harmony_ability_3"
+		texturefile = "gfx//interface//government_mechanics//communal_harmony//communal_harmony_ability_3.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+    
+    #----------------------------
+    # Legion Bloodlust
+    #----------------------------
+    spriteType = {
+		name = "GFX_legion_bloodlust_bg"
+		texturefile = "gfx//interface//government_mechanics//legion_bloodlust//legion_bloodlust_bg.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_legion_bloodlust_ability_1"
+		texturefile = "gfx//interface//government_mechanics//legion_bloodlust//legion_bloodlust_ability_1.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_legion_bloodlust_ability_2"
+		texturefile = "gfx//interface//government_mechanics//legion_bloodlust//legion_bloodlust_ability_2.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_legion_bloodlust_ability_3"
+		texturefile = "gfx//interface//government_mechanics//legion_bloodlust//legion_bloodlust_ability_3.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+    
+    #----------------------------
+    # Casino
+    #----------------------------
+    spriteType = {
+		name = "GFX_casino_bg"
+		texturefile = "gfx//interface//government_mechanics//casino//casino_bg.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_casino_ability_1"
+		texturefile = "gfx//interface//government_mechanics//casino//casino_ability_1.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+    
+	spriteType = {
+		name = "GFX_casino_ability_2"
+		texturefile = "gfx//interface//government_mechanics//casino//casino_ability_2.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+    
+    spriteType = {
+		name = "GFX_casino_ability_3"
+		texturefile = "gfx//interface//government_mechanics//casino//casino_ability_3.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+    
+    #----------------------------
+    # NCR Authority
+    #----------------------------
+    spriteType = {
+		name = "GFX_ncr_authority_bg"
+		texturefile = "gfx//interface//government_mechanics//ncr_authority//ncr_authority_bg.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_ncr_authority_ability_1"
+		texturefile = "gfx//interface//government_mechanics//ncr_authority//ncr_authority_ability_1.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+    spriteType = {
+		name = "GFX_ncr_authority_ability_2"
+		texturefile = "gfx//interface//government_mechanics//ncr_authority//ncr_authority_ability_2.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+    spriteType = {
+		name = "GFX_ncr_authority_ability_3"
+		texturefile = "gfx//interface//government_mechanics//ncr_authority//ncr_authority_ability_3.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+    spriteType = {
+		name = "GFX_ncr_authority_ability_4"
+		texturefile = "gfx//interface//government_mechanics//ncr_authority//ncr_authority_ability_4.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+    spriteType = {
+		name = "GFX_ncr_authority_ability_5"
+		texturefile = "gfx//interface//government_mechanics//ncr_authority//ncr_authority_ability_5.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+    spriteType = {
+		name = "GFX_ncr_authority_ability_6"
+		texturefile = "gfx//interface//government_mechanics//ncr_authority//ncr_authority_ability_6.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+    
+    #----------------------------
+    # Psychic Domination
+    #----------------------------
+    spriteType = {
+		name = "GFX_psychic_domain_bg"
+		texturefile = "gfx//interface//government_mechanics//psychic_domain//psychic_domain_bg.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_psychic_domain_ability_1"
+		texturefile = "gfx//interface//government_mechanics//psychic_domain//psychic_domain_ability_1.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+    spriteType = {
+		name = "GFX_psychic_domain_ability_2"
+		texturefile = "gfx//interface//government_mechanics//psychic_domain//psychic_domain_ability_2.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+    spriteType = {
+		name = "GFX_psychic_domain_ability_3"
+		texturefile = "gfx//interface//government_mechanics//psychic_domain//psychic_domain_ability_3.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+    spriteType = {
+		name = "GFX_psychic_domain_ability_4"
+		texturefile = "gfx//interface//government_mechanics//psychic_domain//psychic_domain_ability_4.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+    spriteType = {
+		name = "GFX_psychic_domain_ability_5"
+		texturefile = "gfx//interface//government_mechanics//psychic_domain//psychic_domain_ability_5.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+    spriteType = {
+		name = "GFX_psychic_domain_ability_6"
+		texturefile = "gfx//interface//government_mechanics//psychic_domain//psychic_domain_ability_6.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+    
+    #----------------------------
+    # Patriotic Spirit
+    #----------------------------
+    spriteType = {
+		name = "GFX_patriotic_spirit_bg"
+		texturefile = "gfx//interface//government_mechanics//patriotic_spirit//patriotic_spirit_bg.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_patriotic_spirit_ability_1"
+		texturefile = "gfx//interface//government_mechanics//patriotic_spirit//patriotic_spirit_ability_1.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+    spriteType = {
+		name = "GFX_patriotic_spirit_ability_2"
+		texturefile = "gfx//interface//government_mechanics//patriotic_spirit//patriotic_spirit_ability_2.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+    spriteType = {
+		name = "GFX_patriotic_spirit_ability_3"
+		texturefile = "gfx//interface//government_mechanics//patriotic_spirit//patriotic_spirit_ability_3.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+    
+    #----------------------------
+    # Raider Thrill
+    #----------------------------
+    spriteType = {
+		name = "GFX_raider_thrill_bg"
+		texturefile = "gfx//interface//government_mechanics//raider_thrill//raider_thrill_bg.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_raider_thrill_ability_1"
+		texturefile = "gfx//interface//government_mechanics//raider_thrill//raider_thrill_ability_1.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+    spriteType = {
+		name = "GFX_raider_thrill_ability_2"
+		texturefile = "gfx//interface//government_mechanics//raider_thrill//raider_thrill_ability_2.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+    spriteType = {
+		name = "GFX_raider_thrill_ability_3"
+		texturefile = "gfx//interface//government_mechanics//raider_thrill//raider_thrill_ability_3.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+    
+    #----------------------------
+    # Mutation
+    #----------------------------
+    spriteType = {
+		name = "GFX_mutation_bg"
+		texturefile = "gfx//interface//government_mechanics//mutation//mutation_bg.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_mutation_ability_1"
+		texturefile = "gfx//interface//government_mechanics//mutation//mutation_ability_1.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+    spriteType = {
+		name = "GFX_mutation_ability_2"
+		texturefile = "gfx//interface//government_mechanics//mutation//mutation_ability_2.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+    spriteType = {
+		name = "GFX_mutation_ability_3"
+		texturefile = "gfx//interface//government_mechanics//mutation//mutation_ability_3.dds"
+		loadType = "INGAME"
+		transparencecheck = yes
+	}
+}

@@ -1,0 +1,17 @@
+
+owner = EHT
+controller = EHT
+add_core = EHT
+is_city = yes
+
+base_tax = 7
+base_production = 5
+base_manpower = 3
+
+culture = eighties
+religion = survivalist
+
+hre = no
+center_of_trade = 1
+trade_goods = weaponry
+

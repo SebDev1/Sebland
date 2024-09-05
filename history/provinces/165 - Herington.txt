@@ -1,0 +1,18 @@
+# set_variable = { which = province_id value = 4023  }
+
+owner = COL
+controller = COL
+add_core = COL
+is_city = yes
+
+base_tax = 1
+base_production = 2
+base_manpower = 2
+
+culture = coldwater
+religion = survivalist
+
+trade_goods = steel
+hre = no
+center_of_trade = 1
+

@@ -1,0 +1,340 @@
+#--------------------------------------------
+# Tribal
+#--------------------------------------------
+# Generic
+tribe_reform = {
+    icon                        = "brahmin"
+    legacy_equivalent           = tribe_legacy
+    valid_for_new_country       = yes 
+    allow_normal_conversion     = yes 
+	allow_convert               = yes
+    valid_for_nation_designer   = yes
+	nation_designer_cost        = 0
+    
+    modifiers = {
+        core_creation = -0.1
+		global_unrest = -1
+        morale_damage = 0.1
+        
+        governing_capacity = -100
+        
+        max_absolutism = 10
+    }
+    
+    conditional = {
+        allow = {
+            has_dlc = "Cradle of Civilization"
+        }
+        
+        government_abilities = {
+            tribal_unity_mechanic
+        }
+    }
+    
+    custom_attributes = {
+		tribal_succession = yes
+	}
+    
+    potential = {
+        NOT = { has_government_attribute = locked_government_type }
+    }
+    
+	ai = { factor = 1 }
+}
+
+# Generic
+commune_reform = {
+    icon                        = "person"
+    legacy_equivalent           = commune_legacy
+    valid_for_new_country       = yes 
+    allow_normal_conversion     = yes 
+	allow_convert               = yes
+    valid_for_nation_designer   = yes
+	nation_designer_cost        = 0
+    
+    modifiers = {
+        global_tax_modifier = 0.1
+        improve_relation_modifier = 0.05
+		reinforce_speed = 0.1
+        
+        max_absolutism = -10
+    }
+    
+    conditional = {
+        allow = {
+            has_dlc = "Cradle of Civilization"
+        }
+        
+        government_abilities = {
+            communal_harmony_mechanic
+        }
+    }
+    
+    custom_attributes = {
+		tribal_succession = yes
+	}
+    
+    potential = {
+        NOT = { has_government_attribute = locked_government_type }
+    }
+    
+	ai = { factor = 1 }
+}
+
+# Raider
+raider_reform = {
+    icon                        = "raider"
+    legacy_equivalent           = raider_legacy
+    valid_for_new_country       = yes 
+    allow_normal_conversion     = yes 
+	allow_convert               = yes
+    valid_for_nation_designer   = yes
+	nation_designer_cost        = 0
+    
+    nomad                   = yes
+    monarchy                = no
+    heir                    = no
+    raze_province           = yes
+    
+    modifiers = {
+        land_morale = 0.1
+        global_regiment_cost = -0.1
+        manpower_in_own_culture_provinces = 0.15
+        
+        land_forcelimit = 5
+        
+        governing_capacity = -150
+        
+        max_absolutism = 20
+    }
+    
+    conditional = {
+        allow = {
+            has_dlc = "Cradle of Civilization"
+        }
+        
+        government_abilities = {
+            raider_thrill_mechanic
+        }
+    }
+    
+    custom_attributes = {
+        autocratic_succession = yes
+	}
+    
+    potential = {
+        NOT = { has_government_attribute = locked_government_type }
+    }
+    
+	ai = { factor = 1 }
+}
+
+# Super Mutant
+super_mutant_reform = {
+    icon                        = "union"
+    legacy_equivalent           = super_mutant_legacy
+    valid_for_new_country       = no 
+    allow_normal_conversion     = no 
+	allow_convert               = no 
+    valid_for_nation_designer   = yes
+	nation_designer_cost        = 0
+    lock_level_when_selected    = yes
+    
+    nomad                   = yes
+    monarchy                = no
+    heir                    = no
+    raze_province           = yes
+    
+    modifiers = {
+        global_regiment_cost = -0.1
+        unjustified_demands = -0.1
+		army_tradition_from_battle = 0.33
+        
+        land_forcelimit = 5
+        
+        governing_capacity = -100
+        
+        max_absolutism = 10
+    }
+    
+    conditional = {
+        allow = {
+            has_dlc = "Cradle of Civilization"
+        }
+        
+        government_abilities = {
+            mutation_mechanic
+        }
+    }
+    
+    custom_attributes = {
+        autocratic_succession = yes
+		locked_government_type = yes
+	}
+    
+    potential = {
+        have_had_reform = super_mutant_reform
+    }
+    
+    ai = { factor = 0 }
+}
+
+# Swarm
+swarm_reform = {
+    icon                        = "factory"
+    legacy_equivalent           = swarm_legacy
+    valid_for_new_country       = no 
+    allow_normal_conversion     = no 
+	allow_convert               = no 
+    valid_for_nation_designer   = yes
+	nation_designer_cost        = 0
+    lock_level_when_selected    = yes
+    
+    nomad                   = yes
+    monarchy                = no
+    heir                    = no
+    raze_province           = yes
+    
+    modifiers = {
+        global_manpower_modifier = 0.1
+        province_warscore_cost = -0.1
+        infantry_shock = 1.0
+        
+        land_forcelimit = 10
+        
+        governing_capacity = -200
+        
+        max_absolutism = 20
+    }
+    
+    custom_attributes = {
+        autocratic_succession = yes
+		locked_government_type = yes
+	}
+    
+    potential = {
+        have_had_reform = swarm_reform
+    }
+    
+    ai = { factor = 0 }
+}
+
+# Wolf Pack
+wolf_pack_reform = {
+    icon                        = "military"
+    legacy_equivalent           = wolf_pack_legacy
+    valid_for_new_country       = no 
+    allow_normal_conversion     = no 
+	allow_convert               = no 
+    valid_for_nation_designer   = yes
+	nation_designer_cost        = 0
+    lock_level_when_selected    = yes
+    
+    nomad                   = yes
+    monarchy                = no
+    heir                    = no
+    raze_province           = yes
+    
+    modifiers = {
+        core_creation = -0.1
+        harsh_treatment_cost = -0.2
+        infantry_power = 0.1
+        
+        land_forcelimit = 5
+        
+        governing_capacity = -250
+        
+        max_absolutism = 20
+    }
+    
+    custom_attributes = {
+        tribal_succession = yes
+		locked_government_type = yes
+	}
+    
+    potential = {
+		have_had_reform = wolf_pack_reform
+	}
+    
+	ai = { factor = 0 }
+}
+
+# Great Khan
+great_khan_reform = {
+    icon                        = "cross"
+    legacy_equivalent           = great_khan_legacy
+    valid_for_new_country       = no 
+    allow_normal_conversion     = no 
+	allow_convert               = no 
+    valid_for_nation_designer   = yes
+	nation_designer_cost        = 0
+    lock_level_when_selected    = yes
+    
+    heir                    = no
+    monarchy                = no
+    nomad                   = yes
+    raze_province           = yes
+    
+    modifiers = {
+        harsh_treatment_cost = -0.2
+		cavalry_power = 0.25
+        raze_power_gain = 0.33
+        
+        land_forcelimit = 5
+        
+        governing_capacity = -100
+        
+        max_absolutism = 20
+	}
+    
+    custom_attributes = {
+        tribal_succession = yes
+		locked_government_type = yes
+	}    
+    
+    potential = {
+		have_had_reform = great_khan_reform
+	}
+    
+	ai = { factor = 0 }
+}
+
+# Beastlord
+beastlord_reform = {
+    icon                        = "radscorpion"
+    legacy_equivalent           = beastlord_legacy
+    valid_for_new_country       = yes 
+    allow_normal_conversion     = yes 
+	allow_convert               = yes
+    valid_for_nation_designer   = yes
+	nation_designer_cost        = 0
+    
+    modifiers = {
+        own_territory_dice_roll_bonus = 1
+        reinforce_cost_modifier = -0.1
+        
+        governing_capacity = -100
+        
+        max_absolutism = 10
+    }
+    
+    conditional = {
+        allow = {
+            has_dlc = "Cradle of Civilization"
+        }
+        
+        government_abilities = {
+            psychic_domain_mechanic
+        }
+    }
+    
+    custom_attributes = {
+		tribal_succession = yes
+	}
+    
+    potential = {
+        NOT = { has_government_attribute = locked_government_type }
+    }
+    
+	ai = { factor = 1 }
+}

@@ -1,0 +1,18 @@
+# set_variable = { which = province_id value = 498  }
+
+owner = BKF
+controller = BKF
+add_core = BKF
+
+is_city = yes
+base_tax = 2
+base_production = 2
+base_manpower = 2
+
+culture = blackfoot
+religion = totemism
+
+trade_goods = food
+hre = no
+center_of_trade = 1
+

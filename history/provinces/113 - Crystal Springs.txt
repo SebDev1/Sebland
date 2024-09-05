@@ -1,0 +1,75 @@
+# set_variable = { which = province_id value = 113  }
+
+owner = SOR
+controller = SOR
+add_core = SOR
+is_city = yes
+
+base_tax = 2
+base_production = 1
+base_manpower = 1
+
+culture = sorrow
+religion = mormon
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

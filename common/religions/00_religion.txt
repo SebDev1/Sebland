@@ -1,0 +1,1135 @@
+#----------------------------------------------------------------------
+# Mechanics
+#----------------------------------------------------------------------
+#   fervor:                 generic
+#   patriarch_authority:    creatorism
+#   religious_authority:    NONE
+#   blessings:              robotics / american_restorationists
+#   church_aspects:         atomic_worship
+#   cults:                  NONE
+#   doom:                   NONE
+#   karma:                  NONE
+#   isolationism:           NONE
+#   papacy:                 NONE
+#   personal_diety:         survivalist / animism / fetishism / totemism
+#   piety:                  cult_of_mars
+#   syncretic_faith         NONE
+#   harmony:                NONE
+ 
+#----------------------------------------------------------------------
+# Post War
+#----------------------------------------------------------------------
+religion_group_postwar = {
+	defender_of_faith = no
+	can_form_personal_unions = no
+
+	flags_with_emblem_percentage = 33
+	flag_emblem_index_range = { 1 18 }
+    
+    #-------------------------------------
+    # Secular
+    #-------------------------------------
+    secular = {
+		color = { 0.6 0.33 0.5 }
+		icon = 1
+
+		country = { 
+            development_cost = -0.05
+            diplomatic_reputation = 1.0
+		}
+        country_as_secondary = {
+            diplomatic_reputation = 1.0
+        }
+        province = {
+            
+        }
+        
+        fervor = yes
+        
+        on_convert = {
+			change_religion = secular
+			add_prestige = -100
+
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}			
+		}
+        
+        heretic = { HERETIC }
+	}
+    
+    #-------------------------------------
+    # Creatorism
+    #-------------------------------------
+    creatorism = {
+		color = { 0.3 0.5 0.3 }
+		icon = 2
+
+		country = { 
+            mil_tech_cost_modifier = -0.1
+            development_cost_in_primary_culture = -0.1
+		}
+        country_as_secondary = {
+            mil_tech_cost_modifier = -0.1
+        }
+        province = {
+            local_missionary_strength = -0.02
+        }
+        
+        has_patriarchs = yes
+        
+        orthodox_icons = {
+            focus_military_drills = {
+				discipline = 0.05
+				
+				allow = {
+					always = yes
+				}
+				ai_will_do = {
+					factor = 1
+                    
+					modifier = {
+						factor = 0
+						NOT = { is_at_war = yes }
+					}
+				}
+			}
+            focus_recruitment = {
+				global_manpower_modifier = 0.1
+				
+				allow = {
+					always = yes
+				}
+				ai_will_do = {
+					factor = 1
+				}
+			}
+            focus_infrastructure = {
+				build_cost = -0.1
+				
+				allow = {
+					always = yes
+				}
+				ai_will_do = {
+					factor = 1
+					modifier = {
+						factor = 0
+						is_at_war = yes
+					}
+				}
+			}
+            focus_conquest = {
+				province_warscore_cost = -0.1
+				
+				allow = {
+					always = yes
+				}
+				ai_will_do = {
+					factor = 1
+                    
+					modifier = {
+						factor = 0
+						NOT = { is_at_war = yes }
+					}
+				}
+			}
+            focus_technology_scavenging = {
+				idea_cost = -0.05
+				
+				allow = {
+					always = yes
+				}
+				ai_will_do = {
+					factor = 1
+                    
+					modifier = {
+						factor = 0
+                        is_at_war = yes
+					}
+				}
+			}
+        }
+        
+        on_convert = {
+			change_religion = creatorism
+			add_prestige = -100
+
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}			
+		}
+        
+		heretic = { HERETIC }
+    }
+    
+    #-------------------------------------
+    # Cult of Mars
+    #-------------------------------------
+    cult_of_mars = {
+		color = { 0.3 0.1 0.1 }
+		icon = 3
+
+		country = { 
+            infantry_cost = -0.1
+            global_manpower_modifier = 0.1
+		}
+        country_as_secondary = {
+            infantry_cost = -0.1
+        }
+        province = {
+			
+		}
+        
+        uses_piety = yes
+        
+        on_convert = {
+			change_religion = cult_of_mars
+			add_prestige = -100
+
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}			
+		}
+        
+		heretic = { HERETIC }
+    }
+    
+    #-------------------------------------
+    # Hubology
+    #-------------------------------------
+    hubology = {
+		color = { 0.2 0.3 0.6 }
+		icon = 4
+
+		country = { 
+            global_spy_defence = 0.25
+            advisor_cost = -0.1
+		}
+        country_as_secondary = {
+            global_spy_defence = 0.25
+        }
+        province = {
+            local_missionary_strength = -0.01
+        }
+        
+        fervor = yes
+        
+        on_convert = {
+			change_religion = hubology
+			add_prestige = -100
+
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}			
+		}
+        
+		heretic = { HERETIC }
+	}
+    
+    #-------------------------------------
+    # Robotics
+    #-------------------------------------
+    robotics = {
+		color = { 0.75 0.23 0.55 }
+		icon = 24
+
+		country = { 
+            technology_cost = -0.05
+            production_efficiency = 0.05
+		}
+        country_as_secondary = {
+			production_efficiency = 0.05
+		}
+		province = {
+			
+		}
+        
+        holy_sites = { 
+            1200 # New Vegas
+            1217 # Sierra Army Depot
+            1402  # Sunnyvale
+            1208 # The Glow
+            545  # C.I.T Ruins
+        }
+		blessings = {
+			combat_simulation
+            titanium_plating
+            proton_blades
+            primsmatic_lens
+            sonic_emitters
+		}
+        
+        on_convert = {
+			change_religion = robotics
+			add_prestige = -100
+
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}			
+		}
+        
+		heretic = { HERETIC }
+	}
+
+    #-------------------------------------
+    # Lord of the Pitt
+    #-------------------------------------
+	lord_of_the_pitt = {
+		color = { 0.659 0.487 0.145 }
+		icon = 25
+		
+		country = { 
+			global_manpower_modifier = 0.1
+			hostile_attrition = 2
+		}
+        country_as_secondary = {
+			hostile_attrition = 2
+		}
+		province = {
+			
+		}
+        
+        fervor = yes
+        
+        on_convert = {
+			change_religion = lord_of_the_pitt
+			add_prestige = -100
+
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}			
+		}
+        
+		heretic = { HERETIC }
+	}
+    
+    #-------------------------------------
+    # American Restorationists
+    #-------------------------------------
+    american_restorationists = {
+		color = { 0.0 0.272 0.316 }
+		icon = 23
+        
+		country = { 
+            global_institution_spread = 0.25
+            idea_cost = -0.1
+		}
+        country_as_secondary = {
+            global_institution_spread = 0.25
+        }
+        province = {
+            local_missionary_strength = -0.01
+        }
+        
+        holy_sites = { 
+            1200 # New Vegas
+            299  # Philly
+            1259 # Chicago
+            1414 # DC Mall
+            965  # Manhattan 
+        }
+		blessings = {
+			americana_relics
+			lincolns_legacy
+			pre_war_banner
+            controled_deathclaws
+            american_dream		
+		}
+        
+        on_convert = {
+			change_religion = american_restorationists
+			add_prestige = -100
+
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}			
+		}
+        
+		heretic = { HERETIC }
+	}
+    
+    crusade_name = HOLY_WAR
+}
+
+#----------------------------------------------------------------------
+# Atomic
+#----------------------------------------------------------------------
+religion_group_atomic = {
+	defender_of_faith = no
+	can_form_personal_unions = no
+
+	flags_with_emblem_percentage = 33
+	flag_emblem_index_range = { 1 18 }
+    
+    #-------------------------------------
+    # Atomic Worship
+    #-------------------------------------
+    atomic_worship = {
+		color = { 0.523 0.0244 0.282 }
+		icon = 6
+		
+		country = { 
+			land_morale = 0.1
+            land_attrition = -0.15
+		}
+        country_as_secondary = {
+            land_attrition = -0.15
+        }
+        province = {
+            local_hostile_attrition = 1
+            local_missionary_strength = -0.02
+        }
+        
+		uses_church_power = yes
+		aspects = {
+			atom_unnatural_endurance
+			atom_rad_glow
+			atom_pliable_brains
+			atom_enhanced_obedience
+			atom_rapid_speech
+			atom_atomic_will
+		}
+		aspects_name = ATOMIC_ASPECTS
+        
+        on_convert = {
+			change_religion = atomic_worship
+			add_prestige = -100
+
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}			
+		}
+        
+		heretic = { HERETIC }
+	}
+
+    #-------------------------------------
+    # Bright Brotherhood
+    #-------------------------------------
+	bright_brotherhood = {
+		color = { 0.0383 0.697 0.325 }
+		icon = 22
+        
+		country = {
+			diplomatic_reputation = 1
+			dip_tech_cost_modifier = -0.1
+		}
+        country_as_secondary = {
+			dip_tech_cost_modifier = -0.1
+		}
+        province = {
+            local_hostile_attrition = 1
+            local_missionary_strength = -0.02
+        }
+        
+        fervor = yes
+        
+        on_convert = {
+			change_religion = bright_brotherhood
+			add_prestige = -100
+
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}			
+		}
+        
+		heretic = { HERETIC }
+	}
+
+    #-------------------------------------
+    # Renewal Cult
+    #-------------------------------------
+ 	renewal_cult = {
+		icon = 8
+		color = { 123 81 82 }
+        
+		country = {
+			diplomatic_reputation = 1
+            adm_tech_cost_modifier = -0.1
+		}
+        country_as_secondary = {
+            diplomatic_reputation = 1
+        }
+        province = {
+            local_missionary_strength = -0.02
+        }
+        
+        fervor = yes
+        
+        on_convert = {
+			change_religion = renewal_cult
+			add_prestige = -100
+
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}			
+		}
+        
+		heretic = { HERETIC }
+	}
+    
+    crusade_name = HOLY_WAR
+}
+
+#----------------------------------------------------------------------
+# Pagan
+#----------------------------------------------------------------------
+religion_group_pagan = {
+	defender_of_faith = no
+	can_form_personal_unions = no
+
+	flags_with_emblem_percentage = 33
+	flag_emblem_index_range = { 1 18 }
+    
+    #-------------------------------------
+    # Survivalist
+    #-------------------------------------
+    survivalist = {
+		color = { 0.204 0.22 0.32 }
+		icon = 26
+
+		country = { 
+            army_tradition_decay = -0.01
+            global_regiment_cost = -0.05
+		}
+		country_as_secondary = {
+            army_tradition_decay = -0.01
+        }
+        province = {
+            
+        }
+        
+        personal_deity = yes
+        
+        on_convert = {
+			change_religion = survivalist
+			add_prestige = -100
+			add_stability = -2
+			
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}					
+		}
+        
+        heretic = { HERETIC }
+	}
+
+    #-------------------------------------
+    # Animist
+    #-------------------------------------
+    animism = {
+		color = { 0.374 0.418 0.252 }
+		icon = 27
+
+		country = { 
+            global_unrest = -1
+            manpower_recovery_speed = 0.1
+		}
+		country_as_secondary = {
+            manpower_recovery_speed = 0.1
+        }
+        province = {
+            
+        }
+        
+        personal_deity = yes
+        
+        on_convert = {
+			change_religion = animism
+			add_prestige = -100
+			add_stability = -2
+			
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}					
+		}
+        
+        heretic = { HERETIC }
+	}
+    
+    #-------------------------------------
+    # Fetishist
+    #-------------------------------------
+    fetishism = {
+		color = { 0.374 0.418 0.252 }
+		icon = 20
+
+		country = { 
+            global_trade_goods_size_modifier = 0.05
+            available_province_loot = 1.0
+		}
+        country_as_secondary = {
+            available_province_loot = 1.0
+        }
+        province = {
+            
+        }
+        
+        personal_deity = yes
+        
+        on_convert = {
+			change_religion = fetishism
+			add_prestige = -100
+			add_stability = -2
+			
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}					
+		}
+        
+		heretic = { HERETIC }
+	}
+    
+    #-------------------------------------
+    # Totemist
+    #-------------------------------------
+    totemism = {
+		color = { 0.374 0.418 0.252 }
+		icon = 5
+
+		country = { 
+            land_forcelimit_modifier = 0.1
+            reinforce_cost_modifier = -0.1
+		}
+        country_as_secondary = {
+            reinforce_cost_modifier = -0.1
+        }
+        province = {
+            
+        }
+        
+        personal_deity = yes
+         
+        on_convert = {
+			change_religion = totemism
+			add_prestige = -100
+			add_stability = -2
+			
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}					
+		}
+        
+        heretic = { HERETIC }
+	}
+
+    #-------------------------------------
+    # Fungal
+    #-------------------------------------
+    fungal = {
+		color = { 0.25 0.34 0.51 }
+		icon = 28
+
+		country = { 
+            global_manpower_modifier = 0.1
+            manpower_recovery_speed = 0.1
+		}
+        country_as_secondary = {
+            manpower_recovery_speed = 0.1
+        }
+		province = {
+			local_missionary_strength = -0.02
+		}
+        
+        personal_deity = yes
+        
+        on_convert = {
+			change_religion = fungal
+			add_prestige = -100
+			add_stability = -2
+			
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}					
+		}
+        
+        heretic = { HERETIC }
+	}
+    
+    #-------------------------------------
+    # Swamp Cult
+    #-------------------------------------
+    swamp_cult = {
+		color = { 0.35 0.24 0.21 }
+		icon = 29
+
+		country = { 
+            manpower_in_true_faith_provinces = 0.2
+            war_exhaustion = -0.03
+		}
+        country_as_secondary = { 
+            war_exhaustion = -0.03
+        }
+		province = {
+			local_missionary_strength = -0.02
+		}
+        
+        personal_deity = yes
+        
+        on_convert = {
+			change_religion = swamp_cult
+			add_prestige = -100
+			add_stability = -2
+			
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}					
+		}
+        
+        heretic = { HERETIC }
+	}
+    
+	crusade_name = HOLY_WAR
+}
+
+#----------------------------------------------------------------------
+# Prewar
+#----------------------------------------------------------------------
+religion_group_prewar = {
+	defender_of_faith = no
+	can_form_personal_unions = no
+
+	flags_with_emblem_percentage = 33
+	flag_emblem_index_range = { 1 18 }
+
+    #-------------------------------------
+    # Catholic
+    #-------------------------------------
+    catholic = {
+		color = { 0.8 0.8 0 }
+		icon = 10
+
+		country = {
+			prestige = 0.5
+            improve_relation_modifier = 0.1
+		}
+        country_as_secondary = {
+            improve_relation_modifier = 0.1
+        }
+        province = {
+            
+        }
+		
+        fervor = yes
+        
+		allowed_conversion = {
+			baptist
+			presbyterian
+            mormon
+		}
+        on_convert = {
+			change_religion = catholic
+			add_prestige = -100
+			add_stability = -2
+			
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}					
+		}
+        
+        heretic = { HERETIC }
+	}
+    
+    #-------------------------------------
+    # Baptist
+    #-------------------------------------
+	baptist = {
+		color = { 0.33 0.2 0.5 }
+		icon = 11
+
+		country = {
+			ae_impact = -0.1
+			diplomatic_reputation = 1
+		}
+        country_as_secondary = {
+            ae_impact = -0.1
+        }
+        province = {
+            
+        }
+        
+		fervor = yes
+		
+		allowed_conversion = {
+            catholic
+			presbyterian
+            mormon
+		}
+        on_convert = {
+			change_religion = baptist
+			add_prestige = -100
+			add_stability = -2
+			
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}					
+		}
+
+		heretic = { TRAIL_OF_BLOOD }
+	}
+	
+    #-------------------------------------
+    # Presbyterian
+    #-------------------------------------
+	presbyterian = {
+		color = { 0.33 0.2 0.5 }
+		icon = 12
+
+		country = {
+			global_tax_modifier = 0.1
+            years_of_nationalism = -3
+		}
+		country_as_secondary = {
+            global_tax_modifier = 0.1
+        }
+        province = {
+            
+        }
+        
+        fervor = yes
+        
+		allowed_conversion = {
+            catholic
+			baptist
+            mormon
+		}
+        on_convert = {
+			change_religion = presbyterian
+			add_prestige = -100
+			add_stability = -2
+			
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}					
+		}
+        
+        heretic = { HERETIC }
+	}
+    
+    #-------------------------------------
+    # Mormon
+    #-------------------------------------
+	mormon = {
+		color = { 0.353 0.0913 0.438 }
+		icon = 9
+
+		country = { 
+			free_policy = 1
+            harsh_treatment_cost = -0.2
+		}
+        country_as_secondary = {
+            free_policy = 1
+        }
+        province = {
+			local_missionary_strength = -0.03
+		}
+        
+        fervor = yes
+        
+        allowed_conversion = {
+            catholic
+			baptist
+            presbyterian
+		}
+        on_convert = {
+			change_religion = mormon
+			add_prestige = -100
+			add_stability = -2
+			
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}					
+		}
+        
+        heretic = { HERETIC }
+	}
+
+    #-------------------------------------
+    # Islam
+    #-------------------------------------
+    islam = {
+		color = { 0 0.6 0 }
+		icon = 7
+        
+		country = {
+			yearly_corruption = -0.03
+            same_religion_advisor_cost = -0.1
+		}
+        country_as_secondary = {
+            yearly_corruption = -0.03
+        }
+		province = {
+			local_missionary_strength = -0.01
+		}
+        
+        fervor = yes
+        
+        on_convert = {
+			change_religion = islam
+			add_prestige = -100
+			add_stability = -2
+			
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}					
+		}
+        
+        heretic = { HERETIC }
+	}
+    
+    #-------------------------------------
+    # Buddism
+    #-------------------------------------
+	buddism = { 
+		color = { 0.8 0.3 0 }
+		icon = 13
+
+		country = {
+			min_autonomy_in_territories = -0.1
+            stability_cost_modifier = -0.1
+		}
+        country_as_secondary = {
+            min_autonomy_in_territories = -0.1
+        }
+		province = {
+            
+		}
+        
+		fervor = yes
+        
+        on_convert = {
+			change_religion = buddism
+			add_prestige = -100
+			add_stability = -2
+			
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}					
+		}
+        
+        heretic = { ZEN }
+	}
+	
+    #-------------------------------------
+    # Taoism
+    #-------------------------------------
+	taoism = {
+		color = { 0.84 0.9 0.55 }
+		icon = 15
+        
+		country = {
+			yearly_innovativeness = 1.0
+            technology_cost = -0.05
+		}
+        country_as_secondary = {
+            yearly_innovativeness = 1.0
+        }
+		province = {
+            
+		}
+        
+        fervor = yes
+        
+        on_convert = {
+			change_religion = taoism
+			add_prestige = -100
+			add_stability = -2
+			
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}					
+		}
+        
+		heretic = { TAOIST }
+	}
+
+    #-------------------------------------
+    # Shinto
+    #-------------------------------------
+	shinto = {
+		color = { 0.8 0 0 }
+		icon = 16
+        
+		country = {
+			state_maintenance_modifier = -0.1
+            development_cost_modifier = -0.1
+		}
+        country_as_secondary = {
+            development_cost_modifier = -0.1
+        }
+		province = {
+            
+		}
+        
+        fervor = yes
+        
+        on_convert = {
+			change_religion = shinto
+			add_prestige = -100
+			add_stability = -2
+			
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}					
+		}
+        
+		heretic = { SHUGENDO }
+	}
+	
+    #-------------------------------------
+    # Hinduism
+    #-------------------------------------
+	hinduism = {
+		color = { 0 0.8 0.8 }
+		icon = 14
+		
+		country = {
+			num_accepted_cultures = 3
+            promote_culture_cost = -0.5
+		}
+        country_as_secondary = {
+            num_accepted_cultures = 3
+        }
+		province = {
+            
+		}
+		
+        fervor = yes
+        
+        allowed_conversion = {
+			sikhism
+		}
+        
+		on_convert = {
+			change_religion = hinduism
+			add_prestige = -100
+			add_stability = -2
+			
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}
+		}
+		
+		heretic = { BHAKTI }
+	}
+
+    #-------------------------------------
+    # Sikhism
+    #-------------------------------------
+	sikhism = {
+		color = { 0 0.6 0.6 }
+		icon = 17
+		
+		country = {
+			mil_tech_cost_modifier = -0.1
+            infantry_power = 0.1
+		}
+        country_as_secondary = {
+            infantry_power = 0.1
+        }
+		province = {
+			local_missionary_strength = -0.02
+		}
+		
+        fervor = yes
+        
+        allowed_conversion = {
+			hinduism
+		}
+		on_convert = {
+			change_religion = sikhism
+			add_prestige = -100
+			add_stability = -2
+			
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}
+		}
+
+		heretic = { MASANDIS }
+	}
+
+    #-------------------------------------
+    # Jewish
+    #-------------------------------------
+	jewish = {
+		icon = 18
+		color = { 0.6 0.1 0.4 }
+        
+		country = {
+			tolerance_own = 2
+			caravan_power = 0.2
+		}
+		country_as_secondary = {
+			caravan_power = 0.2
+		}
+		province = {
+			local_missionary_strength = -0.02
+		}
+		
+        fervor = yes
+        
+        on_convert = {
+			change_religion = jewish
+			add_prestige = -100
+			add_stability = -2
+			
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}
+		}
+        
+		heretic = { SAMARITAN KARAITE }
+	}
+	
+	crusade_name = HOLY_WAR
+}
+
+# Required to prevent CTD
+religion_group_internal = {
+	defender_of_faith = no
+	can_form_personal_unions = no
+
+    internal = {
+		color = { 0.6 0.33 0.5 }
+		icon = 1
+
+		country = { }
+        
+        #hre_religion = yes
+        #hre_heretic_religion = yes
+        
+        papacy = {
+			papal_tag = X04
+			election_cost = 1000
+			seat_of_papacy = 1
+        }
+    }
+}

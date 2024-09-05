@@ -1,0 +1,17 @@
+# set_variable = { which = province_id value = 4006  }
+
+owner = SUN
+controller = SUN
+add_core = SUN
+is_city = yes
+
+culture = sun_dog
+religion = animism
+
+base_tax = 2
+base_production = 1
+base_manpower = 2
+
+trade_goods = food
+hre = no
+center_of_trade = 1

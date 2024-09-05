@@ -1,0 +1,51 @@
+
+owner = ELH
+controller = ELH
+add_core = ELH
+is_city = yes
+
+base_tax = 4
+base_production = 4
+base_manpower = 3
+
+culture = elkheart
+religion = animism
+
+trade_goods = unknown
+
+hre = no
+center_of_trade = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

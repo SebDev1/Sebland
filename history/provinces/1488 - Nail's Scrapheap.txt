@@ -1,0 +1,17 @@
+
+owner = RID
+controller = RID
+add_core = RID
+
+is_city = yes
+base_tax = 2
+base_production = 2
+base_manpower = 2
+
+culture = ridger
+religion = animism
+
+trade_goods = steel
+hre = no
+center_of_trade = 1
+

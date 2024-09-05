@@ -1,0 +1,351 @@
+monarch_power = DIP
+
+# applied when a country is ahead of time in this technology
+ahead_of_time = {
+	trade_efficiency = 0.2
+	yearly_corruption = -0.05
+}
+
+# Pre-era techs
+technology = {
+	# Tech 0
+	year = 2241
+	
+	num_accepted_cultures   = 2
+    global_colonial_growth	= 5
+	range					= 10
+	trade_range				= 500
+    trade_efficiency        = 0.0
+    naval_maintenance       = 0.0
+	naval_morale			= 2.0
+	
+	allow_client_states = yes
+	
+	merchants = yes
+	may_fabricate_claims = yes
+	
+	enable = fm_transport_1
+	enable = fm_galley_1
+	enable = fm_trade_ship_1
+	enable = fm_heavy_ship_1
+    
+    fbs_marketplace = yes
+    fbs_dock = yes
+    fbs_shipyard = yes
+    fbs_highway = yes
+    fbs_arsenal = yes
+    fbs_labour_camp = yes
+    fbs_military_factory = yes
+    fbs_industrial_factory = yes
+    fbs_commercial_factory = yes
+    fbs_electronics_factory = yes
+}
+
+technology = {
+	# Tech 1
+	year = 2254
+
+	trade_efficiency = 0.05
+}
+
+technology = {
+	# Tech 2
+	year = 2267
+
+	naval_morale = 0.25
+}
+
+technology = {
+	# Tech 3
+	year = 2280
+
+	trade_efficiency = 0.05
+}
+
+technology = {
+	# Tech 4
+	year = 2293
+	
+    num_accepted_cultures = 1
+}
+
+technology = {
+	# Tech 5
+	year = 2306
+	
+	naval_morale = 0.25
+}
+
+technology = {
+	# Tech 6
+	year = 2319
+
+	trade_efficiency = 0.05
+}
+
+technology = {
+	# Tech 7
+	year = 2332
+	
+	fbs_navy_command = yes
+    fbs_sailor_recruitment_centre = yes
+}
+
+technology = {
+	# Tech 8
+	year = 2345
+
+    num_accepted_cultures = 1
+    may_steal_maps = yes
+    may_slander_merchants = yes
+    may_study_technology = yes
+    may_sabotage_recruitment = yes
+}
+
+technology = {
+	# Tech 9
+	year = 2358
+
+    naval_morale = 0.25
+}
+
+technology = {
+	# Tech 10
+	year = 2371
+	
+    trade_efficiency = 0.05
+}
+
+technology = {
+	# Tech 11
+	year = 2384
+
+    naval_morale = 0.25
+}
+
+technology = {
+	# Tech 12
+	year = 2397
+
+    trade_range = 100
+    range = 50
+}
+
+technology = {
+	# Tech 13
+	year = 2410
+
+    trade_efficiency = 0.05
+}
+
+technology = {
+	# Tech 14
+	year = 2423
+
+    naval_morale = 0.25
+}
+
+technology = {
+	# Tech 15
+	year = 2436
+	
+	fbs_propaganda_centre = yes
+}
+
+technology = {
+	# Tech 16
+	year = 2449
+
+    num_accepted_cultures = 1
+    may_sow_discontent = yes
+    may_sabotage_reputation = yes
+    may_corrupt_officials = yes
+    may_agitate_for_liberty = yes
+	may_infiltrate_administration = yes
+}
+
+technology = {
+	# Tech 17
+	year = 2462
+
+    naval_maintenance = 0.1
+    trade_range = 100
+    range = 50
+    global_colonial_growth = 5
+}
+
+technology = {
+	# Tech 18
+	year = 2475
+
+    trade_efficiency = 0.05
+}
+
+technology = {
+	# Tech 19
+	year = 2488
+
+    naval_morale = 0.25
+}
+
+technology = {
+	# Tech 20
+	year = 2501
+
+    num_accepted_cultures = 1
+}
+
+technology = {
+	# Tech 21
+	year = 2514
+
+    trade_efficiency = 0.05
+}
+
+technology = {
+	# Tech 22
+	year = 2527
+
+    naval_morale = 0.25
+}
+
+technology = {
+	# Tech 23
+	year = 2540
+
+    trade_efficiency = 0.05
+}
+
+technology = {
+	# Tech 24
+	year = 2553
+
+    num_accepted_cultures = 1
+}
+
+technology = {
+	# Tech 25
+	year = 2566
+
+    naval_maintenance = 0.1
+    trade_range = 100
+    range = 100
+    global_colonial_growth = 5
+}
+
+technology = {
+	# Tech 26
+	year = 2579
+	
+    trade_efficiency = 0.05
+}
+
+technology = {
+	# Tech 27
+	year = 2592
+
+    naval_morale = 0.25
+}
+
+technology = {
+	# Tech 28
+	year = 2605
+
+    num_accepted_cultures = 1
+}
+
+technology = {
+	# Tech 29
+	year = 2618
+
+    naval_maintenance = 0.2
+    trade_range = 100
+    range = 100
+    global_colonial_growth = 5
+}
+
+technology = {
+	# Tech 30
+	year = 2631
+
+    naval_morale = 0.5
+}
+
+technology = {
+	# Tech 31
+	year = 2644
+
+    trade_efficiency = 0.05
+}
+
+technology = {
+	# Tech 32
+	year = 2657
+	
+    num_accepted_cultures = 1
+}
+
+technology = {
+	# Tech 33
+	year = 2670
+
+    naval_maintenance = 0.2
+    trade_range = 100
+    range = 100
+    global_colonial_growth = 5
+}
+
+technology = {
+	# Tech 34
+	year = 2685
+
+    naval_morale = 0.5
+}
+
+technology = {
+	# Tech 35
+	year = 2700
+
+    trade_efficiency = 0.1
+}
+
+technology = {
+	# Tech 36
+	year = 2715
+
+    naval_maintenance = 0.2
+    trade_range = 100
+    range = 100
+    global_colonial_growth = 5
+}
+
+technology = {
+	# Tech 37
+	year = 2730
+
+    naval_morale = 0.5
+}
+
+technology = {
+	# Tech 38
+	year = 2745
+
+    trade_efficiency = 0.15
+}
+
+technology = {
+	# Tech 39
+	year = 2750
+
+    naval_morale = 0.5
+}
+
+technology = {
+	# Tech 40
+	year = 2765
+
+    naval_maintenance = 0.2
+    trade_range = 100
+    range = 100
+    global_colonial_growth = 5
+}

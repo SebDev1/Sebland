@@ -1,0 +1,16 @@
+
+owner = WOS
+controller = WOS
+add_core = WOS
+is_city = yes
+
+base_tax = 6
+base_production = 4
+base_manpower = 7
+
+culture = woodstock
+religion = secular
+
+trade_goods = unknown
+hre = no
+center_of_trade = 1

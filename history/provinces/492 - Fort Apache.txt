@@ -1,0 +1,19 @@
+# set_variable = { which = province_id value = 492  }
+
+owner = HAN
+controller = HAN
+add_core = HAN
+
+is_city = yes
+base_tax = 4
+base_production = 4
+base_manpower = 3
+
+culture = hangdog
+religion = animism
+
+trade_goods = munitions
+hre = no
+center_of_trade = 1
+
+fbs_fort_1 = yes

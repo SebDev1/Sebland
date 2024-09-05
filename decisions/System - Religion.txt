@@ -1,0 +1,820 @@
+country_decisions = {
+    #------------------------
+    # Post War
+    #------------------------
+    # Secular
+    adopt_secular = {
+        potential = {
+            is_humanlike_administration = yes
+            NOT = { religion = secular }
+            dominant_religion = secular
+            NOT = { has_country_modifier = fm_conversion_zeal }
+        }
+        allow = {
+            dominant_religion = secular
+            years_of_income = 1
+        }
+        effect = {
+            add_stability = -3
+            add_years_of_income = -1
+            change_religion = secular
+            capital_scope = {
+                change_religion = secular
+            }
+            add_country_modifier = {
+                name = "fm_conversion_zeal"
+                duration = 3650
+            }	
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    
+    # Creatorism
+    adopt_creatorism = {
+        potential = {
+            is_humanlike_administration = yes
+            NOT = { religion = creatorism }
+            dominant_religion = creatorism
+            NOT = { has_country_modifier = fm_conversion_zeal }
+        }
+        allow = {
+            dominant_religion = creatorism
+            years_of_income = 1
+        }
+        effect = {
+            add_stability = -3
+            add_years_of_income = -1
+            change_religion = creatorism
+            capital_scope = {
+                change_religion = creatorism
+            }
+            add_country_modifier = {
+                name = "fm_conversion_zeal"
+                duration = 3650
+            }	
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    
+    # Cult of Mars
+	adopt_the_cult_of_mars = {
+		potential = {
+            is_humanlike_administration = yes
+			NOT = { religion = cult_of_mars }
+			OR = {
+				any_owned_province = {
+					religion = cult_of_mars
+				}
+				secondary_religion = cult_of_mars
+			}
+		}
+		allow = {
+			any_owned_province = {
+				religion = cult_of_mars
+			}
+			stability = 1
+            years_of_income = 1
+		}
+		effect = {
+			add_stability = -3
+            add_years_of_income = -1
+			change_religion = cult_of_mars
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}	
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+    
+    # Hubology
+	adopt_hubology = {
+		potential = {
+            is_humanlike_administration = yes
+			NOT = { religion = hubology }
+			OR = {
+				any_owned_province = {
+					religion = hubology
+				}
+				secondary_religion = hubology
+			}
+		}
+		allow = {
+			any_owned_province = {
+				religion = hubology
+			}
+			stability = 1
+            years_of_income = 1
+		}
+		effect = {
+			add_stability = -3
+            add_years_of_income = -1
+			change_religion = hubology
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}	
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+    
+    # Robotics
+    adopt_robotics = {
+		potential = {
+            is_humanlike_administration = yes
+			NOT = { religion = robotics }
+			OR = {
+				any_owned_province = {
+					religion = robotics
+				}
+				secondary_religion = robotics
+			}
+		}
+		allow = {
+			any_owned_province = {
+				religion = robotics
+			}
+			stability = 1
+            years_of_income = 1
+		}
+		effect = {
+			add_stability = -3
+            add_years_of_income = -1
+			change_religion = robotics
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}	
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+    
+    # Lord of the Pitt
+	adopt_the_lord_of_the_pitt = {
+		potential = {
+            is_humanlike_administration = yes
+            NOT = { religion = lord_of_the_pitt }
+			OR = {
+				any_owned_province = {
+					religion = lord_of_the_pitt
+				}
+				secondary_religion = lord_of_the_pitt
+			}
+		}
+		allow = {
+			any_owned_province = {
+				religion = lord_of_the_pitt
+			}
+			stability = 1
+            years_of_income = 1
+		}
+		effect = {
+			add_stability = -3
+            add_years_of_income = -1
+			change_religion = lord_of_the_pitt
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}	
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+    
+    # American Restorationists
+    adopt_american_restorationists = {
+		potential = {
+            is_humanlike_administration = yes
+			NOT = { religion = american_restorationists }
+			OR = {
+				any_owned_province = {
+					religion = american_restorationists
+				}
+				secondary_religion = american_restorationists
+			}
+		}
+		allow = {
+			any_owned_province = {
+				religion = american_restorationists
+			}
+			stability = 1
+            years_of_income = 1
+		}
+		effect = {
+			add_stability = -3
+            add_years_of_income = -1
+			change_religion = american_restorationists
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}	
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+    
+    #------------------------
+	# Atomic
+    #------------------------
+    # Atomic Worship
+	adopt_atomic_worship = {
+		potential = {
+            is_humanlike_administration = yes
+			NOT = { religion = atomic_worship }
+			OR = {
+				any_owned_province = {
+					religion = atomic_worship
+				}
+				secondary_religion = atomic_worship
+			}
+		}
+		allow = {
+			any_owned_province = {
+				religion = atomic_worship
+			}
+			stability = 1
+            years_of_income = 1
+		}
+		effect = {
+			add_stability = -3
+            add_years_of_income = -1
+			change_religion = atomic_worship
+			add_country_modifier = {
+				name = "fm_conversion_zeal"
+				duration = 3650
+			}	
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+    
+    # Bright Brotherhood
+    adopt_bright_brotherhood = {
+        potential = {
+            is_humanlike_administration = yes
+            NOT = { religion = bright_brotherhood }
+            dominant_religion = bright_brotherhood
+            NOT = { has_country_modifier = fm_conversion_zeal }
+        }
+        allow = {
+            dominant_religion = bright_brotherhood
+            years_of_income = 1
+        }
+        effect = {
+            add_stability = -3
+            add_years_of_income = -1
+            change_religion = bright_brotherhood
+            capital_scope = {
+                change_religion = bright_brotherhood
+            }
+            add_country_modifier = {
+                name = "fm_conversion_zeal"
+                duration = 3650
+            }	
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    
+    # Renewal Cult
+    adopt_renewal_cult = {
+        potential = {
+            is_humanlike_administration = yes
+            NOT = { religion = renewal_cult }
+            dominant_religion = renewal_cult
+            NOT = { has_country_modifier = fm_conversion_zeal }
+        }
+        allow = {
+            dominant_religion = renewal_cult
+            years_of_income = 1
+        }
+        effect = {
+            add_stability = -3
+            add_years_of_income = -1
+            change_religion = renewal_cult
+            capital_scope = {
+                change_religion = renewal_cult
+            }
+            add_country_modifier = {
+                name = "fm_conversion_zeal"
+                duration = 3650
+            }	
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    #------------------------
+    # Pagan
+    #------------------------
+    # Survivalist
+    adopt_survivalist = {
+        potential = {
+            is_humanlike_administration = yes
+            NOT = { religion = survivalist }
+            dominant_religion = survivalist
+            NOT = { has_country_modifier = fm_conversion_zeal }
+        }
+        allow = {
+            dominant_religion = survivalist
+            years_of_income = 1
+        }
+        effect = {
+            add_stability = -3
+            add_years_of_income = -1
+            change_religion = survivalist
+            capital_scope = {
+                change_religion = survivalist
+            }
+            add_country_modifier = {
+                name = "fm_conversion_zeal"
+                duration = 3650
+            }	
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    
+    # Animism
+    adopt_animism = {
+        potential = {
+            is_humanlike_administration = yes
+            NOT = { religion = animism }
+            dominant_religion = animism
+            NOT = { has_country_modifier = fm_conversion_zeal }
+        }
+        allow = {
+            dominant_religion = animism
+            years_of_income = 1
+        }
+        effect = {
+            add_stability = -3
+            add_years_of_income = -1
+            change_religion = animism
+            capital_scope = {
+                change_religion = animism
+            }
+            add_country_modifier = {
+                name = "fm_conversion_zeal"
+                duration = 3650
+            }	
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    # Fetishism
+    adopt_fetishism = {
+        potential = {
+            is_humanlike_administration = yes
+            NOT = { religion = fetishism }
+            dominant_religion = fetishism
+            NOT = { has_country_modifier = fm_conversion_zeal }
+        }
+        allow = {
+            dominant_religion = fetishism
+            years_of_income = 1
+        }
+        effect = {
+            add_stability = -3
+            add_years_of_income = -1
+            change_religion = fetishism
+            capital_scope = {
+                change_religion = fetishism
+            }
+            add_country_modifier = {
+                name = "fm_conversion_zeal"
+                duration = 3650
+            }	
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    # Totemism
+    adopt_totemism = {
+        potential = {
+            is_humanlike_administration = yes
+            NOT = { religion = totemism }
+            dominant_religion = totemism
+            NOT = { has_country_modifier = fm_conversion_zeal }
+        }
+        allow = {
+            dominant_religion = totemism
+            years_of_income = 1
+        }
+        effect = {
+            add_stability = -3
+            add_years_of_income = -1
+            change_religion = totemism
+            capital_scope = {
+                change_religion = totemism
+            }
+            add_country_modifier = {
+                name = "fm_conversion_zeal"
+                duration = 3650
+            }	
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    # Fungal
+    adopt_fungal = {
+        potential = {
+            is_humanlike_administration = yes
+            NOT = { religion = fungal }
+            dominant_religion = fungal
+            NOT = { has_country_modifier = fm_conversion_zeal }
+        }
+        allow = {
+            dominant_religion = fungal
+            years_of_income = 1
+        }
+        effect = {
+            add_stability = -3
+            add_years_of_income = -1
+            change_religion = fungal
+            capital_scope = {
+                change_religion = fungal
+            }
+            add_country_modifier = {
+                name = "fm_conversion_zeal"
+                duration = 3650
+            }	
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    
+    # Swamp Cult
+    adopt_swamp_cult = {
+        potential = {
+            is_humanlike_administration = yes
+            NOT = { religion = swamp_cult }
+            dominant_religion = swamp_cult
+            NOT = { has_country_modifier = fm_conversion_zeal }
+        }
+        allow = {
+            dominant_religion = swamp_cult
+            years_of_income = 1
+        }
+        effect = {
+            add_stability = -3
+            add_years_of_income = -1
+            change_religion = swamp_cult
+            capital_scope = {
+                change_religion = swamp_cult
+            }
+            add_country_modifier = {
+                name = "fm_conversion_zeal"
+                duration = 3650
+            }	
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    
+    #------------------------
+    # Pre-war
+    #------------------------
+    # Catholic
+    adopt_catholic = {
+        potential = {
+            is_humanlike_administration = yes
+            NOT = { religion = catholic }
+            dominant_religion = catholic
+            NOT = { has_country_modifier = fm_conversion_zeal }
+        }
+        allow = {
+            dominant_religion = catholic
+            years_of_income = 1
+        }
+        effect = {
+            add_stability = -3
+            add_years_of_income = -1
+            change_religion = catholic
+            capital_scope = {
+                change_religion = catholic
+            }
+            add_country_modifier = {
+                name = "fm_conversion_zeal"
+                duration = 3650
+            }	
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    # Baptist
+    adopt_baptist = {
+        potential = {
+            is_humanlike_administration = yes
+            NOT = { religion = baptist }
+            dominant_religion = baptist
+            NOT = { has_country_modifier = fm_conversion_zeal }
+        }
+        allow = {
+            dominant_religion = baptist
+            years_of_income = 1
+        }
+        effect = {
+            add_stability = -3
+            add_years_of_income = -1
+            change_religion = baptist
+            capital_scope = {
+                change_religion = baptist
+            }
+            add_country_modifier = {
+                name = "fm_conversion_zeal"
+                duration = 3650
+            }	
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    # Presbyterian
+    adopt_presbyterian = {
+        potential = {
+            is_humanlike_administration = yes
+            NOT = { religion = presbyterian }
+            dominant_religion = presbyterian
+            NOT = { has_country_modifier = fm_conversion_zeal }
+        }
+        allow = {
+            dominant_religion = presbyterian
+            years_of_income = 1
+        }
+        effect = {
+            add_stability = -3
+            add_years_of_income = -1
+            change_religion = presbyterian
+            capital_scope = {
+                change_religion = presbyterian
+            }
+            add_country_modifier = {
+                name = "fm_conversion_zeal"
+                duration = 3650
+            }	
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    
+    # Mormon
+    adopt_mormon = {
+        potential = {
+            is_humanlike_administration = yes
+            NOT = { religion = mormon }
+            dominant_religion = mormon
+            NOT = { has_country_modifier = fm_conversion_zeal }
+        }
+        allow = {
+            dominant_religion = mormon
+            years_of_income = 1
+        }
+        effect = {
+            add_stability = -3
+            add_years_of_income = -1
+            change_religion = mormon
+            capital_scope = {
+                change_religion = mormon
+            }
+            add_country_modifier = {
+                name = "fm_conversion_zeal"
+                duration = 3650
+            }	
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    # Islam
+    adopt_islam = {
+        potential = {
+            is_humanlike_administration = yes
+            NOT = { religion = islam }
+            dominant_religion = islam
+            NOT = { has_country_modifier = fm_conversion_zeal }
+        }
+        allow = {
+            dominant_religion = islam
+            years_of_income = 1
+        }
+        effect = {
+            add_stability = -3
+            add_years_of_income = -1
+            change_religion = islam
+            capital_scope = {
+                change_religion = islam
+            }
+            add_country_modifier = {
+                name = "fm_conversion_zeal"
+                duration = 3650
+            }	
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    # Buddism
+    adopt_buddism = {
+        potential = {
+            is_humanlike_administration = yes
+            NOT = { religion = buddism }
+            dominant_religion = buddism
+            NOT = { has_country_modifier = fm_conversion_zeal }
+        }
+        allow = {
+            dominant_religion = buddism
+            years_of_income = 1
+        }
+        effect = {
+            add_stability = -3
+            add_years_of_income = -1
+            change_religion = buddism
+            capital_scope = {
+                change_religion = buddism
+            }
+            add_country_modifier = {
+                name = "fm_conversion_zeal"
+                duration = 3650
+            }	
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    
+    # Taoism
+    adopt_taoism = {
+        potential = {
+            is_humanlike_administration = yes
+            NOT = { religion = taoism }
+            dominant_religion = taoism
+            NOT = { has_country_modifier = fm_conversion_zeal }
+        }
+        allow = {
+            dominant_religion = taoism
+            years_of_income = 1
+        }
+        effect = {
+            add_stability = -3
+            add_years_of_income = -1
+            change_religion = taoism
+            capital_scope = {
+                change_religion = taoism
+            }
+            add_country_modifier = {
+                name = "fm_conversion_zeal"
+                duration = 3650
+            }	
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    # Shinto
+    adopt_shinto = {
+        potential = {
+            is_humanlike_administration = yes
+            NOT = { religion = shinto }
+            dominant_religion = shinto
+            NOT = { has_country_modifier = fm_conversion_zeal }
+        }
+        allow = {
+            dominant_religion = shinto
+            years_of_income = 1
+        }
+        effect = {
+            add_stability = -3
+            add_years_of_income = -1
+            change_religion = shinto
+            capital_scope = {
+                change_religion = shinto
+            }
+            add_country_modifier = {
+                name = "fm_conversion_zeal"
+                duration = 3650
+            }	
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    # Hinduism
+    adopt_hinduism = {
+        potential = {
+            is_humanlike_administration = yes
+            NOT = { religion = hinduism }
+            dominant_religion = hinduism
+            NOT = { has_country_modifier = fm_conversion_zeal }
+        }
+        allow = {
+            dominant_religion = hinduism
+            years_of_income = 1
+        }
+        effect = {
+            add_stability = -3
+            add_years_of_income = -1
+            change_religion = hinduism
+            capital_scope = {
+                change_religion = hinduism
+            }
+            add_country_modifier = {
+                name = "fm_conversion_zeal"
+                duration = 3650
+            }	
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    # Sikhism
+    adopt_sikhism = {
+        potential = {
+            is_humanlike_administration = yes
+            NOT = { religion = sikhism }
+            dominant_religion = sikhism
+            NOT = { has_country_modifier = fm_conversion_zeal }
+        }
+        allow = {
+            dominant_religion = sikhism
+            years_of_income = 1
+        }
+        effect = {
+            add_stability = -3
+            add_years_of_income = -1
+            change_religion = sikhism
+            capital_scope = {
+                change_religion = sikhism
+            }
+            add_country_modifier = {
+                name = "fm_conversion_zeal"
+                duration = 3650
+            }	
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+
+    # Jewish
+    adopt_jewish = {
+        potential = {
+            is_humanlike_administration = yes
+            NOT = { religion = jewish }
+            dominant_religion = jewish
+            NOT = { has_country_modifier = fm_conversion_zeal }
+        }
+        allow = {
+            dominant_religion = jewish
+            years_of_income = 1
+        }
+        effect = {
+            add_stability = -3
+            add_years_of_income = -1
+            change_religion = jewish
+            capital_scope = {
+                change_religion = jewish
+            }
+            add_country_modifier = {
+                name = "fm_conversion_zeal"
+                duration = 3650
+            }	
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+}

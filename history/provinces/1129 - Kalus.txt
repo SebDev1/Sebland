@@ -1,0 +1,21 @@
+
+owner = HAW
+controller = HAW
+add_core = HAW
+is_city = yes
+
+base_tax = 6
+base_production = 7
+base_manpower = 5
+
+culture = moose
+religion = totemism
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+
+
+
+
+

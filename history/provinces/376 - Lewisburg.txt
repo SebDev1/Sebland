@@ -1,0 +1,78 @@
+# set_variable = { which = province_id value = 376  }
+
+owner = ABE
+controller = ABE
+add_core = ABE
+is_city = yes
+
+base_tax = 2
+base_production = 2
+base_manpower = 2
+
+culture = aberration
+religion = survivalist
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

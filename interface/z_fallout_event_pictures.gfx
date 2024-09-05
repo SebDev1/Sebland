@@ -1,0 +1,850 @@
+spriteTypes = {	
+    spriteType = {
+		name = "GFX_event_option_goto_province"
+		texturefile = "gfx//interface//event_interface//event_button_banner.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+    
+    spriteType = {
+		name = "GFX_event_goto_province"
+		texturefile = "gfx//interface//event_interface//event_button_banner.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+    
+    # Get:
+    #   Vault, normal
+    #   BOS talk/fight
+    #   Tribal talk/fight
+    #   Raider talk/fight/scene
+    #-----------------------------------------
+    # Fallout: New Vegas
+    #-----------------------------------------
+    
+    
+    spriteType = {
+		name = "ATOMIC_WRANGLER_eventPicture"
+		texturefile = "gfx/event_pictures/ATOMIC_WRANGLER.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "ATOMIC_WRANGLER_GAMBLING_eventPicture"
+		texturefile = "gfx/event_pictures/ATOMIC_WRANGLER_GAMBLING.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "AUTO_DOC_eventPicture"
+		texturefile = "gfx/event_pictures/AUTO_DOC.dds"
+		allwaystransparent = yes
+	}
+    spriteType = {
+		name = "BARBED_WALL_eventPicture"
+		texturefile = "gfx/event_pictures/BARBED_WALL.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "BIG_MT_CINEMATIC_eventPicture"
+		texturefile = "gfx/event_pictures/BIG_MT_CINEMATIC.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "BIG_MT_THE_SINK_eventPicture"
+		texturefile = "gfx/event_pictures/BIG_MT_THE_SINK.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "BOOMER_HANGER_eventPicture"
+		texturefile = "gfx/event_pictures/BOOMER_HANGER.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "BOOMER_ANDERSON_SHELTER_eventPicture"
+		texturefile = "gfx/event_pictures/BOOMER_ANDERSON_SHELTER.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "BOS_BUNKER_ENTRANCE_eventPicture"
+		texturefile = "gfx/event_pictures/BOS_BUNKER_ENTRANCE.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "CAESAR_TENT_eventPicture"
+		texturefile = "gfx/event_pictures/CAESAR_TENT.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "COLLAPSED_HIGHWAY_eventPicture"
+		texturefile = "gfx/event_pictures/COLLAPSED_HIGHWAY.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "DOC_MITCHELL_eventPicture"
+		texturefile = "gfx/event_pictures/DOC_MITCHELL.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "DEAD_JUNKIE_eventPicture"
+		texturefile = "gfx/event_pictures/DEAD_JUNKIE.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "MORMON_FORT_INSIDE_eventPicture"
+		texturefile = "gfx/event_pictures/MORMON_FORT_INSIDE.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "FREESIDE_eventPicture"
+		texturefile = "gfx/event_pictures/FREESIDE.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "FREESIDE_WATER_PUMP_eventPicture"
+		texturefile = "gfx/event_pictures/FREESIDE_WATER_PUMP.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "GHOUL_ATTACK_eventPicture"
+		texturefile = "gfx/event_pictures/GHOUL_ATTACK.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "GOMORRAH_eventPicture"
+		texturefile = "gfx/event_pictures/GOMORRAH.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "LUCKY_38_eventPicture"
+		texturefile = "gfx/event_pictures/LUCKY_38.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "THE_TOPS_eventPicture"
+		texturefile = "gfx/event_pictures/THE_TOPS.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "ULTRALUXE_eventPicture"
+		texturefile = "gfx/event_pictures/ULTRALUXE.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "STRIP_CASINO_eventPicture"
+		texturefile = "gfx/event_pictures/STRIP_CASINO.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "CRASHED_SATELLITE_eventPicture"
+		texturefile = "gfx/event_pictures/CRASHED_SATELLITE.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "CRIMSON_CARAVAN_eventPicture"
+		texturefile = "gfx/event_pictures/CRIMSON_CARAVAN.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "DIXON_eventPicture"
+		texturefile = "gfx/event_pictures/DIXON.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "GOODSPRINGS_eventPicture"
+		texturefile = "gfx/event_pictures/GOODSPRINGS.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "GUN_RUNNERS_eventPicture"
+		texturefile = "gfx/event_pictures/GUN_RUNNERS.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "HEXCRETE_ARCHIPELAGO_eventPicture"
+		texturefile = "gfx/event_pictures/HEXCRETE_ARCHIPELAGO.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "HOOVER_DAM_eventPicture"
+		texturefile = "gfx/event_pictures/HOOVER_DAM.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "JACOBSTOWN_eventPicture"
+		texturefile = "gfx/event_pictures/JACOBSTOWN.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "LEGION_CAMP_eventPicture"
+		texturefile = "gfx/event_pictures/LEGION_CAMP.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "LEGION_CROSS_eventPicture"
+		texturefile = "gfx/event_pictures/LEGION_CROSS.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "MORMON_FORT_WALL_eventPicture"
+		texturefile = "gfx/event_pictures/MORMON_FORT_WALL.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "HOWITIZER_eventPicture"
+		texturefile = "gfx/event_pictures/HOWITIZER.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "MILITARY_BUNKS_eventPicture"
+		texturefile = "gfx/event_pictures/MILITARY_BUNKS.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "NCR_CAMP_eventPicture"
+		texturefile = "gfx/event_pictures/NCR_CAMP.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "NCR_DESK_eventPicture"
+		texturefile = "gfx/event_pictures/NCR_DESK.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "FARMSTEAD_eventPicture"
+		texturefile = "gfx/event_pictures/FARMSTEAD.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "PRISON_eventPicture"
+		texturefile = "gfx/event_pictures/PRISON.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "NCR_RANGER_CAMP_eventPicture"
+		texturefile = "gfx/event_pictures/NCR_RANGER_CAMP.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "NCR_STATUE_eventPicture"
+		texturefile = "gfx/event_pictures/NCR_STATUE.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "NIPTON_eventPicture"
+		texturefile = "gfx/event_pictures/NIPTON.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "NUKE_MUSHROOM_eventPicture"
+		texturefile = "gfx/event_pictures/NUKE_MUSHROOM.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "GAS_STATION_eventPicture"
+		texturefile = "gfx/event_pictures/GAS_STATION.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "POWER_SUBSTATION_eventPicture"
+		texturefile = "gfx/event_pictures/POWER_SUBSTATION.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "LUCKY_BISON_CASINO_eventPicture"
+		texturefile = "gfx/event_pictures/LUCKY_BISON_CASINO.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "REPCONN_SITE_eventPicture"
+		texturefile = "gfx/event_pictures/REPCONN_SITE.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "ROAD_SIGNS_eventPicture"
+		texturefile = "gfx/event_pictures/ROAD_SIGNS.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "SACKED_CARAVAN_eventPicture"
+		texturefile = "gfx/event_pictures/SACKED_CARAVAN.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "THE_BURNED_MAN_eventPicture"
+		texturefile = "gfx/event_pictures/THE_BURNED_MAN.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "THE_FORT_eventPicture"
+		texturefile = "gfx/event_pictures/THE_FORT.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "THE_KINGS_eventPicture"
+		texturefile = "gfx/event_pictures/THE_KINGS.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "THINK_TANK_eventPicture"
+		texturefile = "gfx/event_pictures/THINK_TANK.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "ZION_THREE_MARYS_eventPicture"
+		texturefile = "gfx/event_pictures/ZION_THREE_MARYS.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "TOXIC_POOLS_eventPicture"
+		texturefile = "gfx/event_pictures/TOXIC_POOLS.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "THE_STRIP_WALL_eventPicture"
+		texturefile = "gfx/event_pictures/THE_STRIP_WALL.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "VICTOR_eventPicture"
+		texturefile = "gfx/event_pictures/VICTOR.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "WASTELAND_GOODSPRINGS_eventPicture"
+		texturefile = "gfx/event_pictures/WASTELAND_GOODSPRINGS.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "WASTELAND_HILLS_eventPicture"
+		texturefile = "gfx/event_pictures/WASTELAND_HILLS.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "YAO_GUAI_eventPicture"
+		texturefile = "gfx/event_pictures/YAO_GUAI.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "ZION_ROCKY_PASS_eventPicture"
+		texturefile = "gfx/event_pictures/ZION_ROCKY_PASS.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "ZION_REST_TABLE_eventPicture"
+		texturefile = "gfx/event_pictures/ZION_REST_TABLE.dds"
+		allwaystransparent = yes
+	}
+    
+    #-----------------------------------------
+    # Fallout 4
+    #-----------------------------------------
+    spriteType = {
+		name = "GLOWING_SEA_eventPicture"
+		texturefile = "gfx/event_pictures/GLOWING_SEA.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "GOODS_eventPicture"
+		texturefile = "gfx/event_pictures/GOODS.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "DIAMOND_CITY_eventPicture"
+		texturefile = "gfx/event_pictures/DIAMOND_CITY.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "WALL_COLLAPSE_eventPicture"
+		texturefile = "gfx/event_pictures/WALL_COLLAPSE.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "CITY_BRIDGE_CLEAR_eventPicture"
+		texturefile = "gfx/event_pictures/CITY_BRIDGE_CLEAR.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "CITYSTREET_CLEAR_eventPicture"
+		texturefile = "gfx/event_pictures/CITYSTREET_CLEAR.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "WASTE_BY_WATER_eventPicture"
+		texturefile = "gfx/event_pictures/WASTE_BY_WATER.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "GOV_RUINS_CLEAR_eventPicture"
+		texturefile = "gfx/event_pictures/GOV_RUINS_CLEAR.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "GRAVEYARD_CLEAR_eventPicture"
+		texturefile = "gfx/event_pictures/GRAVEYARD_CLEAR.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "CITY_BRIDGE_POLLUTED_eventPicture"
+		texturefile = "gfx/event_pictures/CITY_BRIDGE_POLLUTED.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "CITYSTREET_POLLUTED_eventPicture"
+		texturefile = "gfx/event_pictures/CITYSTREET_POLLUTED.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "GOV_RUINS_POLLUTED_eventPicture"
+		texturefile = "gfx/event_pictures/GOV_RUINS_POLLUTED.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "GRAVEYARD_RADSTORM_eventPicture"
+		texturefile = "gfx/event_pictures/GRAVEYARD_RADSTORM.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "CITYSTREET_RAINY_eventPicture"
+		texturefile = "gfx/event_pictures/CITYSTREET_RAINY.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "FACTORY_RAINY_eventPicture"
+		texturefile = "gfx/event_pictures/FACTORY_RAINY.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "RIVER_RAINY_eventPicture"
+		texturefile = "gfx/event_pictures/RIVER_RAINY.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "SCIENCE_TOWER_CLEAR_eventPicture"
+		texturefile = "gfx/event_pictures/SCIENCE_TOWER_CLEAR.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "VAULT_ENTRANCE_RADSTORM_eventPicture"
+		texturefile = "gfx/event_pictures/VAULT_ENTRANCE_RADSTORM.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "VAULT_ENTRANCE_RAINY_eventPicture"
+		texturefile = "gfx/event_pictures/VAULT_ENTRANCE_RAINY.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "VAULT_ENTRANCE_CLEAR_eventPicture"
+		texturefile = "gfx/event_pictures/VAULT_ENTRANCE_CLEAR.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "ENCAMPMENT_eventPicture"
+		texturefile = "gfx/event_pictures/ENCAMPMENT.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "ROCKY_VALLEY_eventPicture"
+		texturefile = "gfx/event_pictures/ROCKY_VALLEY.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "DEAD_FOREST_eventPicture"
+		texturefile = "gfx/event_pictures/DEAD_FOREST.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "BARN_eventPicture"
+		texturefile = "gfx/event_pictures/BARN.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "LIBERTALIA_eventPicture"
+		texturefile = "gfx/event_pictures/LIBERTALIA.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "SATELLITE_ARRAY_eventPicture"
+		texturefile = "gfx/event_pictures/SATELLITE_ARRAY.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "ARMY_BLOCKADE_eventPicture"
+		texturefile = "gfx/event_pictures/ARMY_BLOCKADE.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "ARMY_STOREROOM_eventPicture"
+		texturefile = "gfx/event_pictures/ARMY_STOREROOM.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "COMMS_TOWER_eventPicture"
+		texturefile = "gfx/event_pictures/COMMS_TOWER.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "ARMY_BUNKER_eventPicture"
+		texturefile = "gfx/event_pictures/ARMY_BUNKER.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "SUPER_MUTANT_BOMBER_eventPicture"
+		texturefile = "gfx/event_pictures/SUPER_MUTANT_BOMBER.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "GHOUL_ATTACK_RAINY_eventPicture"
+		texturefile = "gfx/event_pictures/GHOUL_ATTACK_RAINY.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "NIGHT_SKY_eventPicture"
+		texturefile = "gfx/event_pictures/NIGHT_SKY.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "CHURCH_MISTY_INSIDE_eventPicture"
+		texturefile = "gfx/event_pictures/CHURCH_MISTY_INSIDE.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "FEMALE_SHOPKEEPER_eventPicture"
+		texturefile = "gfx/event_pictures/FEMALE_SHOPKEEPER.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "INS_CAFETERIA_eventPicture"
+		texturefile = "gfx/event_pictures/INS_CAFETERIA.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "INS_MEDBAY_eventPicture"
+		texturefile = "gfx/event_pictures/INS_MEDBAY.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "INS_CHAT_eventPicture"
+		texturefile = "gfx/event_pictures/INS_CHAT.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "INS_LIFT_INSIDE_eventPicture"
+		texturefile = "gfx/event_pictures/INS_LIFT_INSIDE.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "INS_LAB_eventPicture"
+		texturefile = "gfx/event_pictures/INS_LAB.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "INS_BIOSCIENCE_eventPicture"
+		texturefile = "gfx/event_pictures/INS_BIOSCIENCE.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "INS_LIFT_eventPicture"
+		texturefile = "gfx/event_pictures/INS_LIFT.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "INS_CONSOLE_eventPicture"
+		texturefile = "gfx/event_pictures/INS_CONSOLE.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "VAULT_RAIDERS_eventPicture"
+		texturefile = "gfx/event_pictures/VAULT_RAIDERS.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "VAULT_LASERS_eventPicture"
+		texturefile = "gfx/event_pictures/VAULT_LASERS.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "VAULT_DOOR_INSIDE_eventPicture"
+		texturefile = "gfx/event_pictures/VAULT_DOOR_INSIDE.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "RUINED_FOYER_eventPicture"
+		texturefile = "gfx/event_pictures/RUINED_FOYER.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "DOOR_eventPicture"
+		texturefile = "gfx/event_pictures/DOOR.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "SKELETON_BEHIND_BARS_eventPicture"
+		texturefile = "gfx/event_pictures/SKELETON_BEHIND_BARS.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "NUKA_COLA_eventPicture"
+		texturefile = "gfx/event_pictures/NUKA_COLA.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "USA_FLAG_eventPicture"
+		texturefile = "gfx/event_pictures/USA_FLAG.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "VAULT_CHAT_eventPicture"
+		texturefile = "gfx/event_pictures/VAULT_CHAT.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "VAULT_SCANNER_eventPicture"
+		texturefile = "gfx/event_pictures/VAULT_SCANNER.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "VAULT_CAFETERIA_eventPicture"
+		texturefile = "gfx/event_pictures/VAULT_CAFETERIA.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "VAULT_CLASSROOM_eventPicture"
+		texturefile = "gfx/event_pictures/VAULT_CLASSROOM.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "VAULT_IDLE_eventPicture"
+		texturefile = "gfx/event_pictures/VAULT_IDLE.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "VAULT_OFFICE_eventPicture"
+		texturefile = "gfx/event_pictures/VAULT_OFFICE.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "RAIDER_JAIL_eventPicture"
+		texturefile = "gfx/event_pictures/RAIDER_JAIL.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "SUPER_MUTANTS_eventPicture"
+		texturefile = "gfx/event_pictures/SUPER_MUTANTS.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "PRISONERS_eventPicture"
+		texturefile = "gfx/event_pictures/PRISONERS.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "RAIDERS_eventPicture"
+		texturefile = "gfx/event_pictures/RAIDERS.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "BOS_CHAT_eventPicture"
+		texturefile = "gfx/event_pictures/BOS_CHAT.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "BOS_CAFETERIA_eventPicture"
+		texturefile = "gfx/event_pictures/BOS_CAFETERIA.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "BOS_WORKSHOP_eventPicture"
+		texturefile = "gfx/event_pictures/BOS_WORKSHOP.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "BOS_LAB_eventPicture"
+		texturefile = "gfx/event_pictures/BOS_LAB.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "CONFRONTATION_eventPicture"
+		texturefile = "gfx/event_pictures/CONFRONTATION.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "BOS_PATROL_eventPicture"
+		texturefile = "gfx/event_pictures/BOS_PATROL.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "FOREST_eventPicture"
+		texturefile = "gfx/event_pictures/FOREST.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "DESERT_TRUCKSTOP_eventPicture"
+		texturefile = "gfx/event_pictures/DESERT_TRUCKSTOP.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "INSIDE_FACTORY_eventPicture"
+		texturefile = "gfx/event_pictures/INSIDE_FACTORY.dds"
+		allwaystransparent = yes
+	}
+    
+    spriteType = {
+		name = "TERMINAL_eventPicture"
+		texturefile = "gfx/event_pictures/TERMINAL.dds"
+		allwaystransparent = yes
+	}
+    spriteType = {
+		name = "CAZADORS_eventPicture"
+		texturefile = "gfx/event_pictures/CAZADORS.dds"
+		allwaystransparent = yes
+	}
+    spriteType = {
+		name = "SCHEMATIC_eventPicture"
+		texturefile = "gfx/event_pictures/SCHEMATIC.dds"
+		allwaystransparent = yes
+	}
+    spriteType = {
+		name = "RED_SCHEMATIC_eventPicture"
+		texturefile = "gfx/event_pictures/RED_SCHEMATIC.dds"
+		allwaystransparent = yes
+	}
+    spriteType = {
+		name = "BOTTLECAPS_eventPicture"
+		texturefile = "gfx/event_pictures/BOTTLECAPS.dds"
+		allwaystransparent = yes
+	}
+    spriteType = {
+		name = "SCAVENGERS_eventPicture"
+		texturefile = "gfx/event_pictures/SCAVENGERS.dds"
+		allwaystransparent = yes
+	}
+}

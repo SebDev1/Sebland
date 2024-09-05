@@ -1,0 +1,48 @@
+# Yakuza
+yakuza_ideas = {
+    start = {
+		discipline = 0.05	
+        same_culture_advisor_cost = -0.25	
+    }
+    
+    bonus = {
+        global_trade_goods_size_modifier = 0.05
+    }
+    
+    trigger = {
+        tag = YAK
+    }
+	
+    free = yes
+    
+    # Discount Wakizashi
+    yakuza_1 = {
+        global_regiment_cost = -0.15	
+    }
+    # Yakuza Leadership
+    yakuza_2 = {
+        country_military_power = 1	
+    }
+    # Expert Swordplay
+    yakuza_3 = {
+        army_tradition_decay = -0.01
+		infantry_shock = 1				
+    }
+    # Mob Branches 
+    yakuza_4 = {
+		global_allowed_num_of_buildings = 1
+    }
+    # Infiltrating New Reno
+    yakuza_5 = {
+        spy_offence = 0.33
+    }
+    # Wasteland Mastery 
+    yakuza_6 = {
+        hostile_attrition = 2
+    }
+    # Steel Tongued 
+    yakuza_7 = {
+        power_projection_from_insults = 1.0
+		rival_change_cost = -0.5
+    }
+}

@@ -1,0 +1,52 @@
+# set_variable = { which = province_id value = 3055  }
+
+is_city = yes
+owner = TPK
+controller = TPK
+add_core = TPK
+
+base_tax = 1
+base_production = 1
+base_manpower = 1
+
+culture = the_pack
+religion = survivalist
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

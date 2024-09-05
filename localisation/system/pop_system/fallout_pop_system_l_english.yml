@@ -1,0 +1,690 @@
+﻿l_english:
+ #-------------------------------------
+ # Misc
+ #-------------------------------------
+ # Triggers
+ IS_SAME_ADMINISTRATION: "Is the same administration as us"
+ 
+ administration_wastelander: "Wastelander Administration"
+ administration_wastelander_desc: "Our people are composed of a majority of civilized humans."
+ IS_WASTELANDER: "Is §YWastelander Administration§!"
+ ADMIN_WASTELANDER: "Wastelander"
+ ADMIN_WASTELANDER_LOWER: "wastelander"
+ ADMIN_WASTELANDER_PLURAL: "Wastelanders"
+ ADMIN_WASTELANDER_PLURAL_LOWER: "wastelanders"
+ SET_WASTELANDER_ADMINISTRATION: "The administration of §Y[Root.GetName]§! is lead by §YWastelanders§!."
+ 
+ administration_raider: "Raider Administration"
+ administration_raider_desc: "Our people are composed of a majority of uncivilized humans."
+ IS_RAIDER: "Is §YRaider Administration§!"
+ ADMIN_RAIDER: "Raider"
+ ADMIN_RAIDER_LOWER: "raider"
+ ADMIN_RAIDER_PLURAL: "Raiders"
+ ADMIN_RAIDER_PLURAL_LOWER: "raiders"
+ SET_RAIDER_ADMINISTRATION: "The administration of §Y[Root.GetName]§! is lead by §YRaiders§!."
+ 
+ administration_tribal: "Tribal Administration"
+ administration_tribal_desc: "Our people are composed of a majority of tribal humans."
+ IS_TRIBAL: "Is §YTribal Administration§!"
+ ADMIN_TRIBAL: "Tribal"
+ ADMIN_TRIBAL_LOWER: "tribal"
+ ADMIN_TRIBAL_PLURAL: "Tribals"
+ ADMIN_TRIBAL_PLURAL_LOWER: "tribals"
+ SET_TRIBAL_ADMINISTRATION: "The administration of §Y[Root.GetName]§! is lead by §YTribals§!."
+ 
+ administration_robot: "Robot Administration"
+ administration_robot_desc: "Our people are composed of a majority of robots."
+ IS_ROBOT: "Is §YRobot Administration§!"
+ ADMIN_ROBOT: "Robot"
+ ADMIN_ROBOT_LOWER: "robot"
+ ADMIN_ROBOT_PLURAL: "Robots"
+ ADMIN_ROBOT_PLURAL_LOWER: "robots"
+ SET_ROBOT_ADMINISTRATION: "The administration of §Y[Root.GetName]§! is lead by §YRobots§!."
+ 
+ administration_super_mutant: "Super Mutant Administration"
+ administration_super_mutant_desc: "Our people are composed of a majority of super mutants."
+ IS_SUPER_MUTANT: "Is §YSuper Mutant Administration§!"
+ ADMIN_SUPER_MUTANT: "Super Mutant"
+ ADMIN_SUPER_MUTANT_LOWER: "super mutant"
+ ADMIN_SUPER_MUTANT_PLURAL: "Super Mutants"
+ ADMIN_SUPER_MUTANT_PLURAL_LOWER: "super mutants"
+ SET_SUPER_MUTANT_ADMINISTRATION: "The administration of §Y[Root.GetName]§! is lead by §YSuper Mutants§!."
+ 
+ administration_ghoul: "Ghoul Administration"
+ administration_ghoul_desc: "Our people are composed of a majority of ghouls."
+ IS_GHOUL: "Is §YGhoul Administration§!"
+ ADMIN_GHOUL: "Ghoul"
+ ADMIN_GHOUL_LOWER: "ghoul"
+ ADMIN_GHOUL_PLURAL: "Ghouls"
+ ADMIN_GHOUL_PLURAL_LOWER: "ghouls"
+ SET_GHOUL_ADMINISTRATION: "The administration of §Y[Root.GetName]§! is lead by §YGhouls§!."
+ 
+ administration_swampfolk: "Swampfolk Administration"
+ administration_swampfolk_desc: "Our people are composed of a majority of swampfolk."
+ IS_SWAMPFOLK: "Is §YSwampfolk Administration§!"
+ ADMIN_SWAMPFOLK: "Swampfolk"
+ ADMIN_SWAMPFOLK_LOWER: "swampfolk"
+ ADMIN_SWAMPFOLK_PLURAL: "Swampfolk"
+ ADMIN_SWAMPFOLK_PLURAL_LOWER: "swampfolk"
+ SET_SWAMPFOLK_ADMINISTRATION: "The administration of §Y[Root.GetName]§! is lead by §YSwampfolk§!."
+ 
+ administration_synth: "Synth Administration"
+ administration_synth_desc: "Our people are composed of a majority of synths."
+ IS_SYNTH: "Is §YSynth Administration§!"
+ ADMIN_SYNTH: "Synth"
+ ADMIN_SYNTH_LOWER: "synth"
+ ADMIN_SYNTH_PLURAL: "Synths"
+ ADMIN_SYNTH_PLURAL_LOWER: "synths"
+ SET_SYNTH_ADMINISTRATION: "The administration of §Y[Root.GetName]§! is lead by §YSynths§!."
+ 
+ administration_rodent: "Rodent Administration"
+ administration_rodent_desc: "Our people are composed of a majority of rodents."
+ IS_RODENT: "Is §YRodent Administration§!"
+ ADMIN_RODENT: "Rodent"
+ ADMIN_RODENT_LOWER: "rodent"
+ ADMIN_RODENT_PLURAL: "Rodents"
+ ADMIN_RODENT_PLURAL_LOWER: "rodents"
+ SET_RODENT_ADMINISTRATION: "The administration of §Y[Root.GetName]§! is lead by §YRodents§!."
+ 
+ administration_beastlord: "Beastlord Administration"
+ administration_beastlord_desc: "Our people are composed of a majority of beastlords."
+ IS_BEASTLORD: "Is §YBeastlord Administration§!"
+ ADMIN_BEASTLORD: "Beastlord"
+ ADMIN_BEASTLORD_LOWER: "beastlord"
+ ADMIN_BEASTLORD_PLURAL: "Beastlords"
+ ADMIN_BEASTLORD_PLURAL_LOWER: "beastlords"
+ SET_BEASTLORD_ADMINISTRATION: "The administration of §Y[Root.GetName]§! is lead by §YBeastlords§!."
+ 
+ administration_alien: "Alien Administration"
+ administration_alien_desc: "Our people are composed of a majority of aliens."
+ IS_ALIEN: "Is §YAlien Administration§!"
+ ADMIN_ALIEN: "Alien"
+ ADMIN_ALIEN_LOWER: "alien"
+ ADMIN_ALIEN_PLURAL: "Aliens"
+ ADMIN_ALIEN_PLURAL_LOWER: "aliens"
+ SET_ALIEN_ADMINISTRATION: "The administration of §Y[Root.GetName]§! is lead by §YAliens§!."
+ 
+ administration_deathclaw: "Deathclaw Administration"
+ administration_deathclaw_desc: "Our \"people\" are composed of a majority of deathclaws."
+ IS_DEATHCLAW: "Is §YDeathclaw Administration§!"
+ ADMIN_DEATHCLAW: "Deathclaw"
+ ADMIN_DEATHCLAW_LOWER: "deathclaw"
+ ADMIN_DEATHCLAW_PLURAL: "Deathclaws"
+ ADMIN_DEATHCLAW_PLURAL_LOWER: "deathclaws"
+ SET_DEATHCLAW_ADMINISTRATION: "The administration of §Y[Root.GetName]§! is lead by §YDeathclaws§!."
+ 
+ administration_fungal: "Spore Carrier Administration"
+ administration_fungal_desc: "Our people are composed of a majority of spore carriers."
+ IS_FUNGAL: "Is §YSpore Carrier Administration§!"
+ ADMIN_FUNGAL: "Spore Carrier"
+ ADMIN_FUNGAL_LOWER: "spore carrier"
+ ADMIN_FUNGAL_PLURAL: "Spore Carriers"
+ ADMIN_FUNGAL_PLURAL_LOWER: "spore carriers"
+ SET_FUNGAL_ADMINISTRATION: "The administration of §Y[Root.GetName]§! is lead by §YSpore Carriers§!."
+ 
+ administration_dwarf: "Dwarf Administration"
+ administration_dwarf_desc: "Our people are composed of a majority of dwarves."
+ IS_DWARF: "Is §YDwarf Administration§!"
+ ADMIN_DWARF: "Dwarf"
+ ADMIN_DWARF_LOWER: "dwarf"
+ ADMIN_DWARF_PLURAL: "Dwarves"
+ ADMIN_DWARF_PLURAL_LOWER: "dwarves"
+ SET_DWARF_ADMINISTRATION: "The administration of §Y[Root.GetName]§! is lead by §YDwarves§!."
+ 
+ administration_legion: "Legionary Administration"
+ administration_legion_desc: "Our people are composed of a majority of legionaries."
+ IS_LEGION: "Is §YLegionary Administration§!"
+ ADMIN_LEGION: "Legionary"
+ ADMIN_LEGION_LOWER: "legionary"
+ ADMIN_LEGION_PLURAL: "Legionaries"
+ ADMIN_LEGION_PLURAL_LOWER: "legionaries"
+ SET_LEGION_ADMINISTRATION: "The administration of §Y[Root.GetName]§! is lead by §YLegionaries§!."
+ 
+ administration_bos: "Brotherhood of Steel Administration"
+ administration_bos_desc: "Our people are composed of a majority of Brotherhood of Steel."
+ IS_BOS: "Is §YBrotherhood of Steel Administration§!"
+ ADMIN_BOS: "Brotherhood of Steel"
+ ADMIN_BOS_LOWER: "brotherhood of steel"
+ ADMIN_BOS_PLURAL: "Brotherhood of Steel"
+ ADMIN_BOS_PLURAL_LOWER: "brotherhood of steel"
+ SET_BOS_ADMINISTRATION: "The administration of §Y[Root.GetName]§! is lead by §YBrotherhood of Steel§!."
+ 
+ administration_coa: "Children of Atom Administration"
+ administration_coa_desc: "Our people are composed of a majority of children of atom."
+ IS_COA: "Is §YChildren of Atom Administration§!"
+ ADMIN_COA: "Children of Atom"
+ ADMIN_COA_LOWER: "children of atom"
+ ADMIN_COA_PLURAL: "Children of Atom"
+ ADMIN_COA_PLURAL_LOWER: "children of atom"
+ SET_COA_ADMINISTRATION: "The administration of §Y[Root.GetName]§! is lead by §YChildren of Atom§!."
+ 
+ administration_vault: "Vault Administration"
+ administration_vault_desc: "Our people are composed of a majority of vault dwellers."
+ IS_VAULT: "Is §YVault Dweller Administration§!"
+ ADMIN_VAULT: "Vault Dweller"
+ ADMIN_VAULT_LOWER: "vault dweller"
+ ADMIN_VAULT_PLURAL: "Vault Dwellers"
+ ADMIN_VAULT_PLURAL_LOWER: "vault dwellers"
+ SET_VAULT_ADMINISTRATION: "The administration of §Y[Root.GetName]§! is lead by §YVault Dwellers§!."
+ 
+ administration_institute: "Institute Administration"
+ administration_institute_desc: "Our people are composed of a majority of Institute members."
+ IS_INSTITUTE: "Is §YInstitute Administration§!"
+ ADMIN_INSTITUTE: "Institute"
+ ADMIN_INSTITUTE_LOWER: "institute"
+ ADMIN_INSTITUTE_PLURAL: "Institute Members"
+ ADMIN_INSTITUTE_PLURAL_LOWER: "institute members"
+ SET_INSTITUTE_ADMINISTRATION: "The administration of §Y[Root.GetName]§! is lead by the §YInstitute§!."
+ 
+ administration_enclave: "Enclave Administration"
+ administration_enclave_desc: "Our people are composed of a majority of enclave members."
+ IS_ENCLAVE: "Is §YEnclave Administration§!"
+ ADMIN_ENCLAVE: "Enclave"
+ ADMIN_ENCLAVE_LOWER: "enclave"
+ ADMIN_ENCLAVE_PLURAL: "Enclave Members"
+ ADMIN_ENCLAVE_PLURAL_LOWER: "enclave members"
+ SET_ENCLAVE_ADMINISTRATION: "The administration of §Y[Root.GetName]§! is lead by the §YEnclave§!."
+ 
+ administration_shi: "Shi Administration"
+ administration_shi_desc: "Our people are composed of a majority of shi members."
+ IS_SHI: "Is §YShi Administration§!"
+ ADMIN_SHI: "Shi"
+ ADMIN_SHI_LOWER: "shi"
+ ADMIN_SHI_PLURAL: "Shi Members"
+ ADMIN_SHI_PLURAL_LOWER: "shi members"
+ SET_SHI_ADMINISTRATION: "The administration of §Y[Root.GetName]§! is lead by the §YShi§!."
+ 
+ #-------------------------------------
+ # Modifiers
+ #-------------------------------------
+ pop_menu_cooldown: "Pop Menu Cooldown"
+ desc_pop_menu_cooldown: ""
+ 
+ gain_pop: "Gained Population"
+ desc_gain_pop: "A new cohort has entered this province."
+ 
+ expel_pop: "Expelled Population"
+ desc_expel_pop: "We have expelled a specific population in this province."
+ 
+ kill_pop: "Purged Population"
+ desc_kill_pop: "We have purged a specific population in this province."
+ 
+ #-------------------------------------
+ # Pops
+ #-------------------------------------
+ # Wastelander
+ pop_wastelander_high: "Wastelander: Large"
+ desc_pop_wastelander_high: "There are a large amount of wastelanders in this province."
+ pop_wastelander_med: "Wastelander: Medium"
+ desc_pop_wastelander_med: "There are a medium amount of wastelanders in this province."
+ pop_wastelander_low: "Wastelander: Small"
+ desc_pop_wastelander_low: "There are a small amount of wastelanders in this province."
+ 
+ # Raider
+ pop_raider_high: "Raider: Large"
+ desc_pop_raider_high: "There are a large amount of raiders in this province."
+ pop_raider_med: "Raider: Medium"
+ desc_pop_raider_med: "There are a medium amount of raiders in this province."
+ pop_raider_low: "Raider: Small"
+ desc_pop_raider_low: "There are a small amount of raiders in this province."
+ 
+ # Tribal
+ pop_tribal_high: "Tribal: Large"
+ desc_pop_tribal_high: "There are a large amount of tribals in this province."
+ pop_tribal_med: "Tribal: Medium"
+ desc_pop_tribal_med: "There are a medium amount of tribals in this province."
+ pop_tribal_low: "Tribal: Small"
+ desc_pop_tribal_low: "There are a small amount of tribals in this province."
+ 
+ # Robot
+ pop_robot_high: "Robot: Large"
+ desc_pop_robot_high: "There are a large amount of robots in this province."
+ pop_robot_med: "Robot: Medium"
+ desc_pop_robot_med: "There are a medium amount of robots in this province."
+ pop_robot_low: "Robot: Small"
+ desc_pop_robot_low: "There are a small amount of robots in this province."
+ 
+ # Super Mutant
+ pop_super_mutant_high: "Super Mutant: Large"
+ desc_pop_super_mutant_high: "There are a large amount of super_mutants in this province."
+ pop_super_mutant_med: "Super Mutant: Medium"
+ desc_pop_super_mutant_med: "There are a medium amount of super_mutants in this province."
+ pop_super_mutant_low: "Super Mutant: Small"
+ desc_pop_super_mutant_low: "There are a small amount of super_mutants in this province."
+ 
+ # Ghoul
+ pop_ghoul_high: "Ghoul: Large"
+ desc_pop_ghoul_high: "There are a large amount of ghouls in this province."
+ pop_ghoul_med: "Ghoul: Medium"
+ desc_pop_ghoul_med: "There are a medium amount of ghouls in this province."
+ pop_ghoul_low: "Ghoul: Small"
+ desc_pop_ghoul_low: "There are a small amount of ghouls in this province."
+ 
+ # Swampfolk
+ pop_swampfolk_high: "Swampfolk: Large"
+ desc_pop_swampfolk_high: "There are a large amount of swampfolks in this province."
+ pop_swampfolk_med: "Swampfolk: Medium"
+ desc_pop_swampfolk_med: "There are a medium amount of swampfolks in this province."
+ pop_swampfolk_low: "Swampfolk: Small"
+ desc_pop_swampfolk_low: "There are a small amount of swampfolks in this province."
+ 
+ # Synth
+ pop_synth_high: "Synth: Large"
+ desc_pop_synth_high: "There are a large amount of synths in this province."
+ pop_synth_med: "Synth: Medium"
+ desc_pop_synth_med: "There are a medium amount of synths in this province."
+ pop_synth_low: "Synth: Small"
+ desc_pop_synth_low: "There are a small amount of synths in this province."
+ 
+ # Rodent
+ pop_rodent_high: "Rodent: Large"
+ desc_pop_rodent_high: "There are a large amount of rodents in this province."
+ pop_rodent_med: "Rodent: Medium"
+ desc_pop_rodent_med: "There are a medium amount of rodents in this province."
+ pop_rodent_low: "Rodent: Small"
+ desc_pop_rodent_low: "There are a small amount of rodents in this province."
+ 
+ # Beastlord
+ pop_beastlord_high: "Beastlord: Large"
+ desc_pop_beastlord_high: "There are a large amount of beastlords in this province."
+ pop_beastlord_med: "Beastlord: Medium"
+ desc_pop_beastlord_med: "There are a medium amount of beastlords in this province."
+ pop_beastlord_low: "Beastlord: Small"
+ desc_pop_beastlord_low: "There are a small amount of beastlords in this province."
+ 
+ # Alien
+ pop_alien_high: "Zetan: Large"
+ desc_pop_alien_high: "There are a large amount of Zetans in this province."
+ pop_alien_med: "Zetan: Medium"
+ desc_pop_alien_med: "There are a medium amount of Zetans in this province."
+ pop_alien_low: "Zetan: Small"
+ desc_pop_alien_low: "There are a small amount of Zetans in this province."
+ 
+ # Deathclaw
+ pop_deathclaw_high: "Deathclaw: Large"
+ desc_pop_deathclaw_high: "There are a large amount of deathclaws in this province."
+ pop_deathclaw_med: "Deathclaw: Medium"
+ desc_pop_deathclaw_med: "There are a medium amount of deathclaws in this province."
+ pop_deathclaw_low: "Deathclaw: Small"
+ desc_pop_deathclaw_low: "There are a small amount of deathclaws in this province."
+ 
+ # Fungal
+ pop_fungal_high: "Spore Carrier: Large"
+ desc_pop_fungal_high: "There are a large amount of spore carriers in this province."
+ pop_fungal_med: "Spore Carrier: Medium"
+ desc_pop_fungal_med: "There are a medium amount of spore carriers in this province."
+ pop_fungal_low: "Spore Carrier: Small"
+ desc_pop_fungal_low: "There are a small amount of spore carriers in this province."
+ 
+ # Dwarf
+ pop_dwarf_high: "Dwarf: Large"
+ desc_pop_dwarf_high: "There are a large amount of dwarfs in this province."
+ pop_dwarf_med: "Dwarf: Medium"
+ desc_pop_dwarf_med: "There are a medium amount of dwarfs in this province."
+ pop_dwarf_low: "Dwarf: Small"
+ desc_pop_dwarf_low: "There are a small amount of dwarfs in this province."
+ 
+ # Legion
+ pop_legion_high: "Legion: Large"
+ desc_pop_legion_high: "There are a large amount of legionaries in this province."
+ pop_legion_med: "Legion: Medium"
+ desc_pop_legion_med: "There are a medium amount of legionaries in this province."
+ pop_legion_low: "Legion: Small"
+ desc_pop_legion_low: "There are a small amount of legionaries in this province."
+ 
+ # BOS
+ pop_bos_high: "Brotherhood of Steel: Large"
+ desc_pop_bos_high: "There are a large amount of Brotherhood of Steel in this province."
+ pop_bos_med: "Brotherhood of Steel: Medium"
+ desc_pop_bos_med: "There are a medium amount of Brotherhood of Steel in this province."
+ pop_bos_low: "Brotherhood of Steel: Small"
+ desc_pop_bos_low: "There are a small amount of Brotherhood of Steel in this province."
+ 
+ # Children of Atom
+ pop_coa_high: "Children of Atom: Large"
+ desc_pop_coa_high: "There are a large amount of children of Atom in this province."
+ pop_coa_med: "Children of Atom: Medium"
+ desc_pop_coa_med: "There are a medium amount of children of Atom in this province."
+ pop_coa_low: "Children of Atom: Small"
+ desc_pop_coa_low: "There are a small amount of children of Atom in this province."
+ 
+ # Vault Dweller
+ pop_vault_dweller_high: "Vault Dweller: Large"
+ desc_pop_vault_dweller_high: "There are a large amount of vault dwellers in this province."
+ pop_vault_dweller_med: "Vault Dweller: Medium"
+ desc_pop_vault_dweller_med: "There are a medium amount of vault dwellers in this province."
+ pop_vault_dweller_low: "Vault Dweller: Small"
+ desc_pop_vault_dweller_low: "There are a small amount of vault dwellers in this province."
+ 
+ # Institute
+ pop_institute_high: "Institute: Large"
+ desc_pop_institute_high: "There are a large amount of Institute in this province."
+ pop_institute_med: "Institute: Medium"
+ desc_pop_institute_med: "There are a medium amount of Institute in this province."
+ pop_institute_low: "Institute: Small"
+ desc_pop_institute_low: "There are a small amount of Institute in this province."
+ 
+ # Enclave
+ pop_enclave_high: "Enclave: Large"
+ desc_pop_enclave_high: "There are a large amount of Enclave in this province."
+ pop_enclave_med: "Enclave: Medium"
+ desc_pop_enclave_med: "There are a medium amount of Enclave in this province."
+ pop_enclave_low: "Enclave: Small"
+ desc_pop_enclave_low: "There are a small amount of Enclave in this province."
+ 
+ # Shi
+ pop_shi_high: "Shi: Large"
+ desc_pop_shi_high: "There are a large amount of Shi in this province."
+ pop_shi_med: "Shi: Medium"
+ desc_pop_shi_med: "There are a medium amount of Shi in this province."
+ pop_shi_low: "Shi: Small"
+ desc_pop_shi_low: "There are a small amount of Shi in this province."
+ 
+ #-------------------------------------
+ # Decisions
+ #-------------------------------------
+ shift_administration_title: "Shift Administration"
+ shift_administration_desc: "The change in the demographics of our nation must be represented in our government. Let us shift our administrative apparatus to empower these rising cohorts."
+ 
+ #-------------------------------------
+ # Pop Setup
+ #-------------------------------------
+ pop_setup.1.title: "Pop Setup"
+ pop_setup.1.desc: ""
+ pop_setup.1.option.a: "Ok"
+ 
+ pop_setup.2.title: "Shift in Administration"
+ pop_setup.2.desc: "The various kinds of people that make up [Root.GetName] all demand representation. Once a group reaches a critical size, it can begin to petition for control over the government."
+ pop_setup.2.option.none: "Let's remain as we are"
+ pop_setup.2.option.wastelander: "Empower the Wastelanders"
+ pop_setup.2.option.raider: "Empower the Raiders"
+ pop_setup.2.option.tribal: "Empower the Tribals"
+ pop_setup.2.option.robot: "Empower the Robots"
+ pop_setup.2.option.super_mutant: "Empower the Super Mutants"
+ pop_setup.2.option.ghoul: "Empower the Ghouls"
+ pop_setup.2.option.swampfolk: "Empower the Swampfolk"
+ pop_setup.2.option.synth: "Empower the Synths"
+ pop_setup.2.option.rodent: "Empower the Rodents"
+ pop_setup.2.option.beastlord: "Empower the Beastlords"
+ pop_setup.2.option.alien: "Empower the Zetans"
+ pop_setup.2.option.deathclaw: "Empower the Deathclaws"
+ pop_setup.2.option.fungal: "Empower the Spore Carriers"
+ pop_setup.2.option.dwarf: "Empower the Dwarfs"
+ pop_setup.2.option.legion: "Empower the Legionaries"
+ pop_setup.2.option.bos: "Empower the Brotherhood of Steel"
+ pop_setup.2.option.coa: "Empower the Children of Atom"
+ pop_setup.2.option.vault_dweller: "Empower the Vault Dwellers"
+ pop_setup.2.option.institute: "Empower the Institute"
+ pop_setup.2.option.enclave: "Empower the Enclave"
+ pop_setup.2.option.shi: "Empower the Shi"
+ 
+ #-------------------------------------
+ # Pop Attraction
+ #-------------------------------------
+ pop_attraction.1.title: "Attraction in $PROVINCENAME$"
+ pop_attraction.1.desc: "Our local government has been working on making $PROVINCENAME$ more attract to various types of people, in a bit to attract new talent and wealth to the area."
+ pop_attraction.1.option.exit: "Leave"
+ pop_attraction.1.option.wastelander: "Attract Wastelanders"
+ pop_attraction.1.option.raider: "Attract Raiders"
+ pop_attraction.1.option.tribal: "Attract Tribals"
+ pop_attraction.1.option.robot: "Attract Robots"
+ pop_attraction.1.option.super_mutant: "Attract Super Mutants"
+ pop_attraction.1.option.ghoul: "Attract Ghouls"
+ pop_attraction.1.option.swampfolk: "Attract Swampfolk"
+ pop_attraction.1.option.synth: "Attract Synths"
+ pop_attraction.1.option.rodent: "Attract Rodents"
+ pop_attraction.1.option.beastlord: "Attract Beastlords"
+ pop_attraction.1.option.alien: "Attract Zetans"
+ pop_attraction.1.option.deathclaw: "Attract Deathclaws"
+ pop_attraction.1.option.fungal: "Attract Spore Carriers"
+ pop_attraction.1.option.dwarf: "Attract Dwarfs"
+ pop_attraction.1.option.legion: "Attract Legionaries"
+ pop_attraction.1.option.bos: "Attract Brotherhood of Steel"
+ pop_attraction.1.option.coa: "Attract Children of Atom"
+ pop_attraction.1.option.vault_dweller: "Attract Vault Dwellers"
+ pop_attraction.1.option.institute: "Attract Institute"
+ pop_attraction.1.option.enclave: "Attract Enclave"
+ pop_attraction.1.option.shi: "Attract Shi"
+ 
+ #-------------------------------------
+ # Pop Expulsion
+ #-------------------------------------
+ pop_expulsion.1.title: "Expulsion in $PROVINCENAME$"
+ pop_expulsion.1.desc: "Our local government has expelled a cohort from $PROVINCENAME$, greatly reducing their sway in the province."
+ pop_expulsion.1.option.exit: "Leave"
+ pop_expulsion.1.option.wastelander: "Expel Wastelanders"
+ pop_expulsion.1.option.raider: "Expel Raiders"
+ pop_expulsion.1.option.tribal: "Expel Tribals"
+ pop_expulsion.1.option.robot: "Expel Robots"
+ pop_expulsion.1.option.super_mutant: "Expel Super Mutants"
+ pop_expulsion.1.option.ghoul: "Expel Ghouls"
+ pop_expulsion.1.option.swampfolk: "Expel Swampfolk"
+ pop_expulsion.1.option.synth: "Expel Synths"
+ pop_expulsion.1.option.rodent: "Expel Rodents"
+ pop_expulsion.1.option.beastlord: "Expel Beastlords"
+ pop_expulsion.1.option.alien: "Expel Zetans"
+ pop_expulsion.1.option.deathclaw: "Expel Deathclaws"
+ pop_expulsion.1.option.fungal: "Expel Spore Carriers"
+ pop_expulsion.1.option.dwarf: "Expel Dwarfs"
+ pop_expulsion.1.option.legion: "Expel Legionaries"
+ pop_expulsion.1.option.bos: "Expel Brotherhood of Steel"
+ pop_expulsion.1.option.coa: "Expel Children of Atom"
+ pop_expulsion.1.option.vault_dweller: "Expel Vault Dwellers"
+ pop_expulsion.1.option.institute: "Expel Institute"
+ pop_expulsion.1.option.enclave: "Expel Enclave"
+ pop_expulsion.1.option.shi: "Expel Shi"
+ 
+ #-------------------------------------
+ # Pop Decimation
+ #-------------------------------------
+ pop_decimation.1.title: "Decimation of $PROVINCENAME$"
+ pop_decimation.1.desc: "Our local government has killed a cohort from $PROVINCENAME$, greatly reducing their sway in the province. However, this has worried and angered many of the other cohorts."
+ pop_decimation.1.option.exit: "Leave"
+ pop_decimation.1.option.wastelander: "Kill Wastelanders"
+ pop_decimation.1.option.raider: "Kill Raiders"
+ pop_decimation.1.option.tribal: "Kill Tribals"
+ pop_decimation.1.option.robot: "Kill Robots"
+ pop_decimation.1.option.super_mutant: "Kill Super Mutants"
+ pop_decimation.1.option.ghoul: "Kill Ghouls"
+ pop_decimation.1.option.swampfolk: "Kill Swampfolk"
+ pop_decimation.1.option.synth: "Kill Synths"
+ pop_decimation.1.option.rodent: "Kill Rodents"
+ pop_decimation.1.option.beastlord: "Kill Beastlords"
+ pop_decimation.1.option.alien: "Kill Zetans"
+ pop_decimation.1.option.deathclaw: "Kill Deathclaws"
+ pop_decimation.1.option.fungal: "Kill Spore Carriers"
+ pop_decimation.1.option.dwarf: "Kill Dwarfs"
+ pop_decimation.1.option.legion: "Kill Legionaries"
+ pop_decimation.1.option.bos: "Kill Brotherhood of Steel"
+ pop_decimation.1.option.coa: "Kill Children of Atom"
+ pop_decimation.1.option.vault_dweller: "Kill Vault Dwellers"
+ pop_decimation.1.option.institute: "Kill Institute"
+ pop_decimation.1.option.enclave: "Kill Enclave"
+ pop_decimation.1.option.shi: "Kill Shi"
+ 
+ #-------------------------------------
+ # Pop Influx
+ #-------------------------------------
+ pop_influx.1.title: "Influx of Wastelanders"
+ pop_influx.1.desc: "A group of wastelanders have migrated into our lands. They have wandered far and have chosen to settle here."
+ pop_influx.1.option.a: "Let's see what they offer"
+ 
+ pop_influx.2.title: "Influx of Raiders"
+ pop_influx.2.desc: "A group of raiders have migrated into our lands. They have wandered far and have chosen to settle here."
+ pop_influx.2.option.a: "Let's see what they offer"
+ 
+ pop_influx.3.title: "Influx of Tribals"
+ pop_influx.3.desc: "A group of tribals have migrated into our lands. They have wandered far and have chosen to settle here."
+ pop_influx.3.option.a: "Let's see what they offer"
+ 
+ pop_influx.4.title: "Influx of Robots"
+ pop_influx.4.desc: "A group of robots have migrated into our lands. They have wandered far and have chosen to settle here."
+ pop_influx.4.option.a: "Let's see what they offer"
+ 
+ pop_influx.5.title: "Influx of Super Mutants"
+ pop_influx.5.desc: "A group of super mutants have migrated into our lands. They have wandered far and have chosen to settle here."
+ pop_influx.5.option.a: "Let's see what they offer"
+ 
+ pop_influx.6.title: "Influx of Ghouls"
+ pop_influx.6.desc: "A group of ghouls have migrated into our lands. They have wandered far and have chosen to settle here."
+ pop_influx.6.option.a: "Let's see what they offer"
+ 
+ pop_influx.7.title: "Influx of Swampfolk"
+ pop_influx.7.desc: "A group of swa,pfolk have migrated into our lands. They have wandered far and have chosen to settle here."
+ pop_influx.7.option.a: "Let's see what they offer"
+ 
+ pop_influx.8.title: "Influx of Synths"
+ pop_influx.8.desc: "A group of synths have migrated into our lands. They have wandered far and have chosen to settle here."
+ pop_influx.8.option.a: "Let's see what they offer"
+ 
+ pop_influx.9.title: "Influx of Rodents"
+ pop_influx.9.desc: "A group of rodents have migrated into our lands. They have wandered far and have chosen to settle here."
+ pop_influx.9.option.a: "Let's see what they offer"
+ 
+ pop_influx.10.title: "Influx of Beastlords"
+ pop_influx.10.desc: "A group of beastlords have migrated into our lands. They have wandered far and have chosen to settle here."
+ pop_influx.10.option.a: "Let's see what they offer"
+ 
+ pop_influx.11.title: "Influx of Zetans"
+ pop_influx.11.desc: "A group of zetans have migrated into our lands. They have wandered far and have chosen to settle here."
+ pop_influx.11.option.a: "Let's see what they offer"
+ 
+ pop_influx.12.title: "Influx of Deathclaws"
+ pop_influx.12.desc: "A group of deathclaws have migrated into our lands. They have wandered far and have chosen to settle here."
+ pop_influx.12.option.a: "Let's see what they offer"
+ 
+ pop_influx.13.title: "Influx of Spore Carriers"
+ pop_influx.13.desc: "A group of spore carriers have migrated into our lands. They have wandered far and have chosen to settle here."
+ pop_influx.13.option.a: "Let's see what they offer"
+ 
+ pop_influx.14.title: "Influx of Dwarfs"
+ pop_influx.14.desc: "A group of dwarfs have migrated into our lands. They have wandered far and have chosen to settle here."
+ pop_influx.14.option.a: "Let's see what they offer"
+ 
+ pop_influx.15.title: "Influx of Legionaries"
+ pop_influx.15.desc: "A group of legionaries have migrated into our lands. They have wandered far and have chosen to settle here."
+ pop_influx.15.option.a: "Let's see what they offer"
+ 
+ pop_influx.16.title: "Influx of Paladins"
+ pop_influx.16.desc: "A group of brotherhood paladins have migrated into our lands. They have wandered far and have chosen to settle here."
+ pop_influx.16.option.a: "Let's see what they offer"
+ 
+ pop_influx.17.title: "Influx of Cultists"
+ pop_influx.17.desc: "A group of cultists of atom have migrated into our lands. They have wandered far and have chosen to settle here."
+ pop_influx.17.option.a: "Let's see what they offer"
+ 
+ pop_influx.18.title: "Influx of Vault Dwellers"
+ pop_influx.18.desc: "A group of vault dwellers have migrated into our lands. They have wandered far and have chosen to settle here."
+ pop_influx.18.option.a: "Let's see what they offer"
+ 
+ pop_influx.19.title: "Influx of Institute Staff"
+ pop_influx.19.desc: "A group of institute staff have migrated into our lands. They have wandered far and have chosen to settle here."
+ pop_influx.19.option.a: "Let's see what they offer"
+ 
+ pop_influx.20.title: "Influx of Enclave"
+ pop_influx.20.desc: "A group of enclave members have migrated into our lands. They have wandered far and have chosen to settle here."
+ pop_influx.20.option.a: "Let's see what they offer"
+ 
+ pop_influx.21.title: "Influx of Shi"
+ pop_influx.21.desc: "A group of shi members have migrated into our lands. They have wandered far and have chosen to settle here."
+ pop_influx.21.option.a: "Let's see what they offer"
+ 
+ #-------------------------------------
+ # Pop Influx
+ #-------------------------------------
+ pop_migration.1.title: "Migration of Wastelanders"
+ pop_migration.1.desc: "A recent expulsion from a neighbouring state has resulted in the expulsion of wastelanders. They have wandered far and have chosen to settle in our lands."
+ pop_migration.1.option.a: "Let's see what they offer"
+ 
+ pop_migration.2.title: "Migration of Raiders"
+ pop_migration.2.desc: "A recent expulsion from a neighbouring state has resulted in the expulsion of raiders. They have wandered far and have chosen to settle in our lands."
+ pop_migration.2.option.a: "Let's see what they offer"
+ 
+ pop_migration.3.title: "Migration of Tribals"
+ pop_migration.3.desc: "A recent expulsion from a neighbouring state has resulted in the expulsion of tribals. They have wandered far and have chosen to settle in our lands."
+ pop_migration.3.option.a: "Let's see what they offer"
+ 
+ pop_migration.4.title: "Migration of Robots"
+ pop_migration.4.desc: "A recent expulsion from a neighbouring state has resulted in the expulsion of robots. They have wandered far and have chosen to settle in our lands."
+ pop_migration.4.option.a: "Let's see what they offer"
+ 
+ pop_migration.5.title: "Migration of Super Mutants"
+ pop_migration.5.desc: "A recent expulsion from a neighbouring state has resulted in the expulsion of super mutants. They have wandered far and have chosen to settle in our lands."
+ pop_migration.5.option.a: "Let's see what they offer"
+ 
+ pop_migration.6.title: "Migration of Ghouls"
+ pop_migration.6.desc: "A recent expulsion from a neighbouring state has resulted in the expulsion of ghouls. They have wandered far and have chosen to settle in our lands."
+ pop_migration.6.option.a: "Let's see what they offer"
+ 
+ pop_migration.7.title: "Migration of Swampfolk"
+ pop_migration.7.desc: "A recent expulsion from a neighbouring state has resulted in the expulsion of swampfolk. They have wandered far and have chosen to settle in our lands."
+ pop_migration.7.option.a: "Let's see what they offer"
+ 
+ pop_migration.8.title: "Migration of Synths"
+ pop_migration.8.desc: "A recent expulsion from a neighbouring state has resulted in the expulsion of synths. They have wandered far and have chosen to settle in our lands."
+ pop_migration.8.option.a: "Let's see what they offer"
+ 
+ pop_migration.9.title: "Migration of Rodents"
+ pop_migration.9.desc: "A recent expulsion from a neighbouring state has resulted in the expulsion of rodents. They have wandered far and have chosen to settle in our lands."
+ pop_migration.9.option.a: "Let's see what they offer"
+ 
+ pop_migration.10.title: "Migration of Beastlords"
+ pop_migration.10.desc: "A recent expulsion from a neighbouring state has resulted in the expulsion of beastlords. They have wandered far and have chosen to settle in our lands."
+ pop_migration.10.option.a: "Let's see what they offer"
+ 
+ pop_migration.11.title: "Migration of Zetans"
+ pop_migration.11.desc: "A recent expulsion from a neighbouring state has resulted in the expulsion of zetans. They have wandered far and have chosen to settle in our lands."
+ pop_migration.11.option.a: "Let's see what they offer"
+ 
+ pop_migration.12.title: "Migration of Deathclaws"
+ pop_migration.12.desc: "A recent expulsion from a neighbouring state has resulted in the expulsion of deathclaws. They have wandered far and have chosen to settle in our lands."
+ pop_migration.12.option.a: "Let's see what they offer"
+ 
+ pop_migration.13.title: "Migration of Spore Carriers"
+ pop_migration.13.desc: "A recent expulsion from a neighbouring state has resulted in the expulsion of spore carriers. They have wandered far and have chosen to settle in our lands."
+ pop_migration.13.option.a: "Let's see what they offer"
+ 
+ pop_migration.14.title: "Migration of Dwarfs"
+ pop_migration.14.desc: "A recent expulsion from a neighbouring state has resulted in the expulsion of dwarfs. They have wandered far and have chosen to settle in our lands."
+ pop_migration.14.option.a: "Let's see what they offer"
+ 
+ pop_migration.15.title: "Migration of Legionaries"
+ pop_migration.15.desc: "A recent expulsion from a neighbouring state has resulted in the expulsion of legionaries. They have wandered far and have chosen to settle in our lands."
+ pop_migration.15.option.a: "Let's see what they offer"
+ 
+ pop_migration.16.title: "Migration of Paladins"
+ pop_migration.16.desc: "A recent expulsion from a neighbouring state has resulted in the expulsion of brotherhood paladins. They have wandered far and have chosen to settle in our lands."
+ pop_migration.16.option.a: "Let's see what they offer"
+ 
+ pop_migration.17.title: "Migration of Cultists"
+ pop_migration.17.desc: "A recent expulsion from a neighbouring state has resulted in the expulsion of cultists of atom. They have wandered far and have chosen to settle in our lands."
+ pop_migration.17.option.a: "Let's see what they offer"
+ 
+ pop_migration.18.title: "Migration of Vault Dwellers"
+ pop_migration.18.desc: "A recent expulsion from a neighbouring state has resulted in the expulsion of vault dwellers. They have wandered far and have chosen to settle in our lands."
+ pop_migration.18.option.a: "Let's see what they offer"
+ 
+ pop_migration.19.title: "Migration of Institute Staff"
+ pop_migration.19.desc: "A recent expulsion from a neighbouring state has resulted in the expulsion of institute staff. They have wandered far and have chosen to settle in our lands."
+ pop_migration.19.option.a: "Let's see what they offer"
+ 
+ pop_migration.20.title: "Migration of Enclave"
+ pop_migration.20.desc: "A recent expulsion from a neighbouring state has resulted in the expulsion of enclave members. They have wandered far and have chosen to settle in our lands."
+ pop_migration.20.option.a: "Let's see what they offer"
+ 
+ pop_migration.21.title: "Migration of Shi"
+ pop_migration.21.desc: "A recent expulsion from a neighbouring state has resulted in the expulsion of shi members. They have wandered far and have chosen to settle in our lands."
+ pop_migration.21.option.a: "Let's see what they offer"
+ 
+ #-------------------------------------
+ # Pop Flavour
+ #-------------------------------------
+ pop_flavour.1.title: "Wastelander Ingenuity"
+ pop_flavour.1.desc: "The ingenuity of the wastelanders in [Root.valid_province.GetName] is something to behold. They have made the most of their surroundings and throughly developed [Root.valid_province.GetName] into a province to be proud of."
+ pop_flavour.1.option.a: "The facilities are amazing!"
+ pop_flavour.1.option.b: "The factories are churning!"
+ 
+ pop_flavour.2.title: "Wastelander Representation"
+ pop_flavour.2.desc: "The wastelanders within our state feel as if they have been left to rot, and demand representation in our government. Without it, they could become a threat to law and order."
+ pop_flavour.2.option.a: "Promise to grant them some form of representation"
+ pop_flavour.2.option.b: "Ignore their grievances"

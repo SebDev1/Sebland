@@ -1,0 +1,25 @@
+# set_variable = { which = province_id value = 170  }
+
+owner = HAV
+controller = HAV
+add_core = HAV
+is_city = yes
+
+base_tax = 5
+base_production = 5
+base_manpower = 4
+
+culture = haven
+religion = survivalist
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+
+
+
+
+
+
+
+

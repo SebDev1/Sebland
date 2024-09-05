@@ -1,0 +1,18 @@
+
+owner = TFL
+controller = TFL
+add_core = TFL
+is_city = yes
+
+base_tax = 4
+base_production = 3
+base_manpower = 3
+
+culture = thunder_fall
+religion = totemism
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+
+

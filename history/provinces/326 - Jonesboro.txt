@@ -1,0 +1,40 @@
+# set_variable = { which = province_id value = 326  }
+
+owner = CWG
+controller = CWG
+add_core = CWG
+is_city = yes
+
+base_tax = 1
+base_production = 2
+base_manpower = 1
+
+culture = crowgrave
+religion = survivalist
+
+hre = no
+center_of_trade = 1
+trade_goods = food
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

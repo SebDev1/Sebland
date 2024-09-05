@@ -1,0 +1,27 @@
+# set_variable = { which = province_id value = 192  }
+
+owner = SIN
+controller = SIN
+add_core = SIN
+is_city = yes
+
+base_tax = 5
+base_production = 6
+base_manpower = 3
+
+culture = sinaloa
+religion = survivalist
+
+hre = no
+center_of_trade = 1
+trade_goods = drugs
+
+
+
+
+
+
+
+
+
+

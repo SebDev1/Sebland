@@ -1,0 +1,71 @@
+# set_variable = { which = province_id value = 340  }
+
+owner = WLS
+controller = WLS
+add_core = WLS
+is_city = yes
+
+base_tax = 2
+base_production = 1
+base_manpower = 2
+
+culture = white_leg
+religion = survivalist
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,30 @@
+# set_variable = { which = province_id value = 77  }
+
+owner = GWV
+controller = GWV
+add_core = GWV
+is_city = yes
+
+base_tax = 2
+base_production = 2
+base_manpower = 1
+
+culture = golden_wolves
+religion = animism
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+
+
+
+
+
+
+
+
+
+
+
+
+

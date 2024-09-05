@@ -1,0 +1,18 @@
+# set_variable = { which = province_id value = 546  }
+
+add_core = INS
+owner = INS
+controller = INS
+is_city = yes
+
+base_tax = 1
+base_production = 1
+base_manpower = 1
+
+culture = ghoul
+religion = secular
+
+hre = no
+center_of_trade = 1
+trade_goods = radioactive_waste
+

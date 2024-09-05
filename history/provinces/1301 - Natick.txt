@@ -1,0 +1,52 @@
+# set_variable = { which = province_id value = 3064  }
+
+add_core = GUN
+owner = GUN
+controller = GUN
+is_city = yes
+
+base_tax = 2
+base_production = 1
+base_manpower = 1
+
+culture = gunner
+religion = survivalist
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

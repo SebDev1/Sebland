@@ -1,0 +1,303 @@
+#--------------------------------------------
+# Monarchy
+#--------------------------------------------
+# Generic
+autocracy_reform = {
+    icon                        = "military"
+    legacy_equivalent           = autocracy_legacy
+    valid_for_new_country       = yes 
+    allow_normal_conversion     = yes 
+	allow_convert               = yes
+    valid_for_nation_designer   = yes
+	nation_designer_cost        = 0
+    
+    modifiers = {
+        years_of_nationalism = -3
+        province_warscore_cost = -0.05
+        army_tradition_decay = -0.01
+        
+        max_absolutism = 5
+	}
+    
+    custom_attributes = {
+		autocratic_succession = yes
+	}
+	
+    potential = {
+        NOT = { has_government_attribute = locked_government_type }
+    }
+    
+	ai = { factor = 1 }
+}
+
+# Caesar's Legion
+legion_reform = {
+    icon                        = "cross"
+    legacy_equivalent           = legion_legacy
+    valid_for_new_country       = no 
+    allow_normal_conversion     = no 
+	allow_convert               = no 
+    valid_for_nation_designer   = yes
+	nation_designer_cost        = 0
+    lock_level_when_selected    = yes
+    
+    modifiers = {
+        army_tradition = 1
+        discipline = 0.05
+        
+        land_forcelimit = 15
+        naval_forcelimit = 15
+
+        governing_capacity = 250
+
+        max_absolutism = 10
+    }
+    
+    conditional = {
+        allow = {
+            has_dlc = "Cradle of Civilization"
+        }
+        
+        government_abilities = {
+            legion_bloodlust_mechanic
+        }
+    }
+    
+    custom_attributes = {
+		legion_succession = yes
+		locked_government_type = yes
+	}
+    
+    potential = {
+        technology_group = tech_caesars_legion
+    }
+    
+    ai = { factor = 1 }
+}
+
+# New Vegas
+new_vegas_reform = {
+    icon                        = "gambling"
+    legacy_equivalent           = new_vegas_legacy
+    valid_for_new_country       = no 
+    allow_normal_conversion     = no 
+	allow_convert               = no 
+    valid_for_nation_designer   = yes
+	nation_designer_cost        = 0
+    lock_level_when_selected    = yes
+    
+    royal_marriage = no
+    rulers_can_be_generals = no
+    
+    modifiers = {
+        global_tax_modifier = 0.2
+        monarch_diplomatic_power = 1
+        
+        governing_capacity = 250
+
+        max_absolutism = 10
+    }
+    
+    factions = {
+        the_omertas 
+        the_chairmen
+        the_white_glove_society
+    }
+    
+    conditional = {
+        allow = {
+            has_dlc = "Cradle of Civilization"
+        }
+        
+        government_abilities = {
+            casino_mechanic
+        }
+    }
+    
+    custom_attributes = {
+		new_vegas_succession = yes
+		locked_government_type = yes
+	}
+    
+    potential = {
+        technology_group = tech_new_vegas
+    }
+}
+
+# Big MT
+think_tank_reform = {
+    icon                        = "satellite"
+    legacy_equivalent           = think_tank_legacy
+    valid_for_new_country       = no 
+    allow_normal_conversion     = no 
+	allow_convert               = no 
+    valid_for_nation_designer   = yes
+	nation_designer_cost        = 0
+    lock_level_when_selected    = yes
+    
+    heir = no
+	queen = no
+    royal_marriage = no
+    rulers_can_be_generals = no
+    
+    modifiers = {
+        technology_cost = -0.1
+        yearly_corruption = -0.05
+        
+        governing_capacity = -100
+        
+        max_absolutism = 20
+    }
+    
+    custom_attributes = {
+		big_mt_succession = yes
+		locked_government_type = yes
+	}
+    
+    potential = {
+        have_had_reform = think_tank_reform
+    }
+}
+
+# Zetan
+zetan_reform = {
+    icon                        = "sim_centre"
+    legacy_equivalent           = zetan_legacy
+    valid_for_new_country       = no 
+    allow_normal_conversion     = no 
+	allow_convert               = no 
+    valid_for_nation_designer   = yes
+	nation_designer_cost        = 0
+    lock_level_when_selected    = yes
+    
+    heir = no
+	queen = no
+    royal_marriage = no
+    
+    modifiers = {
+        discipline = 0.1
+        unjustified_demands = -0.5
+        
+        land_forcelimit = 20
+        naval_forcelimit = 20
+        
+        governing_capacity = 500
+        
+        max_absolutism = 50
+    }
+    
+    custom_attributes = {
+		locked_government_type = yes
+	}
+    
+    potential = {
+        have_had_reform = zetan_reform
+    }
+}
+
+# Shi
+shi_reform = {
+    icon                        = "vault_computer"
+    legacy_equivalent           = shi_legacy
+    valid_for_new_country       = no 
+    allow_normal_conversion     = no 
+	allow_convert               = no 
+    valid_for_nation_designer   = yes
+	nation_designer_cost        = 0
+    lock_level_when_selected    = yes
+
+    heir = no
+	queen = no
+    
+    modifiers = {
+        production_efficiency = 0.1
+        innovativeness_gain = 0.5
+        
+        governing_capacity = -100
+        
+        max_absolutism = 10
+    }
+    
+    custom_attributes = {
+        shi_succession = yes
+		locked_government_type = yes
+	}
+    
+    potential = {
+        have_had_reform = shi_reform
+    }
+}
+
+# New Reno
+new_reno_reform = {
+    icon                        = "gambling"
+    legacy_equivalent           = new_reno_legacy
+    valid_for_new_country       = no 
+    allow_normal_conversion     = no 
+	allow_convert               = no 
+    valid_for_nation_designer   = yes
+	nation_designer_cost        = 0
+    lock_level_when_selected    = yes
+    
+    heir = no
+	queen = no
+    factions = {
+		the_mordinos
+		the_bishops
+		the_wrights
+		the_van_graffs
+		the_salvatores
+	}
+    modifiers = {
+        advisor_cost = -0.1
+        autonomy_change_time = -0.25
+        
+        governing_capacity = -100
+        
+        max_absolutism = 10
+    }
+    
+    custom_attributes = {
+        new_reno_succession = yes
+		locked_government_type = yes
+	}
+    
+    potential = {
+       have_had_reform = new_reno_reform
+    }
+}
+
+# NCR State
+ncr_state_reform = {
+    icon                        = "artillery"
+    legacy_equivalent           = ncr_state_legacy
+    valid_for_new_country       = no 
+    allow_normal_conversion     = no 
+	allow_convert               = no 
+    valid_for_nation_designer   = yes
+	nation_designer_cost        = 0
+    lock_level_when_selected    = yes
+    
+	queen = no
+    
+    modifiers = {
+        global_colonial_growth = 5
+        global_own_trade_power = 0.1
+        
+        land_forcelimit = 5
+        naval_forcelimit = 5
+        
+        governing_capacity = 100
+        
+        max_absolutism = -10
+    }
+    
+    custom_attributes = {
+        ncr_state_succession = yes
+		locked_government_type = yes
+	}
+    
+    potential = {
+        have_had_reform = ncr_state_reform
+    }
+}

@@ -1,0 +1,23 @@
+# set_variable = { which = province_id value = 396  }
+
+owner = YAK
+controller = YAK
+add_core = YAK
+add_core = MED
+is_city = yes
+
+base_tax = 1
+base_production = 1
+base_manpower = 1
+
+culture = yakuza
+religion = survivalist
+
+hre = no # hre = yes
+center_of_trade = 1
+trade_goods = weaponry
+
+
+
+
+

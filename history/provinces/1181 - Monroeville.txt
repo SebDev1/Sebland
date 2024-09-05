@@ -1,0 +1,47 @@
+# set_variable = { which = province_id value = 2556  }
+
+owner = MON
+controller = MON
+add_core = MON
+is_city = yes
+
+base_tax = 3
+base_production = 5
+base_manpower = 6
+
+culture = monroeville
+religion = survivalist
+
+trade_goods = drugs
+hre = no
+center_of_trade = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

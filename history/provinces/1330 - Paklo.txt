@@ -1,0 +1,22 @@
+# set_variable = { which = province_id value = 3093  }
+
+owner = LTT
+controller = LTT
+add_core = LTT
+is_city = yes
+
+base_tax = 2
+base_production = 2
+base_manpower = 1
+
+culture = lost_totem
+religion = totemism
+
+trade_goods = unknown
+
+
+
+
+hre = no
+center_of_trade = 1
+

@@ -1,0 +1,117 @@
+great_war_aftermath = {
+    start = 2280
+    
+    can_start = {
+        always = yes
+    }
+
+    religious_conflicts = yes
+    papacy = 1.0
+    
+    objectives = { } 
+    
+    abilities = {
+        gwa_ability_1  = { effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        gwa_ability_2  = { allow = { has_age_ability = gwa_ability_1 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        gwa_ability_3  = { allow = { has_age_ability = gwa_ability_2 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        gwa_ability_4  = { allow = { has_age_ability = gwa_ability_3 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        gwa_ability_5  = { allow = { has_age_ability = gwa_ability_4 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        gwa_ability_6  = { allow = { has_age_ability = gwa_ability_5 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        gwa_ability_7  = { allow = { has_age_ability = gwa_ability_6 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        gwa_ability_8  = { allow = { has_age_ability = gwa_ability_7 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        gwa_ability_9  = { allow = { has_age_ability = gwa_ability_8 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        gwa_ability_10 = { allow = { has_age_ability = gwa_ability_9 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        gwa_ability_11 = { allow = { has_age_ability = gwa_ability_10 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+    }
+}
+chinese_incursion = {
+    start = 2350
+    
+    can_start = {
+        custom_trigger_tooltip = {
+            tooltip = TOOLTIP_CHINESE_INCURSION
+            any_country = {
+                grown_by_development = 1000
+                current_age = great_war_aftermath
+            }
+        }
+    }
+
+    religious_conflicts = yes
+    papacy = 1.0
+    absolutism = {
+        harsh_treatment = 1
+		stability = 1
+		decrease_autonomy_command = 1
+		strengthen_government = 2
+		
+		increase_autonomy_command = -2
+		debase_currency = -1
+		execute_rebel_acceptance_command = -10
+		automatic_seat_in_parliament = -2
+		manual_seat_in_parliament = -2
+		war_exhaustion = -1
+    }
+
+    objectives = { } 
+    
+    abilities = {
+        chi_ability_1  = { effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        chi_ability_2  = { allow = { has_age_ability = chi_ability_1 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        chi_ability_3  = { allow = { has_age_ability = chi_ability_2 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        chi_ability_4  = { allow = { has_age_ability = chi_ability_3 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        chi_ability_5  = { allow = { has_age_ability = chi_ability_4 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        chi_ability_6  = { allow = { has_age_ability = chi_ability_5 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        chi_ability_7  = { allow = { has_age_ability = chi_ability_6 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        chi_ability_8  = { allow = { has_age_ability = chi_ability_7 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        chi_ability_9  = { allow = { has_age_ability = chi_ability_8 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        chi_ability_10 = { allow = { has_age_ability = chi_ability_9 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        chi_ability_11 = { allow = { has_age_ability = chi_ability_10 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+    }
+}
+zetan_assault = {
+    start = 2400
+    
+    can_start = {
+        custom_trigger_tooltip = {
+            tooltip = TOOLTIP_ZETAN_ASSAULT
+            any_country = {
+                grown_by_development = 2000
+                current_age = chinese_incursion
+                has_global_flag = setup_chinese_incursion
+            }
+        }
+    }
+
+    religious_conflicts = yes
+    papacy = 1.0
+    absolutism = {
+        harsh_treatment = 1
+		stability = 1
+		decrease_autonomy_command = 1
+		strengthen_government = 2
+		
+		increase_autonomy_command = -2
+		debase_currency = -1
+		execute_rebel_acceptance_command = -10
+		automatic_seat_in_parliament = -2
+		manual_seat_in_parliament = -2
+		war_exhaustion = -1
+    }
+
+    objectives = { } 
+    
+    abilities = {
+        zet_ability_1  = { effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        zet_ability_2  = { allow = { has_age_ability = zet_ability_1 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        zet_ability_3  = { allow = { has_age_ability = zet_ability_2 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        zet_ability_4  = { allow = { has_age_ability = zet_ability_3 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        zet_ability_5  = { allow = { has_age_ability = zet_ability_4 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        zet_ability_6  = { allow = { has_age_ability = zet_ability_5 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        zet_ability_7  = { allow = { has_age_ability = zet_ability_6 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        zet_ability_8  = { allow = { has_age_ability = zet_ability_7 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        zet_ability_9  = { allow = { has_age_ability = zet_ability_8 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        zet_ability_10 = { allow = { has_age_ability = zet_ability_9 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+        zet_ability_11 = { allow = { has_age_ability = zet_ability_10 } effect = { country_event = { id = fallout_age_bonus.100 } } ai_will_do = { factor = 1 } }
+    }
+}

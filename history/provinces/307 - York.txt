@@ -1,0 +1,53 @@
+# set_variable = { which = province_id value = 307  }
+
+owner = ARC
+controller = ARC
+add_core = ARC
+is_city = yes
+
+base_tax = 5
+base_production = 5
+base_manpower = 4
+
+culture = arcjet
+religion = robotics
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

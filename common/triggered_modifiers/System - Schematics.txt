@@ -1,0 +1,558 @@
+#--------------------------------------
+# Schematics
+#--------------------------------------
+# Weapons
+schematic_minigun = {
+	potential = {
+        has_country_flag = schematic_minigun
+    }
+    trigger = {
+        has_country_flag = schematic_minigun
+    }
+    
+    fire_damage = 0.05
+}
+schematic_flamer = {
+	potential = {
+        has_country_flag = schematic_flamer
+    }
+    trigger = {
+        has_country_flag = schematic_flamer
+    }
+    
+    shock_damage = 0.05
+}
+schematic_incinerator = {
+	potential = {
+        has_country_flag = schematic_incinerator
+    }
+    trigger = {
+        has_country_flag = schematic_incinerator
+    }
+    
+   shock_damage = 0.05
+}
+schematic_laser_pistol = {
+	potential = {
+        has_country_flag = schematic_laser_pistol
+    }
+    trigger = {
+        has_country_flag = schematic_laser_pistol
+    }
+    
+    fire_damage = 0.05
+}
+schematic_laser_rifle = {
+	potential = {
+        has_country_flag = schematic_laser_rifle
+    }
+    trigger = {
+        has_country_flag = schematic_laser_rifle
+    }
+    
+    fire_damage = 0.05
+}
+schematic_laer = {
+	potential = {
+        has_country_flag = schematic_laer
+    }
+    trigger = {
+        has_country_flag = schematic_laer
+    }
+    
+    fire_damage = 0.05
+}
+schematic_gatling_laser = {
+	potential = {
+        has_country_flag = schematic_gatling_laser
+    }
+    trigger = {
+        has_country_flag = schematic_gatling_laser
+    }
+    
+    morale_damage = 0.05
+}
+schematic_recharger_rifle = {
+	potential = {
+        has_country_flag = schematic_recharger_rifle
+    }
+    trigger = {
+        has_country_flag = schematic_recharger_rifle
+    }
+    
+    morale_damage = 0.05
+}
+schematic_plasma_rifle = {
+	potential = {
+        has_country_flag = schematic_plasma_rifle
+    }
+    trigger = {
+        has_country_flag = schematic_plasma_rifle
+    }
+    
+    shock_damage = 0.05
+}
+schematic_plasma_caster = {
+	potential = {
+        has_country_flag = schematic_plasma_caster
+    }
+    trigger = {
+        has_country_flag = schematic_plasma_caster
+    }
+    
+    shock_damage = 0.05
+}
+schematic_tesla_cannon = {
+	potential = {
+        has_country_flag = schematic_tesla_cannon
+    }
+    trigger = {
+        has_country_flag = schematic_tesla_cannon
+    }
+    
+    siege_ability = 0.05
+}
+schematic_magnetic_rail_cannon = {
+	potential = {
+        has_country_flag = schematic_magnetic_rail_cannon
+    }
+    trigger = {
+        has_country_flag = schematic_magnetic_rail_cannon
+    }
+    
+    siege_ability = 0.05
+}
+
+# Armor
+schematic_t45_power_armor = {
+	potential = {
+        has_country_flag = schematic_t45_power_armor
+    }
+    trigger = {
+        has_country_flag = schematic_t45_power_armor
+    }
+    
+    fire_damage_received = -0.02
+    shock_damage_received = -0.02
+}
+schematic_t51_power_armor = {
+	potential = {
+        has_country_flag = schematic_t51_power_armor
+    }
+    trigger = {
+        has_country_flag = schematic_t51_power_armor
+    }
+    
+    fire_damage_received = -0.03
+    shock_damage_received = -0.03
+}
+schematic_t60_power_armor = {
+	potential = {
+        has_country_flag = schematic_t60_power_armor
+    }
+    trigger = {
+        has_country_flag = schematic_t60_power_armor
+    }
+    
+    fire_damage_received = -0.05
+    shock_damage_received = -0.05
+}
+schematic_t65_power_armor = {
+	potential = {
+        has_country_flag = schematic_t65_power_armor
+    }
+    trigger = {
+        has_country_flag = schematic_t65_power_armor
+    }
+    
+    fire_damage_received = -0.05
+    shock_damage_received = -0.05
+    morale_damage_received = -0.05
+}
+schematic_x01_power_armor = {
+	potential = {
+        has_country_flag = schematic_x01_power_armor
+    }
+    trigger = {
+        has_country_flag = schematic_x01_power_armor
+    }
+    
+    fire_damage_received = -0.05
+    shock_damage_received = -0.05
+    infantry_power = 0.05
+}
+schematic_tesla_power_armor = {
+	potential = {
+        has_country_flag = schematic_tesla_power_armor
+    }
+    trigger = {
+        has_country_flag = schematic_tesla_power_armor
+    }
+    
+    fire_damage_received = -0.05
+    shock_damage_received = -0.05
+    shock_damage = 0.05
+}
+schematic_hellfire_power_armor = {
+	potential = {
+        has_country_flag = schematic_hellfire_power_armor
+    }
+    trigger = {
+        has_country_flag = schematic_hellfire_power_armor
+    }
+    
+    fire_damage_received = -0.1
+    shock_damage_received = -0.1
+}
+
+# Vehicle
+schematic_atomic_v8 = {
+	potential = {
+        has_country_flag = schematic_atomic_v8
+    }
+    trigger = {
+        has_country_flag = schematic_atomic_v8
+    }
+    
+    movement_speed = 0.1
+}
+schematic_usaf_tank = {
+	potential = {
+        has_country_flag = schematic_usaf_tank
+    }
+    trigger = {
+        has_country_flag = schematic_usaf_tank
+    }
+    
+    artillery_levels_available_vs_fort = 3
+}
+schematic_megaloader = {
+	potential = {
+        has_country_flag = schematic_megaloader
+    }
+    trigger = {
+        has_country_flag = schematic_megaloader
+    }
+    
+    build_cost = -0.1
+}
+schematic_tugboat = {
+	potential = {
+        has_country_flag = schematic_tugboat
+    }
+    trigger = {
+        has_country_flag = schematic_tugboat
+    }
+    
+    global_ship_cost = -0.1
+}
+schematic_vertibird = {
+	potential = {
+        has_country_flag = schematic_vertibird
+    }
+    trigger = {
+        has_country_flag = schematic_vertibird
+    }
+    
+    land_maintenance_modifier = -0.1
+}
+schematic_truck = {
+	potential = {
+        has_country_flag = schematic_truck
+    }
+    trigger = {
+        has_country_flag = schematic_truck
+    }
+    
+    global_trade_power = 0.1
+}
+schematic_forklift = {
+	potential = {
+        has_country_flag = schematic_forklift
+    }
+    trigger = {
+        has_country_flag = schematic_forklift
+    }
+    
+    production_efficiency = 0.1
+}
+schematic_apc = {
+	potential = {
+        has_country_flag = schematic_apc
+    }
+    trigger = {
+        has_country_flag = schematic_apc
+    }
+    
+    land_attrition = -0.1
+}
+schematic_tractor = {
+	potential = {
+        has_country_flag = schematic_tractor
+    }
+    trigger = {
+        has_country_flag = schematic_tractor
+    }
+    
+    global_trade_goods_size_modifier = 0.05
+}
+
+# Energy
+schematic_fusion_cell = {
+	potential = {
+        has_country_flag = schematic_fusion_cell
+    }
+    trigger = {
+        has_country_flag = schematic_fusion_cell
+    }
+    
+    reinforce_cost_modifier = -0.1
+}
+schematic_fusion_core = {
+	potential = {
+        has_country_flag = schematic_fusion_core
+    }
+    trigger = {
+        has_country_flag = schematic_fusion_core
+    }
+    
+    global_regiment_cost = -0.1
+}
+schematic_microfusion_cell = {
+	potential = {
+        has_country_flag = schematic_microfusion_cell
+    }
+    trigger = {
+        has_country_flag = schematic_microfusion_cell
+    }
+    
+    reinforce_cost_modifier = -0.1
+}
+schematic_plasma_cartridge = {
+	potential = {
+        has_country_flag = schematic_plasma_cartridge
+    }
+    trigger = {
+        has_country_flag = schematic_plasma_cartridge
+    }
+    
+    artillery_barrage_cost = -0.25
+}
+schematic_poseidon_ultracite_generator = {
+	potential = {
+        has_country_flag = schematic_poseidon_ultracite_generator
+    }
+    trigger = {
+        has_country_flag = schematic_poseidon_ultracite_generator
+    }
+    
+    development_cost_modifier = -0.05
+}
+schematic_verdant_air_turbine = {
+	potential = {
+        has_country_flag = schematic_verdant_air_turbine
+    }
+    trigger = {
+        has_country_flag = schematic_verdant_air_turbine
+    }
+    
+    development_cost_modifier = -0.05
+}
+schematic_helios_solar_generator = {
+	potential = {
+        has_country_flag = schematic_helios_solar_generator
+    }
+    trigger = {
+        has_country_flag = schematic_helios_solar_generator
+    }
+    
+    development_cost_modifier = -0.05
+}
+
+# Medical
+schematic_stimpak = {
+	potential = {
+        has_country_flag = schematic_stimpak
+    }
+    trigger = {
+        has_country_flag = schematic_stimpak
+    }
+    
+    manpower_recovery_speed = 0.05
+}
+schematic_auto_doc = {
+	potential = {
+        has_country_flag = schematic_auto_doc
+    }
+    trigger = {
+        has_country_flag = schematic_auto_doc
+    }
+    
+    global_unrest = -1
+    # Adds modifier to Ruler death factor
+}
+schematic_buffout = {
+	potential = {
+        has_country_flag = schematic_buffout
+    }
+    trigger = {
+        has_country_flag = schematic_buffout
+    }
+    
+    global_manpower_modifier = 0.05
+}
+schematic_mentats = {
+	potential = {
+        has_country_flag = schematic_mentats
+    }
+    trigger = {
+        has_country_flag = schematic_mentats
+    }
+    
+    idea_cost = -0.05
+}
+schematic_psycho = {
+	potential = {
+        has_country_flag = schematic_psycho
+    }
+    trigger = {
+        has_country_flag = schematic_psycho
+    }
+    
+    war_exhaustion = -0.03
+}
+schematic_jet = {
+	potential = {
+        has_country_flag = schematic_jet
+    }
+    trigger = {
+        has_country_flag = schematic_jet
+    }
+    
+    military_tactics = 0.25
+}
+
+# Robotic
+schematic_protectron = {
+	potential = {
+        has_country_flag = schematic_protectron
+    }
+    trigger = {
+        has_country_flag = schematic_protectron
+    }
+    
+    years_of_nationalism = -5
+}
+schematic_mister_handy = {
+	potential = {
+        has_country_flag = schematic_mister_handy
+    }
+    trigger = {
+        has_country_flag = schematic_mister_handy
+    }
+    
+    stability_cost_modifier = -0.1
+}
+schematic_assaultron = {
+	potential = {
+        has_country_flag = schematic_assaultron
+    }
+    trigger = {
+        has_country_flag = schematic_assaultron
+    }
+    
+    own_territory_dice_roll_bonus = 1
+}
+schematic_eyebot = {
+	potential = {
+        has_country_flag = schematic_eyebot
+    }
+    trigger = {
+        has_country_flag = schematic_eyebot
+    }
+    
+    spy_offence = 0.2
+}
+schematic_mister_gutsy = {
+	potential = {
+        has_country_flag = schematic_mister_gutsy
+    }
+    trigger = {
+        has_country_flag = schematic_mister_gutsy
+    }
+    
+    infantry_power = 0.05
+}
+schematic_robobrain = {
+	potential = {
+        has_country_flag = schematic_robobrain
+    }
+    trigger = {
+        has_country_flag = schematic_robobrain
+    }
+    
+    army_tradition_decay = -0.01
+}
+schematic_securitron = {
+	potential = {
+        has_country_flag = schematic_securitron
+    }
+    trigger = {
+        has_country_flag = schematic_securitron
+    }
+    
+    global_spy_defence = 0.2
+}
+schematic_sentry_bot = {
+	potential = {
+        has_country_flag = schematic_sentry_bot
+    }
+    trigger = {
+        has_country_flag = schematic_sentry_bot
+    }
+    
+    hostile_attrition = 2
+    max_hostile_attrition = 2
+}
+
+# Utility
+schematic_stealth_boy = {
+	potential = {
+        has_country_flag = schematic_stealth_boy
+    }
+    trigger = {
+        has_country_flag = schematic_stealth_boy
+    }
+    
+    spy_action_cost_modifier = -0.25
+}
+schematic_base_replicator_unit = {
+	potential = {
+        has_country_flag = schematic_base_replicator_unit
+    }
+    trigger = {
+        has_country_flag = schematic_base_replicator_unit
+    }
+    
+    all_power_cost = -0.05
+}
+schematic_hologram = {
+	potential = {
+        has_country_flag = schematic_hologram
+    }
+    trigger = {
+        has_country_flag = schematic_hologram
+    }
+    
+    ae_impact = -0.05
+}
+schematic_molecular_relay = {
+	potential = {
+        has_country_flag = schematic_molecular_relay
+    }
+    trigger = {
+        has_country_flag = schematic_molecular_relay
+    }
+    
+    overextension_impact_modifier = -0.1
+}

@@ -1,0 +1,226 @@
+#---------------------------
+# Adherence to Directive
+#---------------------------
+brotherhood_complete_adherence_reform = {
+    icon = "power_armor"
+
+    potential = {
+        OR = {
+        has_reform = brotherhood_reform
+        has_reform = reformed_brotherhood
+        }
+    }
+    
+    modifiers = {
+        max_absolutism = 10
+        ae_impact = 0.1
+    }
+}
+brotherhood_loose_adherence_reform = {
+    icon = "bos_talking"
+
+    potential = {
+        OR = {
+        has_reform = brotherhood_reform
+        has_reform = reformed_brotherhood
+        }
+    }
+    
+    modifiers = {
+        max_absolutism = 5
+        ae_impact = 0.05
+    }
+}
+brotherhood_no_adherence_reform = {
+    icon = "bos_engineer"
+
+    potential = {
+        OR = {
+        has_reform = brotherhood_reform
+        has_reform = reformed_brotherhood
+        }
+    }
+    
+    modifiers = {
+        diplomatic_reputation = 1
+    }
+}
+
+#---------------------------
+# Scribe Factionalism
+#---------------------------
+brotherhood_order_of_the_sword_reform = {
+    icon = "military"
+
+    potential = {
+        OR = {
+        has_reform = brotherhood_reform
+        has_reform = reformed_brotherhood
+        }
+    }
+    
+    modifiers = {
+        mil_tech_cost_modifier = -0.05
+    }
+}
+brotherhood_order_of_the_shield_reform = {
+    icon = "comms"
+
+    potential = {
+       OR = {
+        has_reform = brotherhood_reform
+        has_reform = reformed_brotherhood
+        }
+    }
+    
+    modifiers = {
+        leader_land_fire = 1
+    }
+}
+brotherhood_order_of_the_quill_reform = {
+    icon = "satellite"
+
+    potential = {
+        OR = {
+        has_reform = brotherhood_reform
+        has_reform = reformed_brotherhood
+        }
+    }
+    
+    modifiers = {
+        idea_cost = -0.05
+    }
+}
+
+#---------------------------
+# Recruitment Pool
+#---------------------------
+brotherhood_only_reform = {
+    icon = "bos_talking"
+
+    potential = {
+       OR = {
+        has_reform = brotherhood_reform
+        has_reform = reformed_brotherhood
+        }
+    }
+    
+    modifiers = {
+        discipline = 0.05
+    }
+}
+brotherhood_integrate_outsiders_reform = {
+    icon = "person"
+
+    potential = {
+       OR = {
+        has_reform = brotherhood_reform
+        has_reform = reformed_brotherhood
+        }
+    }
+    
+    modifiers = {
+        global_manpower_modifier = 0.33
+    }
+}
+brotherhood_compromise_for_talent_reform = {
+    icon = "military"
+
+    potential = {
+        OR = {
+        has_reform = brotherhood_reform
+        has_reform = reformed_brotherhood
+        }
+    }
+    
+    modifiers = {
+        technology_cost = -0.1
+    }
+}
+
+#---------------------------
+# Evolving Cause
+#---------------------------
+brotherhood_codex_reform = {
+    icon = "console"
+
+    potential = {
+        OR = {
+        has_reform = brotherhood_reform
+        has_reform = reformed_brotherhood
+        }
+    }
+    
+    modifiers = {
+        tolerance_own = 2
+    }
+}
+brotherhood_new_technology_reform = {
+    icon = "power_armor"
+
+    potential = {
+       OR = {
+        has_reform = brotherhood_reform
+        has_reform = reformed_brotherhood
+        }
+    }
+    
+    # Add research event
+    custom_attributes = {
+		enables_bos_research_event = yes
+	}
+    
+    modifiers = {
+        global_institution_spread = 0.1
+    }
+}
+brotherhood_confiscated_technology_reform = {
+    icon = "bunker"
+
+    potential = {
+       OR = {
+        has_reform = brotherhood_reform
+        has_reform = reformed_brotherhood
+        }
+    }
+    
+    modifiers = {
+        loot_amount = 0.25
+        unjustified_demands = -0.1
+    }
+}
+
+#---------------------------
+# Hierarchy
+#---------------------------
+brotherhood_chains_that_bind_reform = {
+    icon = "power_armor"
+
+    potential = {
+        OR = {
+        has_reform = brotherhood_reform
+        has_reform = reformed_brotherhood
+        }
+    }
+    
+    modifiers = {
+        leader_cost = -0.25
+        drill_decay_modifier = -0.1
+    }
+}
+brotherhood_flexible_leadership_reform = {
+    icon = "bos_talking"
+
+    potential = {
+       OR = {
+        has_reform = brotherhood_reform
+        has_reform = reformed_brotherhood
+        }
+    }
+    
+    modifiers = {
+        free_leader_pool = 1
+        army_tradition = 1
+    }
+}
+

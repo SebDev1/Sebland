@@ -1,0 +1,21 @@
+# set_variable = { which = province_id value = 3113  }
+
+owner = GMT
+controller = GMT
+add_core = GMT
+is_city = yes
+
+base_tax = 1
+base_production = 2
+base_manpower = 1
+
+culture = grimtooth
+religion = fetishism
+
+trade_goods = unknown
+
+
+
+
+hre = no
+center_of_trade = 1

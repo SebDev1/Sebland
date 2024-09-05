@@ -1,0 +1,29 @@
+# set_variable = { which = province_id value = 1808  }
+
+owner = DMT
+controller = DMT
+add_core = DMT
+is_city = yes
+
+base_tax = 2
+base_production = 1
+base_manpower = 1
+
+culture = deadmouth
+religion = survivalist
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+
+
+
+
+
+
+
+
+
+
+
+

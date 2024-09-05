@@ -1,0 +1,33 @@
+#-------------------------------------
+# History
+#-------------------------------------
+diminished_population = {
+    global_colonial_growth = -10
+}
+
+#-------------------------------------
+# Decision
+#-------------------------------------
+
+#-------------------------------------
+# Event
+#-------------------------------------
+immortality = {
+    prestige = 1
+}
+
+autodoc = {
+	legitimacy = -0.25
+	republican_tradition = -0.25
+    devotion = -0.25
+    horde_unity = -0.25
+}
+
+#-------------------------------------
+# System
+#-------------------------------------
+decision_cooldown = { }
+conflict_cooldown = { }
+discovery_cooldown = { }
+disaster_cooldown = {}
+

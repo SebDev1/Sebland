@@ -1,0 +1,17 @@
+#-------------------------------------
+# System
+#-------------------------------------
+damaged_population = {
+	local_manpower_modifier = -0.1
+	local_production_efficiency = -0.1
+	local_tax_modifier = -0.1
+}
+
+damaged_population_global = {
+	global_manpower_modifier = -0.1
+	global_tax_modifier = -0.1
+}
+
+slave_superiority = {
+    land_morale = -0.5
+}

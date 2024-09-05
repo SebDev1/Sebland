@@ -1,0 +1,147 @@
+#---------------------------
+# Overseer
+#---------------------------
+vault_serve_for_life_reform = {
+    icon = "overseer"
+
+    potential = {
+        has_reform = vault_reform
+    }
+    
+    duration = 0
+    has_term_election = no
+    
+    modifiers = {
+        max_absolutism = 5
+    }
+}
+vault_elections_reform = {
+    icon = "leaning_guy"
+    
+    potential = {
+        has_reform = vault_reform
+    }
+    
+    modifiers = {
+        republican_tradition = 0.03
+    }
+}
+vault_central_council_reform = {
+    icon = "vault_person"
+    
+    potential = {
+        has_reform = vault_reform
+    }
+    
+    modifiers = {
+        state_maintenance_modifier = -0.1
+        governing_capacity_modifier = 0.1
+    }
+}
+
+#---------------------------
+# Vault-Tec Directive
+#---------------------------
+vault_reclamation_reform = {
+    icon = "ranch"
+    
+    potential = {
+        has_reform = vault_reform
+    }
+    
+    modifiers = {
+        global_colonial_growth = 5
+    }
+}
+vault_experimental_reform = {
+    icon = "experiment"
+
+    potential = {
+        has_reform = vault_reform
+    }
+    
+    modifiers = {
+        global_unrest = 2
+        free_policy = 1
+    }
+}
+vault_abandoned_reform = {
+    icon = "satellite"
+
+    potential = {
+        has_reform = vault_reform
+    }
+    
+    modifiers = {
+        global_unrest = -2
+    }
+}
+
+#---------------------------
+# Dealing with Outsiders
+#---------------------------
+vault_customs_office_reform = {
+    icon = "office"
+    
+    potential = {
+        has_reform = vault_reform
+    }
+    
+    modifiers = {
+        merchants = 1
+        trade_steering = 0.05
+        global_spy_defence = -0.1
+    }
+}
+vault_free_trade_reform = {
+    icon = "diamond_city"
+
+    potential = {
+        has_reform = vault_reform
+    }
+    
+    modifiers = {
+        merchants = 1
+        caravan_power = 0.1
+        global_spy_defence = -0.2
+    }
+}
+vault_isolationism_reform = {
+    icon = "cross"
+
+    potential = {
+        has_reform = vault_reform
+    }
+    
+    modifiers = {
+        global_spy_defence = 0.15
+        embargo_efficiency = 0.25
+        global_unrest = -1
+    }
+}
+
+#---------------------------
+# Vault Security
+#---------------------------
+vault_police_force_reform = {
+    icon = "vault_guard"
+
+    potential = {
+        has_reform = vault_reform
+    }
+    
+    modifiers = {
+        global_unrest = -2
+    }
+}
+vault_military_force_reform = {
+    icon = "military"
+
+    potential = {
+        has_reform = vault_reform
+    }
+    
+    modifiers = {
+        land_forcelimit = 5
+    }
+}

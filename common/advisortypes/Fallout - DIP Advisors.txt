@@ -1,0 +1,430 @@
+fm_spymaster = {
+    monarch_power = DIP
+	
+    skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            spy_offence = 0.01
+        }
+    }
+    
+    # Bonus
+	spy_offence = 0.1
+
+	chance = { factor = 1 }
+	ai_will_do = { factor = 1 }
+}
+fm_trader = {
+    monarch_power = DIP
+	
+    skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            global_trade_power = 0.02
+        }
+    }
+    
+    # Bonus
+	global_trade_power = 0.1
+
+	chance = { factor = 1 }
+	ai_will_do = { factor = 1 }
+}
+fm_diplomat = {
+    monarch_power = DIP
+	
+    skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            diplomatic_reputation = 0.2
+        }
+    }
+    
+    # Bonus
+	diplomatic_reputation = 2
+
+	chance = { factor = 1 }
+	ai_will_do = { factor = 1 }
+}
+fm_proclaimer = {
+    monarch_power = DIP
+	
+    skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            culture_conversion_cost = -0.01
+        }
+    }
+    
+    # Bonus
+	culture_conversion_cost = -0.1
+
+	chance = { factor = 1 }
+	ai_will_do = { factor = 1 }
+}
+fm_naval_officer = {
+    monarch_power = DIP
+	
+    skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            navy_tradition = 0.1
+        }
+    }
+    
+    # Bonus
+	navy_tradition = 1
+
+	chance = { factor = 1 }
+	ai_will_do = { factor = 1 }
+}
+fm_cartographer = {
+    monarch_power = DIP
+	
+    skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            colony_development_boost = 0.1
+        }
+    }
+    
+    # Bonus
+    colony_development_boost = 1
+
+	chance = { 
+        factor = 1 
+        
+        modifier = {
+            factor = 0
+            
+            owner = { NOT = { num_of_colonists = 1 } }
+        }
+    }
+	ai_will_do = { factor = 1 }
+}
+fm_interpreter = {
+    monarch_power = DIP
+	
+    skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            stability_cost_modifier = -0.01
+        }
+    }
+    
+    # Bonus
+	stability_cost_modifier = -0.1
+    
+	chance = { factor = 1 }
+	ai_will_do = { factor = 1 }
+}
+fm_settler = {
+    monarch_power = DIP
+	
+    skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            global_colonial_growth = 1
+        }
+    }
+    
+    # Bonus
+	global_colonial_growth = 5
+    
+	chance = { 
+        factor = 1 
+        
+        modifier = {
+            factor = 0
+            
+            owner = { NOT = { num_of_colonists = 1 } }
+        }
+    }
+	ai_will_do = { factor = 1 }
+}
+fm_navigator = {
+    monarch_power = DIP
+	
+    skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            colony_cost_modifier = -0.01
+        }
+    }
+    
+    # Bonus
+	colony_cost_modifier = -0.2
+    
+	chance = { 
+        factor = 1 
+        
+        modifier = {
+            factor = 0
+            
+            owner = { NOT = { num_of_colonists = 1 } }
+        }
+    }
+	ai_will_do = { factor = 1 }
+}
+fm_mariner = {
+    monarch_power = DIP
+	
+    skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            global_sailors_modifier = 0.01
+        }
+    }
+    
+    # Bonus
+	global_sailors_modifier = 0.1
+    
+	chance = { 
+        factor = 1 
+        
+        modifier = {
+            factor = 0
+            
+            owner = { NOT = { num_of_ports = 1 } } 
+        }
+    }
+	ai_will_do = { factor = 1 }
+}
+fm_governor = {
+    monarch_power = DIP
+	
+    skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            native_assimilation = 0.025
+        }
+    }
+    
+    # Bonus
+	native_assimilation = 0.25
+    
+	chance = { 
+        factor = 1 
+        
+        modifier = {
+            factor = 0
+            
+            owner = { NOT = { num_of_colonists = 1 } }
+        }
+    }
+	ai_will_do = { factor = 1 }
+}
+fm_broker = {
+    monarch_power = DIP
+	
+    skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            global_trade_goods_size_modifier = 0.01
+        }
+    }
+    
+    # Bonus
+	global_trade_goods_size_modifier = 0.05
+    
+	chance = { factor = 1 }
+	ai_will_do = { factor = 1 }
+}
+fm_trafficker = {
+    monarch_power = DIP
+	
+    skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            trade_efficiency = 0.02
+        }
+    }
+    
+    # Bonus
+	trade_efficiency = 0.1
+    
+	chance = { factor = 1 }
+	ai_will_do = { factor = 1 }
+}
+fm_marshal = {
+    monarch_power = DIP
+	
+    skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            yearly_corruption = -0.01
+        }
+    }
+    
+    # Bonus
+	yearly_corruption = -0.03
+    
+	chance = { factor = 1 }
+	ai_will_do = { factor = 1 }
+}
+fm_envoy = {
+    monarch_power = DIP
+	
+    skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            improve_relation_modifier = 0.01
+        }
+    }
+    
+    # Bonus
+	improve_relation_modifier = 0.1
+    
+	chance = { factor = 1 }
+	ai_will_do = { factor = 1 }
+}

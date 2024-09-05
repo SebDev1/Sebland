@@ -1,0 +1,23 @@
+
+owner = FIE
+controller = FIE
+add_core = FIE
+add_core = SLB
+is_city = yes
+
+base_tax = 3
+base_production = 6
+base_manpower = 7
+
+culture = fiends
+religion = survivalist 
+
+hre = no # hre = yes
+center_of_trade = 1
+trade_goods = food
+
+2282.1.1 = {
+    # owner = NCR
+    # controller = NCR
+    # add_core = NCR
+}

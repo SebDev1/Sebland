@@ -1,0 +1,44 @@
+namespace = fallout_ideagroups
+
+# Wasteland Justice
+country_event = {
+	id = fallout_ideagroups.10
+	title = fallout_ideagroups.10.title
+	desc = fallout_ideagroups.10.desc
+	picture = DEAD_JUNKIE_eventPicture
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = fallout_ideagroups.10.option.a
+		
+        custom_tooltip = ENEMY_GENERAL_DIES_TT
+	}
+}
+
+# Wasteland Justice
+country_event = {
+	id = fallout_ideagroups.11
+	title = fallout_ideagroups.11.title
+	desc = fallout_ideagroups.11.desc
+	picture = DEAD_JUNKIE_eventPicture
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = fallout_ideagroups.11.option.a
+		
+        kill_leader = {
+            type = general
+        }
+	}
+}
+

@@ -1,0 +1,68 @@
+
+owner = HAN
+controller = HAN
+add_core = HAN
+
+is_city = yes
+
+base_tax = 1
+base_production = 2
+base_manpower = 2
+
+culture = hangdog
+religion = animism
+
+hre = no
+center_of_trade = 1
+trade_goods = rare_metals
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

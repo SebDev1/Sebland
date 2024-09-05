@@ -1,0 +1,59 @@
+# set_variable = { which = province_id value = 947  }
+
+owner = FLF
+controller = FLF
+add_core = FLF
+is_city = yes
+
+base_tax = 1
+base_production = 1
+base_manpower = 2
+
+culture = four_leaf
+religion = secular
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

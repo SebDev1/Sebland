@@ -1,0 +1,17 @@
+# set_variable = { which = province_id value = 361  }
+
+owner = MAL
+controller = MAL
+add_core = MAL
+is_city = yes
+
+culture = malpais
+religion = animism
+
+base_tax = 1
+base_production = 1
+base_manpower = 2
+
+trade_goods = clean_water
+hre = no
+center_of_trade = 1

@@ -1,0 +1,47 @@
+# set_variable = { which = province_id value = 2554  }
+
+owner = WDW
+controller = WDW
+add_core = WDW
+is_city = yes
+
+base_tax = 3
+base_production = 3
+base_manpower = 3
+
+culture = wildwood
+religion = fungal
+
+trade_goods = unknown
+
+hre = no
+center_of_trade = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

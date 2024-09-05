@@ -1,0 +1,486 @@
+#-------------------------------
+# Pop Types
+#-------------------------------
+# wastelander
+# raider
+# tribal
+# robot
+# super_mutant
+# ghoul
+# swampfolk
+# synth
+# rodent
+# beastlord
+# alien
+# deathclaw
+# fungal
+# dwarf
+# legion
+# bos
+# coa
+# vault_dweller
+# institute
+# enclave
+# shi
+
+#-------------------------------------
+# Wastelander
+#-------------------------------------
+administration_wastelander = {
+	potential = {
+		is_wastelander_administration = yes
+	}
+	trigger = {
+		is_wastelander_administration = yes
+	}
+    
+	# Boons
+    production_efficiency = 0.05    # Wastelanders are productive
+    interest = -1                   # Stability of wastelander nations secures loans
+    global_institution_spread = 0.1 # Spread of ideas occurs naturally in wastelander states
+    
+    # Penalty
+    global_tax_modifier = -0.05     # Wastelanders distrust taxation
+    development_cost = 0.05         # Desire for accountability slows development
+    ae_impact = 0.1                 # Values of wastelander states means conquest is viewed harshly
+}
+
+#-------------------------------------
+# Raider
+#-------------------------------------
+administration_raider = {
+	potential = {
+		is_raider_administration = yes
+	}
+	trigger = {
+		is_raider_administration = yes
+	}
+
+	# Boons
+    years_of_nationalism = -3 # Raiders can tolerate disorder
+    loot_amount = 1.0 # Raiders love to loot
+    harsh_treatment_cost = -0.25 # Dissidents are dealt with swiftly
+    
+    # Penalty
+    technology_cost = 0.1 # Raiders care little for technology
+    diplomatic_reputation = -2 # Nobody cares for raiders
+    global_spy_defence = -0.2 # Raiders are disorganised, allowing for infiltration
+}
+
+#-------------------------------------
+# Tribal
+#-------------------------------------
+administration_tribal = {
+	potential = {
+		is_tribal_administration = yes
+	}
+	trigger = {
+		is_tribal_administration = yes
+	}
+
+	# Boons
+    global_colonial_growth = 10 # Tribals are capable when it comes to living with the land
+    native_assimilation = 1.0 # Tribals assimilate locals more easily
+    stability_cost_modifier = -0.2 # Tribal culture makes it easier to cope with changes
+    
+    # Penalty
+    technology_cost = 0.2 # Tribals care litte for technology
+    idea_cost = 0.2 # Tribals resist new ideas
+    governing_capacity_modifier = -0.1 # Tribals struggle to manage vast territories
+}
+
+#-------------------------------------
+# Robot
+#-------------------------------------
+administration_robot = {
+	potential = {
+		is_robot_administration = yes
+	}
+	trigger = {
+		is_robot_administration = yes
+	}
+    
+	# Boons
+    yearly_corruption = -0.05 # Self-debugging helps prevent corruption
+    technology_cost = -0.1 # Robots more easily integrate new technologies
+    global_autonomy = -0.05 # Police routines quell unrest
+    
+    # Penalty
+    prestige_decay = 0.01 # Robots care little about prestige
+    culture_conversion_cost = 0.25 # Conversion to robots is messy
+    diplomatic_upkeep = -1 # Few trust robots as diplomatic entities
+}
+
+#-------------------------------------
+# Super Mutant
+#-------------------------------------
+administration_super_mutant = {
+	potential = {
+		is_super_mutant_administration = yes
+	}
+	trigger = {
+		is_super_mutant_administration = yes
+	}
+
+	# Boons
+    unjustified_demands = -0.1 # Many will give super mutants what they want to get rid of them
+    max_absolutism_effect = 0.25 # Super Mutants are natural tyrants
+    core_creation = -0.1 # Super Mutants need little in terms of bureaucracy to integrate new territory
+    
+    # Penalty
+    adm_tech_cost_modifier = 0.2 # Super Mutants care little about administrative matters
+    dip_tech_cost_modifier = 0.2 # Super Mutants care little about diplomatic matters
+    advisor_cost = 0.25 # Intelligent super mutants are hard to find
+}
+
+#-------------------------------------
+# Ghoul
+#-------------------------------------
+administration_ghoul = {
+	potential = {
+		is_ghoul_administration = yes
+	}
+	trigger = {
+		is_ghoul_administration = yes
+	}
+
+	# Boons
+    global_spy_defence = 0.25 # Ghouls are fairly conspicuous to each other
+    advisor_pool = 2 # Ghouls retain old world knowledge
+    global_monthly_devastation = -0.05 # Ghouls cope with devastation more easily
+    
+    # Penalty
+    spy_offence = -0.25 # Ghouls are fairly conspicuous to others
+    diplomatic_reputation = -1 # Ghouls are not trusted
+    idea_cost = 0.1 # Ghouls are resistant to new ideas
+}
+
+#-------------------------------------
+# Swampfolk
+#-------------------------------------
+administration_swampfolk = {
+	potential = {
+		is_swampfolk_administration = yes
+	}
+	trigger = {
+		is_swampfolk_administration = yes
+	}
+
+	# Boons
+    free_mil_policy = 1 # Swampfolk love a fight
+    warscore_from_battles_modifier = 0.25 # Swampfolk love a fight
+    enemy_core_creation = 1.0 # Enemies struggle to control swampfolk land
+    
+    # Penalty
+    production_efficiency = -0.1 # Swamps are not conductive to industry
+    advisor_pool = -1 # Swampfolk are limited in number
+    governing_capacity_modifier = -0.25 # Swampfolk have little coherent statecraft
+}
+
+#-------------------------------------
+# Synth
+#-------------------------------------
+administration_synth = {
+	potential = {
+		is_synth_administration = yes
+	}
+	trigger = {
+		is_synth_administration = yes
+	}
+
+	# Boons
+    administrative_efficiency = 0.05 # Synths are very efficient
+    same_culture_advisor_cost = -0.2 # Synths benefit from being computer analogs
+    discipline = 0.05 # Synths are very disciplined
+    
+    # Penalty
+    land_morale = -0.1 # Synths are vulnerable to hacking, lowering cohesion in combat
+    trade_efficiency = -0.2 # People don't trust synths
+    ae_impact = 0.2 # People don't trust synths
+}
+
+#-------------------------------------
+# Rodent
+#-------------------------------------
+administration_rodent = {
+	potential = {
+		is_rodent_administration = yes
+	}
+	trigger = {
+		is_rodent_administration = yes
+	}
+
+	# Boons
+    missionaries = 1 # Belief in the renewal cult
+    land_attrition = -0.2 # Adapted to wasteland terrain
+    province_warscore_cost = -0.1 # People are willing to give up easier against rodents
+    
+    # Penalty
+    technology_cost = 0.2 # Rodents don't mesh well with technology
+    diplomatic_reputation = -3 # Few trust rodents
+    improve_relation_modifier = -0.2 # Few willing interact with rodents
+}
+
+#-------------------------------------
+# Beastlord
+#-------------------------------------
+administration_beastlord = {
+	potential = {
+		is_beastlord_administration = yes
+	}
+	trigger = {
+		is_beastlord_administration = yes
+	}
+
+	# Boons
+    warscore_from_battles_modifier = 0.2 # Animal command scares wastelanders
+    land_maintenance_modifier = -0.15 # Usage of commanded animals reduces costs
+    land_morale_constant = 0.5 # Psychic arrogance
+    
+    # Penalty
+    technology_cost = 0.2 # Little use for technology due to psychic abilities
+    development_cost = 0.2 # Care little for sustained living
+    improve_relation_modifier = -0.5 # Cannibalistic
+}
+
+#-------------------------------------
+# Alien
+#-------------------------------------
+administration_alien = {
+	potential = {
+		is_alien_administration = yes
+	}
+	trigger = {
+		is_alien_administration = yes
+	}
+
+	# Boons
+    yearly_corruption = -0.1 # Incorruptible
+    administrative_efficiency = 0.1 # Alien technology
+    envoy_travel_time = -0.5 # Teleportation technology
+    
+    # Penalty
+    diplomatic_reputation = -5 # Aliens are repulsive to all
+    improve_relation_modifier = -0.25 # Aliens are repulsive to all
+    global_manpower_modifier = -0.1 # Limited population
+}
+
+#-------------------------------------
+# Deathclaw
+#-------------------------------------
+administration_deathclaw = {
+	potential = {
+		is_deathclaw_administration = yes
+	}
+	trigger = {
+		is_deathclaw_administration = yes
+	}
+
+	# Boons
+    country_military_power = 1 # Natural military leaders
+    unjustified_demands = -0.2 # Others are terrified of deathclaws
+    land_maintenance_modifier = -0.25 # Ready made for war
+    
+    # Penalty
+    advisor_cost = 0.25 # Limited number of intelligent deathclaws
+    development_cost = 0.2 # Not fit to develop settlements well
+    years_of_nationalism = 5 # Others will not accept deathclaw control
+}
+
+#-------------------------------------
+# Fungal
+#-------------------------------------
+administration_fungal = {
+	potential = {
+		is_fungal_administration = yes
+	}
+	trigger = {
+		is_fungal_administration = yes
+	}
+
+	# Boons
+    culture_conversion_cost = -0.2 # Fungal conversion is very effective
+    manpower_recovery_speed = 0.2 # Fungal soldiers easily grown
+    manpower_in_own_culture_provinces = 1.0 # Fungal soldiers easily grown
+    
+    # Penalty
+    trade_efficiency = -0.15 # Fungal spores impair quality of goods
+    production_efficiency = -0.15 # Fungal spores impair machinery
+    governing_capacity_modifier = -0.2 # Ill-suited for wide administration
+}
+
+#-------------------------------------
+# Dwarf
+#-------------------------------------
+administration_dwarf = {
+	potential = {
+		is_dwarf_administration = yes
+	}
+	trigger = {
+		is_dwarf_administration = yes
+	}
+
+	# Boons
+    production_efficiency = 0.15 # Shunned, dwarves often turn to industrial professions
+    caravan_power = 0.15 # Shunned, dwarves often compensate by becoming traders
+    trade_efficiency = 0.15 # Shunned, dwarves often compensate by becoming traders
+    
+    # Penalty
+    prestige_decay = 0.01 # Few consider dwarves their equal
+    global_manpower_modifier = -0.2 # Dwarves are mutants, and so cannot easily reproduce
+    spy_offence = -0.15 # Dwarves tend to be very noticable
+}
+
+#-------------------------------------
+# Legion
+#-------------------------------------
+administration_legion = {
+	potential = {
+		is_legion_administration = yes
+	}
+	trigger = {
+		is_legion_administration = yes
+	}
+
+	# Boons
+    infantry_cost = -0.2 # Legion subsumes all
+    global_autonomy = -0.05 # Legion surpresses local identity
+    min_autonomy_in_territories = -0.25 # Legion surpresses local identity
+    
+    # Penalty
+    advisor_cost = 0.25 # Few are willing to risk their heads to advise the Caesar
+    production_efficiency = -0.2 # Little care is given to industry
+    adm_tech_cost_modifier = 0.25 # Few care for administration progress in the Legion
+}
+
+#-------------------------------------
+# Brotherhood of Steel
+#-------------------------------------
+administration_bos = {
+	potential = {
+		is_bos_administration = yes
+	}
+	trigger = {
+		is_bos_administration = yes
+	}
+
+	# Boons
+    army_tradition = 1.0 # Military training is regularly undergone
+    yearly_corruption = -0.05 # BOS self-audit often
+    harsh_treatment_cost = -0.25 # BOS are brutal to those that threaten their goals
+    
+    # Penalty
+    reform_progress_growth = -0.1 # BOS are not reformers
+    governing_capacity_modifier = -0.2 # BOS lack the ability to administrate wide territory
+    development_cost = 0.25 # BOS do not care about developing settlements
+}
+
+#-------------------------------------
+# Children of Atom
+#-------------------------------------
+administration_coa = {
+	potential = {
+		is_coa_administration = yes
+	}
+	trigger = {
+		is_coa_administration = yes
+	}
+
+	# Boons
+    global_colonial_growth = 10 # Suited to the wasteland
+    land_attrition = -0.2 # Power of the Atom protects
+    tolerance_own = 1 # Absolute belief
+    
+    # Penalty
+    global_unrest = 1 # Inherently unstable
+    stability_cost_modifier = 0.2 # Inherently unstable
+    advisor_cost = 0.25 # Few will risk being irradiated to advise ruler
+}
+
+#-------------------------------------
+# Vault Dweller
+#-------------------------------------
+administration_vault = {
+	potential = {
+		is_vault_administration = yes
+	}
+	trigger = {
+		is_vault_administration = yes
+	}
+
+	# Boons
+    reform_progress_growth = 0.1 # Pressure cooker environment breeds innovation
+    idea_cost = -0.1 # Pressure cooker environment breeds innovation
+    improve_relation_modifier = 0.1 # Old World values help diplomatic outreach
+    
+    # Penalty
+    yearly_corruption = 0.03 # Inherently vulnerable to corruption
+    advisor_pool = -1 # Limited pool of advisors
+    global_trade_goods_size_modifier = -0.05 # Limited industrial space
+}
+
+#-------------------------------------
+# Institute
+#-------------------------------------
+administration_institute = {
+	potential = {
+		is_institute_administration = yes
+	}
+	trigger = {
+		is_institute_administration = yes
+	}
+
+	# Boons
+    free_policy = 1 # Institute is on the cutting edge
+    yearly_innovativeness = 1.0 # Institute is on the cutting edge
+    diplomatic_annexation_cost = -0.25 # Institute can infiltrate subjects via Synths
+    
+    # Penalty
+    governing_capacity_modifier = -0.2 # Institute struggles to hold vast territory
+    global_trade_power = -0.2 # Institute is not open to trade
+    province_warscore_cost = 0.2 # Institute struggles to exert power at a distance
+}
+
+#-------------------------------------
+# Enclave
+#-------------------------------------
+administration_enclave = {
+	potential = {
+		is_enclave_administration = yes
+	}
+	trigger = {
+		is_enclave_administration = yes
+	}
+
+	# Boons
+    core_creation = -0.1 # All of the US is rightful Enclave clay
+    yearly_corruption = -0.05 # Purity of the people ensures a pure core
+    spy_offence = 0.2 # Expert infilitration of enemy nations
+    
+    # Penalty
+    production_efficiency = -0.1 # Lack of production facilities due to the reclusive nature of the Enclave
+    global_trade_power = -0.1 # Lack of trade due to the reclusive nature of the Enclave
+    manpower_recovery_speed = -0.2 # Only the pure are suitable soldiers
+}
+
+#-------------------------------------
+# Shi
+#-------------------------------------
+administration_shi = {
+	potential = {
+		is_shi_administration = yes
+	}
+	trigger = {
+		is_shi_administration = yes
+	}
+
+	# Boons
+    reform_progress_growth = 0.25 # Shi are keen scientists
+    idea_cost = -0.2 # Shi are keen scientists
+    advisor_cost = -0.1 # Head Advisor is a official placement
+    
+    # Penalty
+    governing_capacity_modifier = -0.2 # Shi struggles to hold vast territory
+    build_cost = 0.25 # Shi struggle to employ labor
+    years_of_nationalism = 5 # Shi struggle to integrate external territory
+}

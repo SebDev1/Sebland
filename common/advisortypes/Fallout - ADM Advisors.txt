@@ -1,0 +1,391 @@
+fm_administrator = {
+    monarch_power = ADM
+	
+    skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            core_creation = -0.01
+        }
+    }
+    
+    # Bonus
+	core_creation = -0.05
+    
+	chance = { factor = 1 }
+	ai_will_do = { factor = 1 }
+}
+fm_treasurer = {
+    monarch_power = ADM
+	
+    skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            global_tax_modifier = 0.02
+        }
+    }
+    
+    # Bonus
+	global_tax_modifier = 0.1
+
+	chance = { factor = 1 }
+	ai_will_do = { factor = 1 }
+}
+fm_researcher = {
+    monarch_power = ADM
+	
+    skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            idea_cost = -0.01
+        }
+    }
+    
+    # Bonus
+	idea_cost = -0.05
+
+	chance = { factor = 1 }
+	ai_will_do = { factor = 1 }
+}
+fm_inquisitor = {
+    monarch_power = ADM
+	
+   skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            global_missionary_strength = 0.005
+        }
+        
+    }
+    
+    # Bonus
+	global_missionary_strength = 0.02
+
+	chance = { factor = 1 }
+	ai_will_do = { factor = 1 }
+}
+fm_orator = {
+    monarch_power = ADM
+	
+    skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            global_unrest = -0.2
+        }
+    }
+    
+    # Bonus
+	global_unrest = -2
+
+	chance = { factor = 1 }
+	ai_will_do = { factor = 1 }
+}
+fm_bureaucrat = {
+    monarch_power = ADM
+	
+    skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            overextension_impact_modifier = -0.01
+        }
+    }
+    
+    # Bonus
+    overextension_impact_modifier = -0.1
+
+	chance = { factor = 1 }
+	ai_will_do = { factor = 1 }
+}
+fm_architect = {
+    monarch_power = ADM
+	
+    skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            build_cost = -0.01
+        }
+    }
+    
+    # Bonus
+    build_cost = -0.1
+
+	chance = { factor = 1 }
+	ai_will_do = { factor = 1 }
+}
+fm_artist = {
+    monarch_power = ADM
+	
+    skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            prestige = 0.1
+        }
+    }
+    
+    # Bonus
+    prestige = 1
+
+	chance = { factor = 1 }
+	ai_will_do = { factor = 1 }
+}
+fm_farmer = {
+    monarch_power = ADM
+	
+    skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            production_efficiency = 0.02
+        }
+    }
+    
+    # Bonus
+    production_efficiency = 0.1
+
+	chance = { factor = 1 }
+	ai_will_do = { factor = 1 }
+}
+fm_evangelist = {
+    monarch_power = ADM
+	
+    skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            prestige_per_development_from_conversion = 0.02
+        }
+    }
+    
+    # Bonus
+    prestige_per_development_from_conversion = 0.1
+
+	chance = { factor = 1 }
+	ai_will_do = { factor = 1 }
+}
+fm_theologian = {
+    monarch_power = ADM
+	
+    skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            missionary_maintenance_cost = -0.01
+        }
+    }
+    
+    # Bonus
+    missionary_maintenance_cost = -0.15
+
+	chance = { factor = 1 }
+	ai_will_do = { factor = 1 }
+}
+fm_mayor = {
+    monarch_power = ADM
+	
+    skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            global_autonomy = -0.01
+        }
+    }
+    
+    # Bonus
+    global_autonomy = -0.05 
+
+	chance = { factor = 1 }
+	ai_will_do = { factor = 1 }
+}
+fm_chemist = {
+    monarch_power = ADM
+	
+    skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            monthly_reform_progress_modifier = 0.01
+        }
+    }
+    
+    # Bonus
+    monthly_reform_progress_modifier = 0.1 
+
+	chance = { factor = 1 }
+	ai_will_do = { factor = 1 }
+}
+fm_physicist = {
+    monarch_power = ADM
+	
+   skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            technology_cost = -0.01
+        }
+    }
+    
+    # Bonus
+    technology_cost = -0.05
+
+	chance = { factor = 1 }
+	ai_will_do = { factor = 1 }
+}
+fm_biologist = {
+    monarch_power = ADM
+	
+    skill_scaled_modifier = { 
+        trigger = {
+            owner = {
+                stability = 0
+            }
+        }
+        modifier = {
+            legitimacy = 0.05
+            republican_tradition = 0.05
+            devotion = 0.05
+            horde_unity = 0.05
+            meritocracy = 0.05
+            
+            governing_capacity_modifier = 0.01
+        }
+    }
+    
+    # Bonus
+    governing_capacity_modifier = 0.1
+
+	chance = { factor = 1 }
+	ai_will_do = { factor = 1 }
+}

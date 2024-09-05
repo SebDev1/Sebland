@@ -1,0 +1,31 @@
+# set_variable = { which = province_id value = 401  }
+
+owner = CRS
+controller = CRS
+add_core = CRS
+is_city = yes
+
+base_tax = 5
+base_production = 7
+base_manpower = 5
+
+culture = crag_stalkers
+religion = animism
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+
+
+
+
+
+
+
+
+
+
+
+
+
+

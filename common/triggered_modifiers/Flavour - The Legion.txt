@@ -1,0 +1,41 @@
+# The Howitizer
+# Debuff enemies of the Legion if the Howitizer was restored
+the_howitizer = {
+	potential = {
+		war_with = CAE
+        exists = CAE
+        capital_scope = {
+            OR = {
+                region = arizona_region
+                region = nevada_region
+                region = california_region
+            }
+        }
+	}
+
+	trigger = {
+        war_with = CAE
+        CAE = { 
+            has_country_modifier = howitizer_firing_pin
+        }
+	}
+    
+    fire_damage_received = 0.5
+}
+
+revolt_of_the_heathens = {
+	potential = {
+		OR = {
+			religion = cult_of_mars
+			tag = CAE
+		}
+    }
+    
+    trigger = {
+        NOT = { has_country_modifier = indoctrinated_by_mars }
+    }
+
+    global_missionary_strength = -0.03
+    global_unrest = 1.5
+    harsh_treatment_cost = -0.1
+}

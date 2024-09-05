@@ -1,0 +1,34 @@
+﻿l_english:
+
+#Mission title descriptions 
+Brotherhood_direction_title:0 "Brotherhood Directive"
+Brotherhood_direction_desc:0 "Our founder Maxson viewed technology as the future. Enlightening our people was a goal of his, but our chapter is distant in many ways from our original directive. Perhaps it is up our people to decide the true path we should follow. Should we divert from our founders directive this could have consquences beyond our understanding."
+den_adaptation_title:0 "Adaptation and Inspiration"
+den_adaptation_desc:0 "Our chapter is full of some of the brightest minds in all the brotherhood including leaders that surpass many of the other chapters. Connor Butler is one of great notice his inate understanding of war surpass many others inspiring many to our cause."
+inspirational_leader_title:0 "Inspirational Leader"
+inspirational_leader_desc:0 "We need an elder who will fight for our cause. Even if this results in their death the cause is worth an elders life. Peace through war. With this method of leadership our elder can showcase his skills as well."
+preventative_measures_title:0 "Preventative Measures"
+preventative_measures_desc:0 "These savages have built a city full of vile trash but they have also developed this city appropriately perhaps it's in our best interest to take over this city. We can use the work they put in and develop our capital at the cost of the savages' homes. "
+reforming_den_title:0 " Reforming The Den"
+reforming_den_desc:0 "We have pillaged these savages. We must now change this den and repurpose it for our means. To do this we need to forcefully purge these vile people. Perhaps a little bit of violence will show them the error of their way."
+enhanced_bunker_title:0 "Enhanced Bunkers"
+enhanced_bunker_desc:0 "Our enemies are far and wide. The super mutants from our south threaten us and many forces like ghouls will need to be killed in order to get what we need. Whether we can or not our defenses are lacking we need to develop our bunker to survive any future attacks. "
+steel_men_title:0 "Steel Men"
+steel_men_desc:0 "Honor, Glory, Steel, these are our paths forward. Our elders are important in achieving these goals but they are do not lead in the front. We must change this for every future elder not just our own. Although this could cause unforseen issue the risk is worth it. "
+new_beginnings_title:0 "New Beginnings"
+new_beginnings_desc:0 "Bunkers are our salvation if any wastelander tries to threaten our glorious rule. With this new and improved land we can make another our of bases with little cost."
+
+
+#modifiers 
+new_world_order:0 "New World Order"
+brotherhood_peaceful_directive:0 "Humanitarian Directive"
+repurposed_meds:0 "Repurposed Meds"
+drug_freezone:0 "Drugless Den"
+bunker_upgrades:0 "Bunker Upgrades"
+
+#Events 
+denchapter.1.title:0 "Future Directive"
+denchapter.1.desc:0 "Our future can only be determined by our leader our situation is dangerous and whatever route and path we choose to follow can lead "
+denchapter.1.option.a:0 "We must follow our original path"
+denchapter.1.option.b:0 "We must follow a more violent path"
+denchapter.1.option.c:0 "Perhaps a more compassionate path is the path forward"

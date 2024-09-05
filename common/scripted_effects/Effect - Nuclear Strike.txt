@@ -1,0 +1,47 @@
+apply_nuclear_strike_effect = {
+    save_event_target_as = aggressor
+    
+    event_target:selected_domain_province = {
+        owner = {
+            save_event_target_as = victim
+        }
+    }
+    
+    event_target:victim = {
+        add_aggressive_expansion = {
+            who = ROOT
+            value = 50
+            apply_calc = yes
+        }
+    }
+    
+    every_known_country = {
+        limit = {
+            NOT = { alliance_with = ROOT }
+            NOT = { tag = event_target:victim }
+        }
+        
+        add_aggressive_expansion = {
+            who = ROOT
+            value = 10
+            apply_calc = yes
+        }
+    }
+    
+    event_target:selected_domain_province = {
+        owner = {
+            country_event = { id = fallout_nuclear_strike.2 days = 1 }
+        }
+        
+        area = {
+            kill_units = { }
+            #decolonize = yes
+            
+            add_permanent_province_modifier = {
+                name = nuked_province
+                duration = 18250
+            }
+        }
+    }
+}
+

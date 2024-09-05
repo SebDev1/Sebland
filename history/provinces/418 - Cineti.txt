@@ -1,0 +1,17 @@
+
+owner = BSK
+controller = BSK
+add_core = BSK
+is_city = yes
+
+base_tax = 2
+base_production = 2
+base_manpower = 2
+
+culture = bonespike
+religion = survivalist
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+

@@ -1,0 +1,19 @@
+# set_variable = { which = province_id value = 36  }
+
+owner = SSP
+controller = SSP
+add_core = SSP
+is_city = yes
+
+base_tax = 6
+base_production = 5
+base_manpower = 7
+
+culture = steel_scorpion
+religion = survivalist
+
+hre = no
+center_of_trade = 1
+trade_goods = drugs
+
+

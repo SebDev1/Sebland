@@ -1,0 +1,21 @@
+# set_variable = { which = province_id value = 2972  }
+
+owner = SKY
+controller = SKY
+add_core = SKY
+
+is_city = yes
+base_tax = 5
+base_production = 3
+base_manpower = 5
+
+culture = skynet 
+religion = robotics 
+
+trade_goods = prewar_technology 
+hre = no # hre = yes
+center_of_trade = 1
+
+
+
+

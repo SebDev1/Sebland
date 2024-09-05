@@ -1,0 +1,39 @@
+# set_variable = { which = province_id value = 362  }
+
+owner = HID
+controller = HID
+add_core = HID
+
+is_city = yes
+base_tax = 6
+base_production = 4
+base_manpower = 3
+
+culture = hidebark
+religion = animism
+
+trade_goods = prewar_technology
+hre = no
+center_of_trade = 2
+
+fbs_fort_1 = yes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

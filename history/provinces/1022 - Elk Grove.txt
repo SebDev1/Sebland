@@ -1,0 +1,22 @@
+# set_variable = { which = province_id value = 68  }
+
+owner = VIP
+controller = VIP
+add_core = VIP
+add_core = SAC
+is_city = yes
+
+base_tax = 1
+base_production = 1
+base_manpower = 2
+
+culture = viper
+religion = survivalist 
+
+hre = no # hre = yes
+center_of_trade = 1
+trade_goods = food
+
+
+
+

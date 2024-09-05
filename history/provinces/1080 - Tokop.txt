@@ -1,0 +1,17 @@
+
+owner = WTO
+controller = WTO
+add_core = WTO
+is_city = yes
+
+base_tax = 6
+base_production = 5
+base_manpower = 5
+
+culture = waste_oracle
+religion = fetishism
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+

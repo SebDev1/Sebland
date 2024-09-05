@@ -1,0 +1,16 @@
+
+owner = WBR
+controller = WBR
+add_core = WBR
+is_city = yes
+
+base_tax = 1
+base_production = 1
+base_manpower = 1
+
+culture = whitebraid
+religion = fetishism
+
+trade_goods = unknown
+hre = no
+center_of_trade = 1

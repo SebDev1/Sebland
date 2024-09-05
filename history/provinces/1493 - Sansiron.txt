@@ -1,0 +1,70 @@
+
+owner = DED
+controller = DED
+add_core = DED
+is_city = yes
+
+base_tax = 2
+base_production = 1
+base_manpower = 1
+
+culture = dead_horse
+religion = mormon
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+#--------------------------------
+# Nation
+#--------------------------------
+government = republic
+add_government_reform = enclave_reform
+technology_group = tech_enclave
+religion = american_restorationists
+primary_culture = enclave
+capital = 1337
+
+add_army_tradition = 60
+add_army_professionalism = 0.6
+
+#--------------------------------
+# Laws and Policies
+#--------------------------------
+set_slavery_allowed = yes
+set_gambling_forbidden = yes
+set_prostitution_forbidden = yes
+
+set_narcotics_forbidden = yes
+set_scavenging_allowed = yes
+
+unlock_schematic = {
+    schematic = hellfire_power_armor
+}
+
+#--------------------------------
+# Relationships
+#--------------------------------
+
+#--------------------------------
+# History
+#--------------------------------
+2282.1.1 = {
+	monarch = {
+		name = "Benjamin"
+		dynasty = "Finnegan"
+		adm = 4
+		dip = 2
+		mil = 6
+	}
+}

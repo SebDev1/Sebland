@@ -1,0 +1,20 @@
+
+owner = BKR
+controller = BKR
+add_core = BKR
+is_city = yes
+
+base_tax = 5
+base_production = 6
+base_manpower = 4
+
+culture = blackrot
+religion = fungal
+
+trade_goods = unknown
+hre = no
+center_of_trade = 1
+
+
+
+

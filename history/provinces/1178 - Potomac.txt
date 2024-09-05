@@ -1,0 +1,48 @@
+
+owner = DOM
+controller = DOM
+add_core = DOM
+is_city = yes
+
+base_tax = 2
+base_production = 1
+base_manpower = 1
+
+culture = freedom
+religion = american_restorationists
+
+trade_goods = unknown
+
+hre = no
+center_of_trade = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

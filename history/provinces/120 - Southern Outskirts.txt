@@ -1,0 +1,29 @@
+# set_variable = { which = province_id value = 120  }
+
+owner = NVG
+controller = NVG
+add_core = NVG
+is_city = yes
+
+base_tax = 2
+base_production = 2
+base_manpower = 2
+
+culture = new_vegas
+religion = secular
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+
+
+
+
+
+
+
+
+
+
+
+

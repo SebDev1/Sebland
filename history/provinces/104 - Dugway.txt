@@ -1,0 +1,17 @@
+
+owner = RPC
+controller = RPC
+add_core = RPC
+is_city = yes
+
+base_tax = 1
+base_production = 2
+base_manpower = 2
+
+culture = ripclaw
+religion = survivalist
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+

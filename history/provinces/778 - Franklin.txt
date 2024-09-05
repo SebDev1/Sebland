@@ -1,0 +1,70 @@
+
+owner = TNS
+controller = TNS
+add_core = TNS
+is_city = yes
+
+base_tax = 1
+base_production = 1
+base_manpower = 2
+
+culture = nasher
+religion = survivalist
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

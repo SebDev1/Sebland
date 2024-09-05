@@ -1,0 +1,59 @@
+
+graphical_culture = wastelander_gfx
+
+color = { 10  10  10 }
+
+monarch_names = {
+	"Woodes " = 10
+	"Black " = 10
+	"Howell " = 10
+	"Calico " = 10
+	"Lessone " = 10
+	"Lawrence " = 10
+	"Lewis " = 10
+	"John " = 10	
+	"Roche " = 10
+	"James " = 10
+	"Assan " = 10
+	"Dirck" = 10
+	
+	"Jane" = -1
+}
+	
+leader_names = {
+	Alvel Cavendish "de Bouff" Brower Barton
+	Hein Noort Easton Rais Verney Rous Reis
+	Davis Collier Greaves Bellamy Every Vane
+	Rogers Taylor Vorley Kelly Howard Halsey
+}
+
+ship_names = {
+	"Captain's Horror"
+	"Death"
+	"Disgraceful Strumpet"
+	"Dragon's Gold"
+	"Executioner"
+	"Killer's Fearful Storm"
+	"Murderer's Death"
+	"Privateer's Strumpet"
+	"The Damned Killer"
+	"The Dark Dagger"
+	"The Dirty Blade"
+	"The Dirty Scream"
+	"The Doom of the Ocean"
+	"The Dreaming Demon"
+	"The Fallen Raider"
+	"The Fear of the Demon"
+	"The Foul Whore"
+	"The Gold Cutlass"
+	"The Hell-born"
+	"The Horrid Compass"
+	"The Horrible Raider"
+	"The Howling Wolf"
+	"The Lustful Hangman"
+	"The Nightmare"
+	"The Poison Death"
+	"The Serpent"
+	"The Vicious Murderer"
+	"The Vile Saber"
+}

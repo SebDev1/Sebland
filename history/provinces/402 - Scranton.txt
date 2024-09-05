@@ -1,0 +1,22 @@
+# set_variable = { which = province_id value = 402  }
+
+owner = FYS
+controller = FYS
+add_core = FYS
+is_city = yes
+
+base_tax = 1
+base_production = 1
+base_manpower = 1
+
+culture = furystone
+religion = atomic_worship
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+
+
+
+
+

@@ -1,0 +1,112 @@
+#--------------------------------------------
+# Unique
+#--------------------------------------------
+cb_zetan_supremacy = {
+	prerequisites = {
+		tag = ZET
+	}
+
+	war_goal = take_province_nationalist
+}
+
+cb_chinese_supremacy = {
+	prerequisites = {
+		tag = CHI
+	}
+
+	war_goal = take_province_nationalist
+}
+
+cb_retribution = {
+	valid_for_subject = no
+    
+    is_triggered_only = yes
+    
+	war_goal = take_capital_merciless
+}
+
+#--------------------------------------------
+# System
+#--------------------------------------------
+cb_merciless_war = {
+	valid_for_subject = no
+
+	prerequisites = {
+		has_idea = fallout_absolutism_ideas_6
+		is_free_or_tributary_trigger = yes
+	}
+
+	war_goal = take_capital_merciless
+}
+
+cb_just_world = {
+    valid_for_subject = no
+
+    prerequisites_self = {
+        has_reform = strategic_ambition_a_just_world_reform
+    }
+    
+	war_goal = take_capital_merciless
+}
+
+cb_cultural_unification = {
+    valid_for_subject = no
+
+    prerequisites_self = {
+        has_reform = strategic_ambition_unification_reform
+    }
+
+	prerequisites = {
+        FROM = {
+            culture_group = ROOT
+        }
+	}
+
+	war_goal = take_capital_unification
+}
+
+cb_religious_unification = {
+    valid_for_subject = no
+
+    prerequisites_self = {
+        has_reform = strategic_ambition_one_faith_reform
+    }
+    
+	prerequisites = {
+        FROM = {
+            NOT = { religion_group = ROOT }
+        }
+	}
+
+	war_goal = take_capital_force_religion
+}
+
+cb_distant_conquest = {
+	valid_for_subject = no
+
+    prerequisites_self = {
+        has_idea = fallout_expansion_ideas_7
+		is_free_or_tributary_trigger = yes
+    }
+    
+    prerequisites = {
+        FROM = {
+            NOT = {
+                capital_scope = { continent = ROOT }
+            }
+        }
+	}
+
+	war_goal = take_capital_justified
+}
+
+cb_purification_of_the_wasteland = {
+	valid_for_subject = no
+
+	prerequisites = {
+		has_country_flag = enclave_purification_of_the_wasteland_cb
+        is_neighbor_of = FROM
+	}
+
+	war_goal = take_capital_barbarous
+}

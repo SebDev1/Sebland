@@ -1,0 +1,420 @@
+graphical_culture = wastelander_gfx
+
+color = { 240 240 240 }
+
+monarch_names = {
+    "Henry" = 20
+	"Edward" = 20
+	"Charles" = 20
+	"James" = 20
+	"William" = 20
+	"Richard" = 20
+	"Philip" = 20
+	"Henry" = 20
+	"Frederick" = 20
+	"Arthur" = 20
+	"Charles" = 20
+	"James" = 20
+	"Edgar" = 20
+	"Thomas" = 20
+	"Edmund" = 20
+	"George" = 20
+	"John" = 20
+	"Jacob" = 20
+	"Humphrey" = 20
+	"Robert" = 20
+	"Stephen" = 20
+	"Adam" = 20
+	"Alexander" = 20
+	"Albert" = 20
+	"Alfred" = 20
+	"Ambrose" = 20
+	"Andrew" = 20
+	"Anthony" = 20
+	"Archibald" = 20
+	"Benjamin" = 20
+	"Christopher" = 20
+	"Daniel" = 20
+	"David" = 20
+	"Ernest" = 20
+	"Francis" = 20
+	"Geoffrey" = 20
+	"Guy" = 20
+	"Horatio" = 20
+	"Hugh" = 20
+	"Isaac" = 20
+	"Jeremy" = 20
+	"Jonathan" = 20
+	"Joseph" = 20
+	"Lawrence" = 20
+	"Matthew" = 20
+	"Nehemiah" = 20
+	"Oliver" = 20
+	"Samuel" = 20
+	"Sydney" = 20
+	"Adam" = 20
+	"Alan" = 20
+	"Albert" = 20
+	"Alexander" = 20
+	"Alfred" = 20
+	"Andrew" = 20
+	"Anselm" = 20
+	"Arnold" = 20
+	"Arthur" = 20
+	"Aubrey" = 20
+	"Christopher" = 20
+	"David" = 20
+	"Edmund" = 20
+	"Edward" = 20
+	"Eric" = 20
+	"Erik" = 20
+	"Eustace" = 20
+	"Fulk" = 20
+	"Folke" = 20
+	"Geoffrey" = 20
+	"George" = 20
+	"Gerald" = 20
+	"Gilbert" = 20
+	"Godfrey" = 20
+	"Gregory" = 20
+	"Guy" = 20
+	"Henry" = 20
+	"Hugh" = 20
+	"Humphrey" = 20
+	"Jocelyn" = 20
+	"John" = 20
+	"Jordan" = 20
+	"Laurence" = 20
+	"Lionel" = 20
+	"Mark" = 20
+	"Marcus" = 20
+	"Martin" = 20
+	"Matthew" = 20
+	"Maurice" = 20
+	"Michael" = 20
+	"Nicholas" = 20
+	"Paul" = 20
+	"Peter" = 20
+	"Philip" = 20
+	"Ralph" = 20
+	"Randolph" = 20
+	"Reginald" = 20
+	"Richard" = 20
+	"Robert" = 20
+	"Roger" = 20
+	"Simon" = 20
+	"Stephen" = 20
+	"Theobald" = 20
+	"Thomas" = 20
+	"Waleran" = 20
+	"Walter" = 20
+	"William" = 20
+	"Jacob" = 20
+	"Ambrose" = 20
+	"Anthony" = 20
+	"Archibald" = 20
+	"Benjamin" = 20
+	"Daniel" = 20
+	"Ernest" = 20
+	"Francis" = 20
+	"Horatio" = 20
+	"Isaac" = 20
+	"Jeremy" = 20
+	"Jonathan" = 20
+	"Joseph" = 20
+	"Lawrence" = 20
+	"Nehemiah" = 20
+	"Oliver" = 20
+	"Samuel" = 20
+	"Sydney" = 20
+    
+	"Jane" = -20
+	"Adela" = -20
+	"Adelaide" = -20
+	"Alice" = -20
+	"Amice" = -20
+	"Anne" = -20
+	"Anna" = -20
+	"Aveline" = -20
+	"Avelina" = -20
+	"Beatrice" = -20
+	"Blanche" = -20
+	"Catherine" = -20
+	"Cecilia" = -20
+	"Constance" = -20
+	"Edith" = -20
+	"Ela" = -20
+	"Eleanor" = -20
+	"Elizabeth" = -20
+	"Emma" = -20
+	"Hawise" = -20
+	"Isabel" = -20
+	"Isabella" = -20
+	"Elisabeth" = -20
+	"Joan" = -20
+	"Joanna" = -20
+	"Juliana" = -20
+	"Mahaut" = -20
+	"Margaret" = -20
+	"Mary" = -20
+	"Maria" = -20
+	"Maud" = -20
+	"Matilda" = -20
+	"Philippa" = -20
+	"Sybilla" = -20
+	"Sibylla" = -20
+}
+
+leader_names = {
+	"Smith" "Johnson" "Williams" "Brown" "Jones" "Miller" "Davis" "Garcia" "Rodriguez" "Wilson" "Martinez" "Anderson" "Taylor" "Thomas" "Hernandez" "Moore" "Martin" "Jackson" "Thompson" "White" "Lopez" "Lee" "Gonzalez" "Harris" "Clark" "Lewis" "Robinson" "Walker" "Perez" "Hall" "Young" "Allen" "Sanchez" "Wright" "King" "Scott" "Green" "Baker" "Adams" "Nelson" "Hill" "Ramirez" "Campbell" "Mitchell" "Roberts" "Carter" "Phillips" "Evans" "Turner" "Torres" "Parker" "Collins" "Edwards" "Stewart" "Flores" "Morris" "Nguyen" "Murphy" "Rivera" "Cook" "Rogers" "Morgan" "Peterson" "Cooper" "Reed" "Bailey" "Bell" "Gomez" "Kelly" "Howard" "Ward" "Cox" "Diaz" "Richardson" "Wood" "Watson" "Brooks" "Bennett" "Gray" "James" "Reyes" "Cruz" "Hughes" "Price" "Myers" "Long" "Foster" "Sanders" "Ross" "Morales" "Powell" "Sullivan" "Russell" "Ortiz" "Genkins" "Gutierrez" "Perry" "Butler" "Barnes" "Fisher" "Tenpenny"
+}
+
+ship_names = {
+	"USS Ebon Atoll"
+	"USS Interference"
+	"USS Ozymandias"
+	"USS Abraham Lincoln"
+	"USS Alabama"
+	"USS Alaska"
+	"USS Albany"
+	"USS Albuquerque"
+	"USS Alexandria"
+	"USS America"
+	"USS Anchorage"
+	"USS Annapolis"
+	"USS Antietam"
+	"USS Anzio"
+	"USS Ardent"
+	"USS Arleigh Burke"
+	"USS Arlington"
+	"USS Asheville"
+	"USS Ashland"
+	"USS Bainbridge"
+	"USS Barry"
+	"USS Bataan"
+	"USS Benfold"
+	"USS Blue Ridge"
+	"USS Boise"
+	"USS Bonhomme Richard"
+	"USS Boxer"
+	"USS Bremerton"
+	"USS Buffalo"
+	"USS Bulkeley"
+	"USS Bunker Hill"
+	"USS California"
+	"USS Cape St. George"
+	"USS Carl Vinson"
+	"USS Carney"
+	"USS Carter Hall"
+	"USS Chafee"
+	"USS Champion"
+	"USS Chancellorsville"
+	"USS Charlotte"
+	"USS Cheyenne"
+	"USS Chicago"
+	"USS Chief"
+	"USS Chinook"
+	"USS Chosin"
+	"USS Chung-Hoon"
+	"USS City of Corpus Christi"
+	"USS Cole"
+	"USS Columbia"
+	"USS Columbus"
+	"USS Comstock"
+	"USS Connecticut"
+	"USS Constitution"
+	"USS Coronado"
+	"USS Cowpens"
+	"USS Curtis Wilbur"
+	"USS Dallas"
+	"USS Decatur"
+	"USS Devastator"
+	"USS Dewey"
+	"USS Dextrous"
+	"USS Donald Cook"
+	"USS Dwight D. Eisenhower"
+	"USS Emory S. Land"
+	"USS Essex"
+	"USS Farragut"
+	"USS Firebolt"
+	"USS Fitzgerald"
+	"USS Florida"
+	"USS Forrest Sherman"
+	"USS Fort McHenry"
+	"USS Fort Worth"
+	"USS Frank Cable"
+	"USS Freedom"
+	"USS Gary"
+	"USS George Washington"
+	"USS George H.W. Bush"
+	"USS Georgia"
+	"USS Germantown"
+	"USS Gettysburg"
+	"USS Gladiator"
+	"USS Gonzalez"
+	"USS Gravely"
+	"USS Green Bay"
+	"USS Greeneville"
+	"USS Gridley"
+	"USS Gunston Hall"
+	"USS Halsey"
+	"USS Hampton"
+	"USS Harpers Ferry"
+	"USS Harry S. Truman"
+	"USS Hartford"
+	"USS Hawaii"
+	"USS Helena"
+	"USS Henry M. Jackson"
+	"USS Higgins"
+	"USS Hopper"
+	"USS Houston"
+	"USS Howard"
+	"USS Hue City"
+	"USS Hurricane"
+	"USS Independence"
+	"USS Iwo Jima"
+	"USS Jacksonville"
+	"USS James E. Williams"
+	"USS Jason Dunham"
+	"USS Jefferson City"
+	"USS Jimmy Carter"
+	"USS John C. Stennis"
+	"USS John Paul Jones"
+	"USS John S. McCain"
+	"USS Kauffman"
+	"USS Kearsarge"
+	"USS Kentucky"
+	"USS Key West"
+	"USS Kidd"
+	"USS Laboon"
+	"USS Lake Champlain"
+	"USS Lake Erie"
+	"USS Lassen"
+	"USS Leyte Gulf"
+	"USS Louisiana"
+	"USS Louisville"
+	"USS Mahan"
+	"USS Maine"
+	"USS Makin Island"
+	"USS Maryland"
+	"USS Mason"
+	"USS McCampbell"
+	"USS McFaul"
+	"USS Mesa Verde"
+	"USS Michael Murphy"
+	"USS Michigan"
+	"USS Milius"
+	"USS Minnesota"
+	"USS Mississippi"
+	"USS Missouri"
+	"USS Mitscher"
+	"USS Mobile Bay"
+	"USS Momsen"
+	"USS Monsoon"
+	"USS Monterey"
+	"USS Montpelier"
+	"USS Mount Whitney"
+	"USS Mustin"
+	"USS Nebraska"
+	"USS Nevada"
+	"USS New Hampshire"
+	"USS New Mexico"
+	"USS New Orleans"
+	"USS New York"
+	"USS Newport News"
+	"USS Nimitz"
+	"USS Nitze"
+	"USS Normandy"
+	"USS North Carolina"
+	"USS North Dakota"
+	"USS O'Kane"
+	"USS Oak Hill"
+	"USS Ohio"
+	"USS Oklahoma City"
+	"USS Olympia"
+	"USS Oscar Austin"
+	"USS Pasadena"
+	"USS Patriot"
+	"USS Paul Hamilton"
+	"USS Pearl Harbor"
+	"USS Peleliu"
+	"USS Pennsylvania"
+	"USS Philippine Sea"
+	"USS Pinckney"
+	"USS Pioneer"
+	"USS Pittsburgh"
+	"USS Ponce"
+	"USS Port Royal"
+	"USS Porter"
+	"USS Preble"
+	"USS Princeton"
+	"USS Providence"
+	"USS Pueblo"
+	"USS Ramage"
+	"USS Rhode Island"
+	"USS Ronald Reagan"
+	"USS Roosevelt"
+	"USS Ross"
+	"USS Rushmore"
+	"USS Russell"
+	"USS Sampson"
+	"USS Samuel B. Roberts"
+	"USS San Antonio"
+	"USS San Diego"
+	"USS San Francisco"
+	"USS San Jacinto"
+	"USS San Juan"
+	"USS Santa Fe"
+	"USS Scout"
+	"USS Scranton"
+	"USS Seawolf"
+	"USS Sentry"
+	"USS Shamal"
+	"USS Shiloh"
+	"USS Shoup"
+	"USS Simpson"
+	"USS Sirocco"
+	"USS Somerset"
+	"USS Springfield"
+	"USS Spruance"
+	"USS Squall"
+	"USS Sterett"
+	"USS Stethem"
+	"USS Stockdale"
+	"USS Stout"
+	"USS Taylor"
+	"USS Tempest"
+	"USS Tennessee"
+	"USS Texas"
+	"USS The Sullivans"
+	"USS Theodore Roosevelt"
+	"USS Thunderbolt"
+	"USS Toledo"
+	"USS Topeka"
+	"USS Tornado"
+	"USS Tortuga"
+	"USS Truxtun"
+	"USS Tucson"
+	"USS Typhoon"
+	"USS Vella Gulf"
+	"USS Vicksburg"
+	"USS Virginia"
+	"USS Warrior"
+	"USS Wasp"
+	"USS Wayne E. Meyer"
+	"USS West Virginia"
+	"USS Whidbey Island"
+	"USS Whirlwind"
+	"USS William P. Lawrence"
+	"USS Winston S. Churchill"
+	"USS Wyoming"
+	"USS Zephyr"
+}
+
+army_names = {
+	"Army of $PROVINCE$" 
+}
+
+fleet_names = {
+	"Fleet of $PROVINCE$"
+}

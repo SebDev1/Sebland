@@ -1,0 +1,35 @@
+
+owner = BRW
+controller = BRW
+add_core = BRW
+
+is_city = yes
+base_tax = 3
+base_production = 6
+base_manpower = 7
+
+culture = brahmin_wood
+religion = fetishism
+
+trade_goods = munitions
+hre = no
+center_of_trade = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+# set_variable = { which = province_id value = 964  }
+
+owner = WND
+controller = WND
+add_core = WND
+is_city = yes
+
+base_tax = 2
+base_production = 2
+base_manpower = 2
+
+culture = windmore
+religion = mormon
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

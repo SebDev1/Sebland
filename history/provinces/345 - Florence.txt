@@ -1,0 +1,21 @@
+
+owner = NFF
+controller = NFF
+add_core = NFF
+is_city = yes
+
+base_tax = 1
+base_production = 1
+base_manpower = 1
+
+culture = frankfurt
+religion = jewish
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+
+
+
+
+

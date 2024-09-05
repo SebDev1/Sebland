@@ -1,0 +1,84 @@
+country_decisions = {
+    activate_securitron_bunker = {
+        major = yes
+		potential = {
+            OR = {
+                has_country_flag = conquered_new_vegas
+                tag = NVG
+            }
+            NOT = { has_country_modifier = securitron_bunker }
+		}
+		allow =  {
+            owns_core_province = 258
+            years_of_income = 2
+		}
+	  	effect = {
+            custom_tooltip = UNLOCK_MKII_SECURITRONS
+            
+            add_years_of_income = -2
+            
+            remove_country_modifier = limited_securitrons
+            
+			add_country_modifier = {
+                name = securitron_bunker
+                duration = -1
+            }
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+    
+    salvage_securitron_parts = {
+		potential = {
+            tag = NVG
+            has_country_modifier = limited_securitrons
+		}
+		allow =  {
+            NOT = { manpower_percentage = 1.0 }
+            mil_power = 100
+		}
+	  	effect = {
+            add_mil_power = -100
+            
+            add_manpower = 5
+		}
+		ai_will_do = {
+			factor = 1
+            
+            modifier = {
+                factor = 0
+                
+                manpower_percentage = 0.75
+            }
+            
+            modifier = {
+                factor = 0
+                
+                NOT = { mil_power = 300 }
+            }
+		}
+	}
+    
+    # construct_assault_securitrons = {
+		# potential = {
+            # OR = {
+                # tag = NVG
+                # has_country_flag = conquered_new_vegas
+            # }
+		# }
+		# allow =  {
+            # has_country_modifier = securitron_bunker
+            # years_of_income = 1
+            # NOT = { num_of_rajput = 20 }
+		# }
+	  	# effect = {
+            # add_years_of_income = -1
+            
+			# capital_scope = { rajput_infantry = ROOT }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
+}

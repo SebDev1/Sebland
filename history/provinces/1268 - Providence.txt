@@ -1,0 +1,52 @@
+# set_variable = { which = province_id value = 3031  }
+
+owner = KIL
+controller = KIL
+add_core = KIL
+is_city = yes
+
+base_tax = 2
+base_production = 2
+base_manpower = 2
+
+culture = killred
+religion = robotics
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

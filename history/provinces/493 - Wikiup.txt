@@ -1,0 +1,19 @@
+# set_variable = { which = province_id value = 493  }
+
+owner = FRE
+controller = FRE
+add_core = FRE
+is_city = yes
+
+is_city = yes
+base_tax = 1
+base_production = 1
+base_manpower = 2
+
+culture = fredonian
+religion = animism
+
+trade_goods = food
+hre = no
+center_of_trade = 1
+

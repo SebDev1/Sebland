@@ -1,0 +1,17 @@
+
+owner = LOZ
+controller = LOZ
+add_core = LOZ
+is_city = yes
+
+base_tax = 1
+base_production = 2
+base_manpower = 2
+
+culture = los_zetas
+religion = survivalist
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+

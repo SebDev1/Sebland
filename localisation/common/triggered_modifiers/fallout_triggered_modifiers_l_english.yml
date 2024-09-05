@@ -1,0 +1,52 @@
+﻿l_english:
+ #-------------------------------
+ # Courier
+ #-------------------------------
+ courier_disruption: "Courier Disruption"
+ desc_courier_disruption: "The courier has taken the Platinum Chip for himself."
+ 
+ #-------------------------------
+ # Super Mutant
+ #-------------------------------
+ fev_vats: "FEV Vats"
+ desc_fev_vats: "Natural expansion for Super Mutants is impossible due to the sterilization effects of FEV. Continued Expansion is reliant on forcibly conditioning non-mutants in FEV."
+ 
+ #-------------------------------
+ # Caesar's Legion
+ #-------------------------------
+ the_howitizer: "The Howitzer"
+ desc_the_howitizer: "Our troops are bombarded daily by the Legion's howitzer, sapping their will to fight."
+ 
+ revolt_of_the_heathens: "Undesirables Resisting Our Rule!"
+ desc_revolt_of_the_heathens: "Our nation currently lacks the Legitimacy to enforce a statewide Martian Indoctrination Program. This means that we cannot seize and brainw- ahem, enlighten the children of our conquered ''peoples'' in the ways of the Cult of Mars. This will greatly hamper our ability to keep order in provinces we have yet to pacify."
+ 
+ #-------------------------------
+ # Locations
+ #-------------------------------
+ vertibird_fleet_chicago: "Vertibird Fleet - Chicago"
+ desc_vertibird_fleet_chicago: "Home to the remnants of a vertibird fleet."
+ 
+ controls_washington: "Washington"
+ desc_controls_washington: "The historical capital of the United States."
+ 
+ #-------------------------------
+ # Ages
+ #-------------------------------
+ chinese_invasion_force: "Chinese Invasion Force"
+ desc_chinese_invasion_force: "These are the benefits provided to the invasion force by the motherland."
+ 
+ zetan_invasion_force: "Zetan Invasion Force"
+ desc_zetan_invasion_force: "These are the benefits provided to the invasion force by the motherland."
+ 
+ invasion_spread_china: "Chinese Occupation"
+ desc_invasion_spread_china: ""
+ 
+ invasion_spread_zetan: "Zetan Occupation"
+ desc_invasion_spread_zetan: ""
+ 
+ 
+ #-------------------------------
+ # Colonisation
+ #-------------------------------
+ colonial_restrictions: "Colonial Restrictions"
+ desc_colonial_restrictions: "As a small nation, we lack the necessary infrastructure to colonise far beyond our borders."

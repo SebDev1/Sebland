@@ -1,0 +1,27 @@
+# set_variable = { which = province_id value = 401  }
+
+owner = RAD
+controller = RAD
+add_core = RAD
+is_city = yes
+
+base_tax = 7
+base_production = 4
+base_manpower = 4
+
+culture = dwarf
+religion = survivalist
+
+hre = no
+center_of_trade = 1
+trade_goods = radioactive_waste
+
+
+
+
+
+
+
+
+
+

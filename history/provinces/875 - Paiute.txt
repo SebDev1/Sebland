@@ -1,0 +1,72 @@
+# set_variable = { which = province_id value = 875  }
+
+owner = TWM
+controller = TWM
+add_core = TWM
+is_city = yes
+
+base_tax = 1
+base_production = 1
+base_manpower = 1
+
+culture = twin_mother
+religion = fetishism
+
+hre = no
+center_of_trade = 1
+trade_goods = food
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

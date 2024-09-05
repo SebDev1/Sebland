@@ -1,0 +1,18 @@
+# set_variable = { which = province_id value = 3127  }
+
+owner = GRK
+controller = GRK
+add_core = GRK
+is_city = yes
+
+base_tax = 7
+base_production = 7
+base_manpower = 5
+
+culture = khan
+religion = survivalist
+
+trade_goods = unknown
+
+hre = no
+center_of_trade = 1

@@ -1,0 +1,20 @@
+# set_variable = { which = province_id value = 90  }
+
+owner = BBN
+controller = BBN
+add_core = BBN
+is_city = yes
+
+base_tax = 2
+base_production = 1
+base_manpower = 2
+
+culture = blackbone 
+religion = survivalist
+
+trade_goods = unknown
+
+hre = no # hre = yes
+center_of_trade = 1
+
+

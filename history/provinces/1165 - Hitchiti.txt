@@ -1,0 +1,27 @@
+# set_variable = { which = province_id value = 2537  }
+
+owner = LTC
+controller = LTC
+add_core = LTC
+is_city = yes
+
+base_tax = 2
+base_production = 2
+base_manpower = 2
+
+culture = lost_caste
+religion = animism
+
+trade_goods = meat
+hre = no
+center_of_trade = 1
+
+capital = "Hitchiti"
+
+
+
+
+
+
+
+

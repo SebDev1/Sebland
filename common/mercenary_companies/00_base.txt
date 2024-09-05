@@ -1,0 +1,126 @@
+#--------------------------------
+# Generic
+#--------------------------------
+fm_merc_small_infantry = {
+    regiments_per_development = 0.01
+    cavalry_weight = 0.0
+    artillery_weight = 0.0
+}
+fm_merc_small_cavalry = {
+    regiments_per_development = 0.01
+    cavalry_weight = 1.0
+    artillery_weight = 0.0
+}
+fm_merc_small_artillery = {
+    regiments_per_development = 0.01
+    cavalry_weight = 0.0
+    artillery_weight = 1.0
+}
+
+fm_merc_medium_infantry = {
+    regiments_per_development = 0.023
+    cavalry_weight = 0.0
+    artillery_weight = 0.0
+}
+fm_merc_medium_cavalry = {
+    regiments_per_development = 0.023
+    cavalry_weight = 1.0
+    artillery_weight = 0.0
+}
+fm_merc_medium_artillery = {
+    regiments_per_development = 0.023
+    cavalry_weight = 0.0
+    artillery_weight = 1.0
+}
+
+fm_merc_big_infantry = {
+    regiments_per_development = 0.035
+    cavalry_weight = 0.0
+    artillery_weight = 0.0
+}
+fm_merc_big_cavalry = {
+    regiments_per_development = 0.035
+    cavalry_weight = 1.0
+    artillery_weight = 0.0
+}
+fm_merc_big_artillery = {
+    regiments_per_development = 0.035
+    cavalry_weight = 0.0
+    artillery_weight = 1.0
+}
+
+#--------------------------------
+# Special
+#--------------------------------
+fm_merc_veteran_infantry = {
+    regiments_per_development = 0.023
+    cavalry_weight = 0.0
+    artillery_weight = 0.0
+    cost_modifier = 1.5
+    trigger = {
+		has_idea = fallout_mercenary_army_ideas_5
+	}
+	modifier = {
+		discipline = 0.1
+    }
+}
+fm_merc_veteran_cavalry = {
+    regiments_per_development = 0.023
+    cavalry_weight = 1.0
+    artillery_weight = 0.0
+    cost_modifier = 1.5
+    trigger = {
+		has_idea = fallout_mercenary_army_ideas_5
+	}
+	modifier = {
+		discipline = 0.1
+    }
+}
+fm_merc_veteran_artillery = {
+    regiments_per_development = 0.023
+    cavalry_weight = 0.0
+    artillery_weight = 1.0
+    cost_modifier = 1.5
+    trigger = {
+		has_idea = fallout_mercenary_army_ideas_5
+	}
+	modifier = {
+		discipline = 0.1
+    }
+}
+fm_merc_hardened_infantry = {
+    regiments_per_development = 0.023
+    cavalry_weight = 0.0
+    artillery_weight = 0.0
+    cost_modifier = 1.2
+    trigger = {
+		has_idea = fallout_mercenary_army_ideas_2
+	}
+	modifier = {
+		land_morale = 0.1
+    }
+}
+fm_merc_hardened_cavalry = {
+    regiments_per_development = 0.023
+    cavalry_weight = 1.0
+    artillery_weight = 0.0
+    cost_modifier = 1.2
+    trigger = {
+		has_idea = fallout_mercenary_army_ideas_2
+	}
+	modifier = {
+		land_morale = 0.1
+    }
+}
+fm_merc_hardened_artillery = {
+    regiments_per_development = 0.023
+    cavalry_weight = 0.0
+    artillery_weight = 1.0
+    cost_modifier = 1.2
+    trigger = {
+		has_idea = fallout_mercenary_army_ideas_2
+	}
+	modifier = {
+		land_morale = 0.1
+    }
+}

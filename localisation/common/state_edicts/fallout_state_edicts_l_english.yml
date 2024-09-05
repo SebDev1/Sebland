@@ -1,0 +1,11 @@
+﻿l_english:
+ #-----------------------------------
+ # Edicts
+ #-----------------------------------
+ edict_advancement_effort: "Advancement Effort"
+ edict_religious_unity: "Dominate Local Belief"
+ edict_protect_trade: "Protect Trsde"
+ edict_promote_military_recruitment: "Military Recruitment"
+ edict_encourage_development: "Encourage Development"
+ edict_defensive_edict: "Defensive Effort"
+ edict_centralization_effort: "Centralization Effort"

@@ -1,0 +1,17 @@
+
+owner = GD2
+controller = GD2
+add_core = GD2
+is_city = yes
+
+base_tax = 4
+base_production = 7
+base_manpower = 5
+
+culture = marked_men 
+religion = survivalist 
+
+trade_goods = unknown
+
+hre = no
+center_of_trade = 1

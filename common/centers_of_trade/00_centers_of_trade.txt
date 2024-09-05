@@ -1,0 +1,75 @@
+#--------------------------
+# Coast
+#--------------------------
+settlement_coastal = {
+    level = 1
+    type = coastal
+}
+town_coastal = {
+    level = 2
+    cost = 2000
+    type = coastal
+    
+    province_modifiers = {
+        province_trade_power_value = 3
+        local_development_cost = -0.05
+        local_institution_spread = 0.1
+    }
+}
+metropolis_coastal = {
+    level = 3
+    cost = 5000
+    type = coastal
+    
+    province_modifiers = {
+        province_trade_power_value = 5
+        local_institution_spread = 0.3
+    }
+    state_modifiers = {
+        local_development_cost = -0.1
+        local_development_cost = -0.1
+        allowed_num_of_buildings = 1
+    }
+    global_modifiers = {
+        all_power_cost = -0.02
+    }
+}
+
+#--------------------------
+# Inland
+#--------------------------
+settlement_inland = {
+    level = 1
+    type = inland
+}
+
+town_inland = {
+    level = 2
+    cost = 2000
+    type = inland
+    
+    province_modifiers = {
+        province_trade_power_value = 3
+        local_development_cost = -0.05
+        local_institution_spread = 0.1
+    }
+}
+
+metropolis_inland = {
+    level = 3
+    cost = 5000
+    type = inland
+    
+    province_modifiers = {
+        province_trade_power_value = 5
+        local_institution_spread = 0.3
+    }
+    state_modifiers = {
+        local_development_cost = -0.1
+        local_development_cost = -0.1
+        allowed_num_of_buildings = 1
+    }
+    global_modifiers = {
+        all_power_cost = -0.02
+    }
+}

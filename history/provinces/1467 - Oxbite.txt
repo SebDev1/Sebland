@@ -1,0 +1,66 @@
+
+owner = CIP
+controller = CIP
+add_core = CIP
+is_city = yes
+
+base_tax = 2
+base_production = 2
+base_manpower = 2
+
+culture = cipher
+religion = secular
+
+hre = no
+center_of_trade = 1
+trade_goods = meat
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

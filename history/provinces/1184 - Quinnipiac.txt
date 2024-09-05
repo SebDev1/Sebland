@@ -1,0 +1,16 @@
+
+owner = NYC
+controller = NYC
+add_core = NYC
+is_city = yes
+
+base_tax = 2
+base_production = 1
+base_manpower = 2
+
+culture = new_yorker
+religion = secular
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown

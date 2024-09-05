@@ -1,0 +1,28 @@
+country_decisions = {
+	check_caravan_inventory = {
+        color = { 98 101 105 }
+        
+		potential = {
+            is_humanlike_administration = yes
+            NOT = { has_country_flag = in_buy_menu }
+		}
+		allow = {
+            NOT = { has_country_modifier = caravan_cooldown }
+            
+            capital_scope = {
+                any_province = {
+                    region = PREV
+                    has_caravan_marker = yes
+                }
+            }
+		}
+		
+		effect = {
+			country_event = { id = fallout_caravan_shop.1 }
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

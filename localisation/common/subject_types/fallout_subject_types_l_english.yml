@@ -1,0 +1,11 @@
+﻿l_english:
+ # hegemonic Vassal
+ hegemonic_vassal: "Hegemonic Vassal"
+ hegemonic_vassal_title: "Hegemonic Vassal"
+ hegemonic_vassal_plural: "Hegemonic Vassals"
+ hegemonic_vassal_title_plural: "Hegemonic Vassals"
+ hegemonic_vassal_is_our: "Hegemonic Vassal"
+ hegemonic_vassal_long_desc: "A vassal under our hegemony."
+ 
+ hegemonic_subject: "Hegemonic Subject"
+ hegemonic_bonus: "Hegemonic Overlord"

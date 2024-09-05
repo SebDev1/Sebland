@@ -1,0 +1,113 @@
+namespace = discovery
+
+country_event = {
+	id = discovery.1
+	title = discovery.1.title
+	desc = discovery.1.desc
+    picture = GOODS_eventPicture
+	
+    is_triggered_only = yes
+    hidden = yes
+    
+    immediate = {
+        hidden_effect = {
+            if = { limit = { has_global_flag = enable_event_logging } log = "[Root.GetName] - discovery.1" }
+        }
+    }
+    
+	option = {
+		name = discovery.1.option.a
+    
+        # Show all provinces
+        every_province = {
+            discover_country = ROOT
+            
+            sea_zone = {
+                discover_country = ROOT
+            }
+        }
+        # Show close seazones
+        west_seaboard_region = {
+            discover_country = ROOT
+        }
+        gulf_of_mexico_region = {
+            discover_country = ROOT
+        }
+        caribbean_seaboard_region = {
+            discover_country = ROOT
+        }
+        east_seaboard_region = {
+            discover_country = ROOT
+        }
+        
+        
+        # Show only some of Canada
+        quebec_region = {
+            undiscover_country = ROOT
+        }
+        north_bay_area = {
+            undiscover_country = ROOT
+        }
+        ogoki_area = {
+            undiscover_country = ROOT
+        }
+        winisk_area = {
+            undiscover_country = ROOT
+        }
+        opasquia_area = {
+            undiscover_country = ROOT
+        }
+        pikangikum_area = {
+            undiscover_country = ROOT
+        }
+        manitoba_region = {
+            undiscover_country = ROOT
+        }
+        saskatchewan_region = {
+            undiscover_country = ROOT
+        }
+        alberta_region = {
+            undiscover_country = ROOT
+        }
+        british_columbia_region = {
+            undiscover_country = ROOT
+        }
+        228 = {
+            undiscover_country = ROOT
+        }
+        1745 = {
+            undiscover_country = ROOT
+        }
+        
+        # Show these lakes
+        1103 = {
+            discover_country = ROOT
+        }
+        1102 = {
+            discover_country = ROOT
+        }
+        1101 = {
+            discover_country = ROOT
+        }
+        572 = {
+            discover_country = ROOT
+        }
+        1905 = {
+            discover_country = ROOT
+        }
+        12 = {
+            discover_country = ROOT
+        }
+        1110 = {
+            discover_country = ROOT
+        }
+        1109 = {
+            discover_country = ROOT
+        }
+        1104 = {
+            discover_country = ROOT
+        }
+        
+    }
+}
+

@@ -1,0 +1,35 @@
+# set_variable = { which = province_id value = 312  }
+
+owner = LUB
+controller = LUB
+add_core = LUB
+
+is_city = yes
+base_tax = 6
+base_production = 6
+base_manpower = 3
+
+culture = west_lubbock
+religion = secular
+
+trade_goods = clean_water
+hre = no
+center_of_trade = 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

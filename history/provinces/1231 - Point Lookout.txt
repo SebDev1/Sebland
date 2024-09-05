@@ -1,0 +1,20 @@
+
+owner = PLO
+controller = PLO
+add_core = PLO
+is_city = yes
+
+base_tax = 5
+base_production = 7
+base_manpower = 5
+
+culture = swampfolk
+religion = fetishism
+
+trade_goods = unknown
+hre = no
+center_of_trade = 1
+
+
+
+

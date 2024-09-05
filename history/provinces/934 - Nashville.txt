@@ -1,0 +1,32 @@
+
+owner = TNS
+controller = TNS
+add_core = TNS
+is_city = yes
+
+base_tax = 4
+base_production = 4
+base_manpower = 5
+
+culture = nasher
+religion = survivalist
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+
+2000.1.1 = {
+	add_permanent_province_modifier = {
+		name = trade_post
+		duration = -1 
+	}
+}
+
+
+
+
+
+
+
+
+

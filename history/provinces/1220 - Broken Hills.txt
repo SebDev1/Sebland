@@ -1,0 +1,21 @@
+# set_variable = { which = province_id value = 2975  }
+
+owner = NRN
+controller = NRN
+add_core = NRN
+add_core = HAT
+
+is_city = yes
+base_tax = 2
+base_production = 1
+base_manpower = 1
+
+culture = super_mutant 
+religion = secular
+
+trade_goods = drugs
+hre = no # hre = yes
+center_of_trade = 1
+
+
+

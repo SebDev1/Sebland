@@ -1,0 +1,90 @@
+tactical_doctrine_grand_battle_plan = {
+	can_select = {
+		mil_power = 250
+        is_at_war = no
+	}
+	
+	country_modifier = {
+        army_tradition_from_battle = 0.33
+        global_regiment_cost = -0.1
+        global_regiment_recruit_speed = -0.1
+	}
+    
+    effect = {
+        add_mil_power = -250
+    }
+	
+	button_gfx = 1
+}
+tactical_doctrine_mobile_warfare = {
+	can_select = {
+		mil_power = 250
+        is_at_war = no
+	}
+	
+	country_modifier = {
+        movement_speed = 0.1
+        reinforce_speed = 0.1
+        reserves_organisation = 0.1
+	}
+    
+    effect = {
+        add_mil_power = -250
+    }
+	
+	button_gfx = 4
+}
+tactical_doctrine_superior_firepower = {
+	can_select = {
+		mil_power = 250
+        is_at_war = no
+	}
+	
+	country_modifier = {
+        fire_damage = 0.1
+        backrow_artillery_damage = 0.1
+        leader_siege = 1.0
+	}
+    
+    effect = {
+        add_mil_power = -250
+    }
+	
+	button_gfx = 3
+}
+tactical_doctrine_mass_assault = {
+	can_select = {
+		mil_power = 250
+        is_at_war = no
+	}
+	
+	country_modifier = {
+        war_exhaustion = -0.03
+        land_maintenance_modifier = -0.1
+        manpower_recovery_speed = 0.1
+	}
+    
+    effect = {
+        add_mil_power = -250
+    }
+	
+	button_gfx = 2
+}
+tactical_doctrine_defence_in_depth = {
+	can_select = {
+		mil_power = 250
+        is_at_war = no
+	}
+	
+	country_modifier = {
+        defensiveness = 0.1
+        own_territory_dice_roll_bonus = 1.0
+        hostile_attrition = 1.0
+	}
+    
+    effect = {
+        add_mil_power = -250
+    }
+	
+	button_gfx = 5
+}

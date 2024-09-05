@@ -1,0 +1,173 @@
+spriteTypes = {	
+	#-------------------------
+    # Ages
+    #-------------------------
+    spriteType = {
+		name = "GFX_great_war_aftermath"
+		texturefile = "gfx/interface/ages/great_war_aftermath.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_chinese_incursion"
+		texturefile = "gfx/interface/ages/chinese_incursion.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_zetan_assault"
+		texturefile = "gfx/interface/ages/zetan_assault.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_icon_ages"
+		texturefile = "gfx/interface/ages/icon_ages.dds"
+		noOfFrames = 3
+	}	
+    spriteType = {
+		name = "GFX_icon_ages_grey"
+		texturefile = "gfx/interface/ages/icon_ages_grey.dds"
+		noOfFrames = 3
+	}	
+    spriteType = {
+		name = "GFX_icon_age_s"
+		texturefile = "gfx/interface/ages/icon_age_s.dds"
+		noOfFrames = 3
+	}
+    
+    #-------------------------
+    # Abilities
+    #-------------------------
+    spriteType = {
+		name = "GFX_gwa_ability_1"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_gwa_ability_2"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_gwa_ability_3"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_gwa_ability_4"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_gwa_ability_5"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_gwa_ability_6"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_gwa_ability_7"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_gwa_ability_8"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_gwa_ability_9"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_gwa_ability_10"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_gwa_ability_11"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_chi_ability_1"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_chi_ability_2"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_chi_ability_3"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_chi_ability_4"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_chi_ability_5"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_chi_ability_6"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_chi_ability_7"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_chi_ability_8"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_chi_ability_9"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_chi_ability_10"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_chi_ability_11"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    
+    spriteType = {
+		name = "GFX_zet_ability_1"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_zet_ability_2"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_zet_ability_3"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_zet_ability_4"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_zet_ability_5"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_zet_ability_6"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_zet_ability_7"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_zet_ability_8"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_zet_ability_9"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_zet_ability_10"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+    spriteType = {
+		name = "GFX_zet_ability_11"
+		texturefile = "gfx//interface//ages//icon_vault.dds"
+	}
+}

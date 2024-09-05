@@ -1,0 +1,469 @@
+spriteTypes = {	
+    spriteType = {
+		name = "government_reform_union"
+		texturefile = "gfx//interface//government_reform_icons//union.dds"
+	}
+    
+    spriteType = {
+		name = "government_reform_artillery"
+		texturefile = "gfx//interface//government_reform_icons//artillery.dds"
+	}
+    spriteType = {
+		name = "government_reform_barbed_wall"
+		texturefile = "gfx//interface//government_reform_icons//barbed_wall.dds"
+	}
+    spriteType = {
+		name = "government_reform_bos_engineer"
+		texturefile = "gfx//interface//government_reform_icons//bos_engineer.dds"
+	}
+    spriteType = {
+		name = "government_reform_bos_talking"
+		texturefile = "gfx//interface//government_reform_icons//bos_talking.dds"
+	}
+    spriteType = {
+		name = "government_reform_brahmin"
+		texturefile = "gfx//interface//government_reform_icons//brahmin.dds"
+	}
+    spriteType = {
+		name = "government_reform_bunker"
+		texturefile = "gfx//interface//government_reform_icons//bunker.dds"
+	}
+    spriteType = {
+		name = "government_reform_burned_man"
+		texturefile = "gfx//interface//government_reform_icons//burned_man.dds"
+	}
+    spriteType = {
+		name = "government_reform_charismatic_person"
+		texturefile = "gfx//interface//government_reform_icons//charismatic_person.dds"
+	}
+    spriteType = {
+		name = "government_reform_classroom"
+		texturefile = "gfx//interface//government_reform_icons//classroom.dds"
+	}
+    spriteType = {
+		name = "government_reform_comms"
+		texturefile = "gfx//interface//government_reform_icons//comms.dds"
+	}
+    spriteType = {
+		name = "government_reform_console"
+		texturefile = "gfx//interface//government_reform_icons//console.dds"
+	}
+    spriteType = {
+		name = "government_reform_cross"
+		texturefile = "gfx//interface//government_reform_icons//cross.dds"
+	}
+    spriteType = {
+		name = "government_reform_doc"
+		texturefile = "gfx//interface//government_reform_icons//doc.dds"
+	}
+    spriteType = {
+		name = "government_reform_diamond_city"
+		texturefile = "gfx//interface//government_reform_icons//diamond_city.dds"
+	}
+    spriteType = {
+		name = "government_reform_experiment"
+		texturefile = "gfx//interface//government_reform_icons//experiment.dds"
+	}
+    spriteType = {
+		name = "government_reform_factory"
+		texturefile = "gfx//interface//government_reform_icons//factory.dds"
+	}
+    spriteType = {
+		name = "government_reform_gambling"
+		texturefile = "gfx//interface//government_reform_icons//gambling.dds"
+	}
+    spriteType = {
+		name = "government_reform_jail"
+		texturefile = "gfx//interface//government_reform_icons//jail.dds"
+	}
+    spriteType = {
+		name = "government_reform_military"
+		texturefile = "gfx//interface//government_reform_icons//military.dds"
+	}
+    spriteType = {
+		name = "government_reform_nuke"
+		texturefile = "gfx//interface//government_reform_icons//nuke.dds"
+	}
+    spriteType = {
+		name = "government_reform_office"
+		texturefile = "gfx//interface//government_reform_icons//office.dds"
+	}
+    spriteType = {
+		name = "government_reform_old_bunker"
+		texturefile = "gfx//interface//government_reform_icons//old_bunker.dds"
+	}
+    spriteType = {
+		name = "government_reform_peace"
+		texturefile = "gfx//interface//government_reform_icons//peace.dds"
+	}
+    spriteType = {
+		name = "government_reform_person"
+		texturefile = "gfx//interface//government_reform_icons//person.dds"
+	}
+    spriteType = {
+		name = "government_reform_power_armor"
+		texturefile = "gfx//interface//government_reform_icons//power_armor.dds"
+	}
+    spriteType = {
+		name = "government_reform_prisoner"
+		texturefile = "gfx//interface//government_reform_icons//prisoner.dds"
+	}
+    spriteType = {
+		name = "government_reform_raider"
+		texturefile = "gfx//interface//government_reform_icons//raider.dds"
+	}
+    spriteType = {
+		name = "government_reform_ranch"
+		texturefile = "gfx//interface//government_reform_icons//ranch.dds"
+	}
+    spriteType = {
+		name = "government_reform_satellite"
+		texturefile = "gfx//interface//government_reform_icons//satellite.dds"
+	}
+    spriteType = {
+		name = "government_reform_ship"
+		texturefile = "gfx//interface//government_reform_icons//ship.dds"
+	}
+    spriteType = {
+		name = "government_reform_state_house"
+		texturefile = "gfx//interface//government_reform_icons//state_house.dds"
+	}
+    spriteType = {
+		name = "government_reform_usa_flag"
+		texturefile = "gfx//interface//government_reform_icons//usa_flag.dds"
+	}
+    spriteType = {
+		name = "government_reform_victor"
+		texturefile = "gfx//interface//government_reform_icons//victor.dds"
+	}
+    spriteType = {
+		name = "government_reform_vault_computer"
+		texturefile = "gfx//interface//government_reform_icons//vault_computer.dds"
+	}
+    spriteType = {
+		name = "government_reform_vault_guard"
+		texturefile = "gfx//interface//government_reform_icons//vault_guard.dds"
+	}
+    spriteType = {
+		name = "government_reform_vault_person"
+		texturefile = "gfx//interface//government_reform_icons//vault_person.dds"
+	}
+    spriteType = {
+		name = "government_reform_vault_teacher"
+		texturefile = "gfx//interface//government_reform_icons//vault_teacher.dds"
+	}
+    spriteType = {
+		name = "government_reform_leaning_guy"
+		texturefile = "gfx//interface//government_reform_icons//leaning_guy.dds"
+	}
+    spriteType = {
+		name = "government_reform_overseer"
+		texturefile = "gfx//interface//government_reform_icons//overseer.dds"
+	}
+    spriteType = {
+		name = "government_reform_strip_light"
+		texturefile = "gfx//interface//government_reform_icons//strip_light.dds"
+	}
+    spriteType = {
+		name = "government_reform_snowglobe"
+		texturefile = "gfx//interface//government_reform_icons//snowglobe.dds"
+	}
+    spriteType = {
+		name = "government_reform_mr_house"
+		texturefile = "gfx//interface//government_reform_icons//mr_house.dds"
+	}
+    spriteType = {
+		name = "government_reform_rocket_btm"
+		texturefile = "gfx//interface//government_reform_icons//rocket_btm.dds"
+	}
+    
+    
+    spriteType = {
+		name = "government_reform_bridge"
+		texturefile = "gfx//interface//government_reform_icons//bridge.dds"
+	}
+    spriteType = {
+		name = "government_reform_camp"
+		texturefile = "gfx//interface//government_reform_icons//camp.dds"
+	}
+    spriteType = {
+		name = "government_reform_barracks"
+		texturefile = "gfx//interface//government_reform_icons//barracks.dds"
+	}
+    spriteType = {
+		name = "government_reform_command_centre"
+		texturefile = "gfx//interface//government_reform_icons//command_centre.dds"
+	}
+    spriteType = {
+		name = "government_reform_dock"
+		texturefile = "gfx//interface//government_reform_icons//dock.dds"
+	}
+    spriteType = {
+		name = "government_reform_embassy"
+		texturefile = "gfx//interface//government_reform_icons//embassy.dds"
+	}
+    spriteType = {
+		name = "government_reform_farm"
+		texturefile = "gfx//interface//government_reform_icons//farm.dds"
+	}
+    spriteType = {
+		name = "government_reform_depot"
+		texturefile = "gfx//interface//government_reform_icons//depot.dds"
+	}
+    spriteType = {
+		name = "government_reform_executive_office"
+		texturefile = "gfx//interface//government_reform_icons//executive_office.dds"
+	}
+    spriteType = {
+		name = "government_reform_research_lab"
+		texturefile = "gfx//interface//government_reform_icons//research_lab.dds"
+	}
+    spriteType = {
+		name = "government_reform_road"
+		texturefile = "gfx//interface//government_reform_icons//road.dds"
+	}
+    spriteType = {
+		name = "government_reform_school"
+		texturefile = "gfx//interface//government_reform_icons//school.dds"
+	}
+    spriteType = {
+		name = "government_reform_sim_centre"
+		texturefile = "gfx//interface//government_reform_icons//sim_centre.dds"
+	}
+    spriteType = {
+		name = "government_reform_church"
+		texturefile = "gfx//interface//government_reform_icons//church.dds"
+	}
+    spriteType = {
+		name = "government_reform_steelworks"
+		texturefile = "gfx//interface//government_reform_icons//steelworks.dds"
+	}
+    spriteType = {
+		name = "government_reform_forest"
+		texturefile = "gfx//interface//government_reform_icons//forest.dds"
+	}
+    spriteType = {
+		name = "government_reform_research_tower"
+		texturefile = "gfx//interface//government_reform_icons//research_tower.dds"
+	}
+    spriteType = {
+		name = "government_reform_deathclaw"
+		texturefile = "gfx//interface//government_reform_icons//deathclaw.dds"
+	}
+    spriteType = {
+		name = "government_reform_government"
+		texturefile = "gfx//interface//government_reform_icons//government.dds"
+	}
+    spriteType = {
+		name = "government_reform_graveyard"
+		texturefile = "gfx//interface//government_reform_icons//graveyard.dds"
+	}
+    spriteType = {
+		name = "government_reform_moon"
+		texturefile = "gfx//interface//government_reform_icons//moon.dds"
+	}
+    spriteType = {
+		name = "government_reform_scientist"
+		texturefile = "gfx//interface//government_reform_icons//scientist.dds"
+	}
+    spriteType = {
+		name = "government_reform_cola"
+		texturefile = "gfx//interface//government_reform_icons//cola.dds"
+	}
+    spriteType = {
+		name = "government_reform_yao_guai"
+		texturefile = "gfx//interface//government_reform_icons//yao_guai.dds"
+	}
+    spriteType = {
+		name = "government_reform_wastelander"
+		texturefile = "gfx//interface//government_reform_icons//wastelander.dds"
+	}
+    spriteType = {
+		name = "government_reform_strangle"
+		texturefile = "gfx//interface//government_reform_icons//strangle.dds"
+	}
+    spriteType = {
+		name = "government_reform_legion_soldier"
+		texturefile = "gfx//interface//government_reform_icons//legion_soldier.dds"
+	}
+    spriteType = {
+		name = "government_reform_legion_sniper"
+		texturefile = "gfx//interface//government_reform_icons//legion_sniper.dds"
+	}
+    spriteType = {
+		name = "government_reform_slave"
+		texturefile = "gfx//interface//government_reform_icons//slave.dds"
+	}
+    spriteType = {
+		name = "government_reform_slave_2"
+		texturefile = "gfx//interface//government_reform_icons//slave_2.dds"
+	}
+    spriteType = {
+		name = "government_reform_brahmin_spit"
+		texturefile = "gfx//interface//government_reform_icons//brahmin_spit.dds"
+	}
+    spriteType = {
+		name = "government_reform_legion_tent"
+		texturefile = "gfx//interface//government_reform_icons//legion_tent.dds"
+	}
+    spriteType = {
+		name = "government_reform_wandering_slaves"
+		texturefile = "gfx//interface//government_reform_icons//wandering_slaves.dds"
+	}
+    spriteType = {
+		name = "government_reform_machine_gunner"
+		texturefile = "gfx//interface//government_reform_icons//machine_gunner.dds"
+	}
+    spriteType = {
+		name = "government_reform_bos_soldier_duststorm"
+		texturefile = "gfx//interface//government_reform_icons//bos_soldier_duststorm.dds"
+	}
+    spriteType = {
+		name = "government_reform_bos_soldier"
+		texturefile = "gfx//interface//government_reform_icons//bos_soldier.dds"
+	}
+    spriteType = {
+		name = "government_reform_nuka_cola_sign"
+		texturefile = "gfx//interface//government_reform_icons//nuka_cola_sign.dds"
+	}
+    spriteType = {
+		name = "government_reform_vault_wanderer"
+		texturefile = "gfx//interface//government_reform_icons//vault_wanderer.dds"
+	}
+    spriteType = {
+		name = "government_reform_ruined_car"
+		texturefile = "gfx//interface//government_reform_icons//ruined_car.dds"
+	}
+    spriteType = {
+		name = "government_reform_dockyard"
+		texturefile = "gfx//interface//government_reform_icons//dockyard.dds"
+	}
+    spriteType = {
+		name = "government_reform_industrial_unit"
+		texturefile = "gfx//interface//government_reform_icons//industrial_unit.dds"
+	}
+    spriteType = {
+		name = "government_reform_industrial_train"
+		texturefile = "gfx//interface//government_reform_icons//industrial_train.dds"
+	}
+    spriteType = {
+		name = "government_reform_ruined_highrise"
+		texturefile = "gfx//interface//government_reform_icons//ruined_highrise.dds"
+	}
+    spriteType = {
+		name = "government_reform_ruined_bus"
+		texturefile = "gfx//interface//government_reform_icons//ruined_bus.dds"
+	}
+    spriteType = {
+		name = "government_reform_flat_iron"
+		texturefile = "gfx//interface//government_reform_icons//flat_iron.dds"
+	}
+    spriteType = {
+		name = "government_reform_ruined_hall"
+		texturefile = "gfx//interface//government_reform_icons//ruined_hall.dds"
+	}
+    spriteType = {
+		name = "government_reform_swamp_wanderer"
+		texturefile = "gfx//interface//government_reform_icons//swamp_wanderer.dds"
+	}
+    spriteType = {
+		name = "government_reform_scrapyard"
+		texturefile = "gfx//interface//government_reform_icons//scrapyard.dds"
+	}
+    spriteType = {
+		name = "government_reform_scavengers"
+		texturefile = "gfx//interface//government_reform_icons//scavengers.dds"
+	}
+    spriteType = {
+		name = "government_reform_mounted_gun"
+		texturefile = "gfx//interface//government_reform_icons//mounted_gun.dds"
+	}
+    spriteType = {
+		name = "government_reform_watchpost"
+		texturefile = "gfx//interface//government_reform_icons//watchpost.dds"
+	}
+    spriteType = {
+		name = "government_reform_shabby_town"
+		texturefile = "gfx//interface//government_reform_icons//shabby_town.dds"
+	}
+    spriteType = {
+		name = "government_reform_sniper_nest"
+		texturefile = "gfx//interface//government_reform_icons//sniper_nest.dds"
+	}
+    spriteType = {
+		name = "government_reform_rivet_city"
+		texturefile = "gfx//interface//government_reform_icons//rivet_city.dds"
+	}
+    spriteType = {
+		name = "government_reform_city_ruins"
+		texturefile = "gfx//interface//government_reform_icons//city_ruins.dds"
+	}
+    spriteType = {
+		name = "government_reform_hoover_dam"
+		texturefile = "gfx//interface//government_reform_icons//hoover_dam.dds"
+	}
+    spriteType = {
+		name = "government_reform_wanderer"
+		texturefile = "gfx//interface//government_reform_icons//wanderer.dds"
+	}
+    spriteType = {
+		name = "government_reform_ruined_plane"
+		texturefile = "gfx//interface//government_reform_icons//ruined_plane.dds"
+	}
+    spriteType = {
+		name = "government_reform_coastal_view"
+		texturefile = "gfx//interface//government_reform_icons//coastal_view.dds"
+	}
+    spriteType = {
+		name = "government_reform_rocky_outcrop"
+		texturefile = "gfx//interface//government_reform_icons//rocky_outcrop.dds"
+	}
+    spriteType = {
+		name = "government_reform_prewar_nuke"
+		texturefile = "gfx//interface//government_reform_icons//prewar_nuke.dds"
+	}
+    spriteType = {
+		name = "government_reform_prewar_street"
+		texturefile = "gfx//interface//government_reform_icons//prewar_street.dds"
+	}
+    spriteType = {
+		name = "government_reform_bos_craftbench"
+		texturefile = "gfx//interface//government_reform_icons//bos_craftbench.dds"
+	}
+    spriteType = {
+		name = "government_reform_workshop"
+		texturefile = "gfx//interface//government_reform_icons//workshop.dds"
+	}
+    spriteType = {
+		name = "government_reform_raider_1"
+		texturefile = "gfx//interface//government_reform_icons//raider_1.dds"
+	}
+    spriteType = {
+		name = "government_reform_raider_2"
+		texturefile = "gfx//interface//government_reform_icons//raider_2.dds"
+	}
+    spriteType = {
+		name = "government_reform_raider_3"
+		texturefile = "gfx//interface//government_reform_icons//raider_3.dds"
+	}
+    spriteType = {
+		name = "government_reform_threat_of_violence"
+		texturefile = "gfx//interface//government_reform_icons//threat_of_violence.dds"
+	}
+    spriteType = {
+		name = "government_reform_salesman"
+		texturefile = "gfx//interface//government_reform_icons//salesman.dds"
+	}
+    spriteType = {
+		name = "government_reform_prewar_man"
+		texturefile = "gfx//interface//government_reform_icons//prewar_man.dds"
+	}
+    spriteType = {
+		name = "government_reform_searchlight"
+		texturefile = "gfx//interface//government_reform_icons//searchlight.dds"
+	}
+    spriteType = {
+		name = "government_reform_radscorpion"
+		texturefile = "gfx//interface//government_reform_icons//radscorpion.dds"
+	}
+}

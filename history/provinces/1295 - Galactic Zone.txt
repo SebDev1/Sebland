@@ -1,0 +1,19 @@
+# set_variable = { which = province_id value = 3058  }
+
+is_city = yes
+owner = OPT
+controller = OPT
+add_core = OPT
+
+base_tax = 5
+base_production = 6
+base_manpower = 3
+
+culture = operators
+religion = survivalist
+
+hre = no
+center_of_trade = 1
+trade_goods = drugs
+
+

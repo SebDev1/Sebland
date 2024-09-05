@@ -1,0 +1,457 @@
+#-----------------------------------------
+# Tag Limit: 850 (522)
+#-----------------------------------------
+# Base
+REB = "countries/Rebels.txt"
+PIR = "countries/Pirates.txt"
+NAT = "countries/Natives.txt"
+
+#-----------------------------------------
+# Southwest Commonwealth
+#-----------------------------------------
+# South California, Nevada
+
+NCR = "countries/NCR - New California Republic.txt"
+FOA = "countries/FOA - Followers of the Apocalypse.txt" 
+TUB = "countries/TUB - The Hub.txt"         
+JNK = "countries/JNK - Junktown.txt"
+NRN = "countries/NRN - New Reno.txt"    
+SHA = "countries/SHA - Shady Sands.txt"  
+MXS = "countries/MXS - Maxson.txt"          
+DYS = "countries/DYS - Dayglow.txt"         
+BUL = "countries/BUL - Bullhead.txt"    
+CAM = "countries/CAM - Camp McCarren.txt"  
+NAV = "countries/NAV - Navarro.txt"         
+SAC = "countries/SAC - Sac-Town.txt"        
+RED = "countries/RED - Redding.txt"         
+ONE = "countries/ONE - One Pine.txt"        
+HAT = "countries/HAT - Hawthorne.txt"       
+BIT = "countries/BIT - Bitterwater.txt"   
+VLJ = "countries/VLJ - Vallejo.txt"         
+MED = "countries/MED - Mendocino.txt"       
+GRP = "countries/GRP - Granite Peak.txt"    
+ELK = "countries/ELK - Elko.txt"            
+WHT = "countries/WHT - Whitehorn.txt"   
+NAI = "countries/NAI - Nail.txt"            
+LAS = "countries/LAS - Lassen.txt"          
+VIS = "countries/VIS - Visalia.txt"         
+FRS = "countries/FRS - Fresno.txt"          
+MER = "countries/MER - Merced.txt"          
+MND = "countries/MND - Mendota.txt"         
+FLT = "countries/FLT - The Flats.txt"       
+TAH = "countries/TAH - Tahoe.txt"     
+VID = "countries/VID - Vidal.txt"
+SLB = "countries/SLB - Slab.txt"
+BOG = "countries/BOG - Borrego.txt"
+QUZ = "countries/QUZ - Quartz.txt"
+BIP = "countries/BIP - Big Pine.txt"
+SCH = "countries/SCH - Scrapheap.txt"
+
+BOS = "countries/BOS - Lost Hills Chapter.txt"
+NEC = "countries/NEC - Necropolis.txt"
+REG = "countries/REG - Regulators.txt"
+NVG = "countries/NVG - New Vegas.txt"    
+BOO = "countries/BOO - Boomers.txt"
+JAC = "countries/JAC - Jacobstown.txt"
+GDS = "countries/GDS - Goodsprings.txt"
+GRK = "countries/GRK - Great Khans.txt" 
+GEC = "countries/GEC - Gecko.txt" 
+VAU = "countries/VAU - Vault City.txt"
+SKY = "countries/SKY - Skynet.txt"
+RNC = "countries/RNC - Renewal Cult.txt" 
+PRI = "countries/PRI - Primm.txt"
+FIE = "countries/FIE - Fiends.txt"
+SOU = "countries/SOU - State of Utobitha.txt"
+POW = "countries/POW - Powder Gangers.txt"
+TKG = "countries/TKG - The Kings.txt"                 
+WSS = "countries/WSS - Westside.txt"
+MCT = "countries/MCT - Mojave Chapter.txt" 
+GD1 = "countries/GD1 - Californian Marked Men.txt"
+GD2 = "countries/GD2 - Legionary Marked Men.txt"
+POC = "countries/POC - Convict Revolutionaries.txt"
+SLN = "countries/SLN - Sloan.txt"
+YAK = "countries/YAK - Yakuza.txt"              
+BBR = "countries/BBR - Bright Brotherhood.txt"
+NOV = "countries/NOV - Novac.txt"
+LPN = "countries/LPN - Lo Pan.txt"
+SHI = "countries/SHI - Shi.txt"     
+VBO = "countries/VBO - Chinatown Chapter.txt"
+DEN = "countries/DEN - The Den.txt"
+MOD = "countries/MOD - Modoc.txt"
+VB1 = "countries/VB1 - Den Chapter.txt"
+TPT = "countries/TPT - Trapper Town.txt"
+ARR = "countries/ARR - Arroyo.txt"
+HUB = "countries/HUB - Hubologists.txt"
+MAR = "countries/MAR - Mariposa.txt"
+VIP = "countries/VIP - Vipers.txt"
+
+#-----------------------------------------
+# Northwest Commonwealth
+#-----------------------------------------
+# Oregon, Idaho, Washington
+
+BBN = "countries/BBN - Blackbones.txt"      
+WSK = "countries/WSK - Whitestalkers.txt"   
+CKF = "countries/CKF - Cracked Fist.txt"    
+LTT = "countries/LTT - Lost Totem.txt"      
+DMT = "countries/DMT - Deadmouth.txt"       
+ISS = "countries/ISS - Issaquah.txt"      
+RSB = "countries/RSB - Rustbucket.txt"
+
+#-----------------------------------------
+# Four States Commonwealth
+#-----------------------------------------
+# Utah, Colorado, Arizona, New Mexico
+
+CAE = "countries/CAE - Caesar's Legion.txt"
+CPY = "countries/CPY - Crypts.txt"
+CLI = "countries/CLI - Caliente.txt"
+DED = "countries/DED - Dead Horses.txt"               
+WLS = "countries/WLS - White Legs.txt"                
+SOR = "countries/SOR - Sorrows.txt"
+EHT = "countries/EHT - Eighties.txt"
+PAR = "countries/PAR - Painted Rock.txt"              
+CIP = "countries/CIP - Ciphers.txt"
+IRR = "countries/IRR - Iron Rivers.txt"               
+TWM = "countries/TWM - Twin Mothers.txt"
+SCB = "countries/SCB - Scorpions Bite.txt"
+MAL = "countries/MAL - Malpais.txt"
+DOH = "countries/DOH - Daughters of Hecate.txt"
+RES = "countries/RES - Reservation.txt"
+BKF = "countries/BKF - Blackfoot.txt"                 
+TWH = "countries/TWH - Twisted Hairs.txt"             
+FRE = "countries/FRE - Fredonians.txt"                
+HAN = "countries/HAN - Hangdogs.txt"                  
+HID = "countries/HID - Hidebarks.txt"                 
+KAI = "countries/KAI - Kaibabs.txt"                   
+RID = "countries/RID - Ridgers.txt"                   
+SUN = "countries/SUN - Sun Dogs.txt"
+
+#-----------------------------------------
+# Great Midwest Commonwealth
+#-----------------------------------------
+# Minnesota, Wisconsin, Illinois, Indiana and Michigan
+
+BMW = "countries/BMW - Midwest Chapter.txt"       
+BRW = "countries/BRW - Brahmin Wood.txt"              
+PEO = "countries/PEO - Peoria.txt"
+ENC = "countries/ENC - Enclave.txt"
+RUS = "countries/RUS - Rust City.txt" 
+SOJ = "countries/SOJ - Sons of Jupiter.txt"
+BKA = "countries/BKA - Black Arrow.txt"         
+BRK = "countries/BRK - Bear Kin.txt"        
+BVS = "countries/BVS - Braveshell.txt"          
+SKE = "countries/SKE - Snake-ears.txt"          
+FGS = "countries/FGS - Fanged Sun.txt"          
+WTO = "countries/WTO - Waste Oracles.txt"       
+NGH = "countries/NGH - Night Hounds.txt"        
+BMM = "countries/BMM - Broken Hammer.txt"           
+GHH = "countries/GHH - Ghoul Haters.txt"
+
+#-----------------------------------------
+# Plains Commonwealth     
+#-----------------------------------------
+# Iowa, Missouri, Kansas, Oklahoma and Nebraska      
+   
+MAC = "countries/MAC - Macomb.txt"                    
+GRA = "countries/GRA - Gravestone.txt"                
+JUN = "countries/JUN - Junction City.txt"             
+COL = "countries/COL - Coldwater.txt"
+TMF = "countries/TMF - The Main Faction.txt"
+GDG = "countries/GDG - Gang of Devil's Graveyard.txt" 
+GOM = "countries/GOM - Gang of Macomb.txt"
+GMA = "countries/GMA - Gammorin's Army.txt"
+GMF = "countries/GMF - Grimfoot.txt"            
+WHC = "countries/WHC - Wheatclaw.txt"           
+BSK = "countries/BSK - Bonespike.txt"           
+RPC = "countries/RPC - Ripclaw.txt"             
+LSH = "countries/LSH - Lashers.txt"             
+CWG = "countries/CWG - Crowgrave.txt"           
+CMS = "countries/CMS - Crimson Sons.txt"        
+TFL = "countries/TFL - Thunderfalls.txt"        
+DRV = "countries/DRV - Dirtvale.txt"            
+CYE = "countries/CYE - Coyote Eyes.txt"     
+
+#-----------------------------------------
+# Columbia Commonwealth
+#-----------------------------------------
+# Virginia, Maryland, Washington DC
+
+BEC = "countries/BEC - East Coast Chapter.txt"   
+RIV = "countries/RIV - Rivet City.txt"                
+MEG = "countries/MEG - Megaton.txt"                   
+PLO = "countries/PLO - Point Lookout.txt"
+BIG = "countries/BIG - Big Town.txt"
+FAM = "countries/FAM - The Family.txt"
+CRM = "countries/CRM - Chinese Remnant.txt"
+V11 = "countries/V11 - Vault 101.txt"
+ABR = "countries/ABR - Abbey of the Road.txt"
+BRO = "countries/BRO - Brotherhood Outcasts.txt"
+LLL = "countries/LLL - Little Lamplight.txt"
+PAF = "countries/PAF - Paradise Falls.txt"            
+RPD = "countries/RPD - Republic of Dave.txt"          
+GER = "countries/GER - Germantown.txt"                
+SPV = "countries/SPV - Springvale.txt"                
+ANL = "countries/ANL - Andale.txt"                    
+TEN = "countries/TEN - Tenpenny.txt"                  
+UND = "countries/UND - Underworld.txt"
+ARE = "countries/ARE - Arefu.txt"
+OAS = "countries/OAS - Oasis.txt"
+TOU = "countries/TOU - Temple of the Union.txt"       
+CCM = "countries/CCM - Canterbury Commons.txt"
+WTN = "countries/WTN - Warrington.txt" 
+
+#-----------------------------------------
+# New England Commonwealth
+#-----------------------------------------
+# Maine, New Hampshire, Vermont, Massachusetts, Rhode Island and Connecticut
+INS = "countries/INS - The Institute.txt"             
+MEC = "countries/MEC - Mechanist.txt"                 
+TRG = "countries/TRG - Triggermen.txt"                
+USC = "countries/USC - USS Constitution.txt"          
+HTW = "countries/HTW - Hardware Town.txt"             
+COV = "countries/COV - Covenant.txt"
+RRD = "countries/RRD - The Railroad.txt"              
+MTM = "countries/MTM - The Minutemen.txt"
+ATC = "countries/ATC - Atom Cats.txt"
+GUN = "countries/GUN - Gunners.txt"  
+DIC = "countries/DIA - Diamond City.txt"                           
+BOC = "countries/BOC - Boston Chapter.txt"       
+COA = "countries/COA - Children of the Atom.txt"    
+GNB = "countries/GNB - Goodneighbour.txt"
+FRG = "countries/FRG - Forged.txt"
+V81 = "countries/V81 - Vault 81.txt"
+SLG = "countries/SLG - Slag.txt"   
+BKH = "countries/BKH - Bunker Hill.txt"
+
+#-----------------------------------------
+# Eastern Commonwealth
+#-----------------------------------------
+# Pennsylvania, New York, Delaware, New Jersey and West Virginia
+
+PIT = "countries/PIT - The Pitt.txt"
+NYC = "countries/NYC - New New York.txt"
+GLA = "countries/GLA - Great Lanta.txt"
+MON = "countries/MON - Monroeville.txt"
+TPK = "countries/TPK - The Pack.txt"      
+DIS = "countries/DIS - Disciples.txt"     
+OPT = "countries/OPT - Operators.txt"     
+NUK = "countries/NUK - Nuka-Hub.txt"
+NWD = "countries/NWD - Nuka-World.txt"
+IRB = "countries/IRB - Ironbow.txt"         
+HWT = "countries/HWT - Hawktalon.txt"       
+EBC = "countries/EBC - Eboncaste.txt"       
+
+YOK = "countries/YOK - Yokmuth.txt" 
+HAV = "countries/HAV - Haven.txt" 
+KIL = "countries/KIL - Killred.txt" 
+RUW = "countries/RUW - Rustworth.txt" 
+SHT = "countries/SHT - Shattered Eye.txt" 
+NFF = "countries/NFF - New Frankfurt.txt"
+BOT = "countries/BOT - Bothi.txt" 
+WND = "countries/WND - Windmore.txt" 
+
+#-----------------------------------------
+# Texas Commonwealth
+#-----------------------------------------
+# Texas and Arkansas
+
+AUS = "countries/AUS - Austin.txt"
+LUB = "countries/LUB - Lubbock.txt"         
+LNS = "countries/LNS - Lone Star.txt"
+BTX = "countries/BTX - Texas Chapter.txt"   
+CZH = "countries/CZH - Crazy Horns.txt"     
+SRS = "countries/SRS - Scarred Sun.txt"     
+IRO = "countries/IRO - Ironbask.txt"        
+ATF = "countries/ATF - Atomicflare.txt"     
+SOL = "countries/SOL - Sol.txt"             
+BCB = "countries/BCB - Bleached Bones.txt"  
+RCA = "countries/RCA - Red Scar.txt"        
+FMF = "countries/FMF - Flamefoot.txt"        
+GHR = "countries/GHR - Ghoulroad.txt"        
+SSP = "countries/SSP - Steel Scorpions.txt" 
+COS = "countries/COS - Confederation of Soot.txt"
+TUL = "countries/TUL - Tul Gator.txt"
+ZAK = "countries/ZAK - Zark.txt"
+
+
+#-----------------------------------------
+# East Central Commonwealth
+#-----------------------------------------
+# Ohio, Kentucky and Tennessee
+
+COB = "countries/COB - Cobras.txt" 
+IRF = "countries/IRF - Iron Fist.txt" 
+SPA = "countries/SPA - Sparta.txt" 
+CRT = "countries/CRT - Crater.txt"
+JCK = "countries/JCK - Jackels.txt"
+MTB = "countries/MTB - Motorboys.txt"
+LSS = "countries/LSS - Lasso.txt"
+FRM = "countries/FRM - Fremontia.txt"
+BOD = "countries/BOD - Boulder Dome.txt"
+
+
+#-----------------------------------------
+# Northern Commonwealth
+#-----------------------------------------
+# Montana, Wyoming, North Dakota and South Dakota
+
+BMO = "countries/BMO - Montana Chapter.txt" 
+RTS = "countries/RTS - Ratspeakers.txt"     
+GMT = "countries/GMT - Grimtooth.txt"       
+HAW = "countries/HAW - Moose.txt"
+
+#-----------------------------------------
+# Gulf Commonwealth
+#-----------------------------------------
+# Louisiana, Mississippi, Alabama, North Carolina, 
+# South Carolina, Georgia and Florida
+
+ATL = "countries/ATL - Atlanta.txt"  
+ORL = "countries/ORL - New Orleans.txt"  
+SWF = "countries/SWF - Swampfolk.txt"
+TAR = "countries/TAR - Tar Walkers.txt"     
+SES = "countries/SES - Steel Stalkers.txt"  
+LTC = "countries/LTC - Lost Caste.txt"      
+GVW = "countries/GVW - Gravewatch.txt"      
+NKS = "countries/NKS - Nukaspike.txt"       
+DUF = "countries/DUF - Dustfury.txt"        
+MKI = "countries/MKI - Murkiron.txt"        
+TDG = "countries/TDG - The Degenerates.txt" 
+CFD = "countries/CFD - The Confederacy.txt" 
+WBR = "countries/WBR - Whitebraid.txt" 
+SOH = "countries/SOH - Scorched Hand.txt" 
+BKR = "countries/BKR - Blackrot.txt" 
+WOS = "countries/WOS - Woodstock.txt" 
+EDE = "countries/EDE - Eden.txt" 
+RST = "countries/RST - Red Stingers.txt" 
+KIS = "countries/KIS - Kalissa.txt" 
+RDB = "countries/RDB - Radbite.txt" 
+
+#-----------------------------------------
+# Canada
+#-----------------------------------------
+RON = "countries/RON - Ronto.txt"
+CRS = "countries/CRS - Crag Stalkers.txt" 
+MOW = "countries/MOW - Men of the Wolf.txt" 
+STW = "countries/STW - Stagwalkers.txt" 
+REC = "countries/REC - Redclaw.txt" 
+SNF = "countries/SNF - Snowfoot.txt" 
+HDL = "countries/HDL - Hidelocks.txt" 
+SNA = "countries/SNA - Snajan.txt" 
+
+#-----------------------------------------
+# Mexico
+#-----------------------------------------
+BAJ = "countries/BAJ - Baja.txt" # Banditos
+DRG = "countries/DRG - Desert Rangers.txt"
+MEX = "countries/MEX - Mexico City.txt"
+SIN = "countries/SIN - Sinaloa.txt" 
+LOZ = "countries/LOZ - Los Zetas.txt" 
+BUC = "countries/BUC - Bulwark of Christ.txt" 
+PUE = "countries/PUE - Puebla.txt"          
+HDG = "countries/HDG - Hidalgo.txt"
+
+#-----------------------------------------
+# Other
+#-----------------------------------------
+GHT = "countries/GHT - Ghoul Town.txt"
+ROD = "countries/ROD - Rodent Scourge.txt"
+TNK = "countries/TNK - Think Tank.txt"                
+FBZ = "countries/FBZ - Forbidden Zone.txt"
+ZET = "countries/ZET - Zeta.txt"
+CUB = "countries/CUB - Cuba.txt"
+ST1 = "countries/ST1 - Scavenger Team One.txt"
+SIR = "countries/SIR - Sierra Madre.txt"
+DTC = "countries/DTC - Deathclaw Cabal.txt"  
+MAW = "countries/MAW - Port Maw.txt"  
+CHI = "countries/CHI - China.txt"
+RAD = "countries/RAD - Radstone.txt" 
+BCA = "countries/BCA - Beastlords.txt" 
+SPL = "countries/SPL - Sporelings.txt" 
+
+CNK = "countries/CNK - Church of Nuka.txt" 
+TNS = "countries/TNS - The Nashers.txt" 
+NOX = "countries/NOX - Fort Knox.txt" 
+FUS = "countries/FUS - The Fusion.txt" 
+KOK = "countries/KOK - Kokomoro.txt" 
+ELH = "countries/ELH - Elkheart.txt" 
+ABE = "countries/ABE - Aberration.txt" 
+LAW = "countries/LAW - The Lawless.txt" 
+RDI = "countries/RDI - Red Dirt.txt" 
+FYS = "countries/FYS - Furystone.txt" 
+CKT = "countries/CKT - Casktooth.txt" 
+RAI = "countries/RAI - Railspike.txt" 
+GWV = "countries/GWV - Golden Wolves.txt" 
+DOM = "countries/DOM - Freedom.txt" 
+ARC = "countries/ARC - Arcjet.txt" 
+FLF = "countries/FLF - Four Leaf.txt" 
+WDW = "countries/WDW - Wildwood.txt" 
+
+
+#-----------------------------------------
+# Formables
+#-----------------------------------------
+X01 = "countries/X01 - Empire of the Legion.txt"
+X02 = "countries/X02 - Shi Empire.txt"
+X03 = "countries/X03 - New Californian Empire.txt"
+X04 = "countries/X04 - United States.txt"
+X05 = "countries/X05 - The Brotherhood.txt"
+X06 = "countries/X06 - New Canaan.txt"
+X07 = "countries/X07 - Mexico.txt"
+X08 = "countries/X08 - Canada.txt"
+X09 = "countries/X09 - Zion Confederacy.txt"         
+X10 = "countries/X10 - Washington.txt"
+X11 = "countries/X11 - Oregon.txt"
+X12 = "countries/X12 - California.txt"
+X13 = "countries/X13 - Nevada.txt"
+X14 = "countries/X14 - Utah.txt"
+X15 = "countries/X15 - Idaho.txt"
+X16 = "countries/X16 - Montana.txt"
+X17 = "countries/X17 - Wyoming.txt"
+X18 = "countries/X18 - Baja California.txt"
+X19 = "countries/X19 - Arizona.txt"
+X20 = "countries/X20 - New Mexico.txt"
+X21 = "countries/X21 - Colorado.txt"
+X22 = "countries/X22 - North Dakota.txt"
+X23 = "countries/X23 - South Dakota.txt"
+X24 = "countries/X24 - Nebraska.txt"
+X25 = "countries/X25 - Kansas.txt"
+X26 = "countries/X26 - Missouri.txt"
+X27 = "countries/X27 - Iowa.txt"
+X28 = "countries/X28 - Kentucky.txt"
+X29 = "countries/X29 - West Virginia.txt"
+X30 = "countries/X30 - Ohio.txt"
+X31 = "countries/X31 - Indiana.txt"
+X32 = "countries/X32 - Michigan.txt"
+X33 = "countries/X33 - Minnesota.txt"
+X34 = "countries/X34 - Wisconsin.txt"
+X35 = "countries/X35 - Illinois.txt"
+X36 = "countries/X36 - Oklahoma.txt"
+X37 = "countries/X37 - Arkansas.txt"
+X38 = "countries/X38 - Texas.txt"
+X39 = "countries/X39 - Louisiana.txt"
+X40 = "countries/X40 - Mississippi.txt"
+X41 = "countries/X41 - Alabama.txt"
+X42 = "countries/X42 - Tennessee.txt"
+X43 = "countries/X43 - Florida.txt"
+X44 = "countries/X44 - Georgia.txt"
+X45 = "countries/X45 - South Carolina.txt"
+X46 = "countries/X46 - North Carolina.txt"
+X47 = "countries/X47 - Virginia.txt"
+X48 = "countries/X48 - New York.txt"
+X49 = "countries/X49 - New Jersey.txt"
+X50 = "countries/X50 - Pennsylvania.txt"
+X51 = "countries/X51 - The Capital Wasteland.txt"
+X52 = "countries/X52 - The Commonwealth.txt"
+X53 = "countries/X53 - British Columbia.txt"
+X54 = "countries/X54 - Alberta.txt"
+X55 = "countries/X55 - Saskatchewan.txt"
+X56 = "countries/X56 - Manitoba.txt"
+X57 = "countries/X57 - Ontario.txt"
+X58 = "countries/X58 - Quebec.txt"
+X59 = "countries/X59 - Newfoundland and Labrador.txt"
+X60 = "countries/X60 - New Brunswick.txt"
+X61 = "countries/X61 - Nova Scotia.txt"
+
+

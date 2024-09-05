@@ -1,0 +1,66 @@
+# set_variable = { which = province_id value = 262  }
+
+owner = NVG
+controller = NVG
+add_core = NVG
+add_core = WSS
+is_city = yes
+
+base_tax = 6
+base_production = 4
+base_manpower = 4
+
+culture = westside
+religion = secular
+
+trade_goods = food
+hre = no
+center_of_trade = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

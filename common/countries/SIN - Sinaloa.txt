@@ -1,0 +1,81 @@
+graphical_culture = raider_gfx
+
+color = { 244 203 66 }
+
+monarch_names = {
+	"Agustín" = 10
+	"Ángel" = 10
+	"Felipe" = 10
+	"Jesús" = 10
+	"Salvador" = 10
+	"Alfredo" = 10
+	"Álvaro" = 10
+	"Armando" = 10
+	"Arturo" = 10
+	"Blas" = 10
+	"Calixto" = 10
+	"Carlos" = 10
+	"Daniel" = 10
+	"Elías" = 10
+	"Emiliano" = 10
+	"Enrique" = 10
+	"Eugenio" = 10
+	"Félix" = 10
+	"Francisco" = 10
+	"Gerardo" = 10
+	"Horacio" = 10
+	"Ignacio" = 10
+	"Jaime" = 10
+	"José Manuel" = 10
+	"José María" = 10
+	"José Miguel" = 10
+	"José Sixto" = 10
+	"Lucio" = 10
+	"Manuel" = 10
+	"Marcos" = 10
+	"Melchor" = 10
+	"Natalio" = 10
+	"Osvaldo" = 10
+	"Porfirio" = 10
+	"Ramón" = 10
+	"Sandalio" = 10
+	"Toribio" = 10
+	"Vicente" = 10
+	"Víctor" = 10
+	"Zacarías" = 10
+	
+	"Laura" = -1
+	"Marciela" = -1
+	"Perla" = -1
+}
+
+leader_names = {
+	Aldama Allende Álvarez Benavente Bravo Bustamante Cárdenas Carranza Comonfort
+	Díaz Domingo Echávarri Elías Elizondo Galeana García Gómez Gonzalez Guerrero
+	Hidalgo Huerta Iglesias Itúrbide Juárez "León de la Barra" "Lerdo de Tejada" López
+	Madero Matamoros Mejía Mendoza Mina Miramón Mora Morelos Moreno Negrete
+	Obregón Ortíz Pino "Ramírez de Arellano" Rayón "Ruíz de Apodaca" "Santa Anna" Suárez
+	Torres Victoria Villa Zaragoza "Zavala"
+}
+
+ship_names = {
+	Abasolo Allende
+	Bravo
+	Despacito
+	Durango
+	Galeana Guanjuato
+	Ilhunicamina
+	Juarez
+	Netzahualcoyotl
+	Romero
+	Serria Sonora
+	Veracruz Victoria 
+}
+
+army_names = {
+	"Ejército de $PROVINCE$" 
+}
+
+fleet_names = {
+	"Armada de $PROVINCE$ "
+}

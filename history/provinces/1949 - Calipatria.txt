@@ -1,0 +1,17 @@
+
+owner = FIE
+controller = FIE
+add_core = FIE
+is_city = yes
+
+base_tax = 1
+base_production = 1
+base_manpower = 1
+
+culture = fiends
+religion = survivalist 
+
+hre = no # hre = yes
+center_of_trade = 1
+trade_goods = unknown
+

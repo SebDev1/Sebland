@@ -1,0 +1,18 @@
+# set_variable = { which = province_id value = 70  }
+
+owner = LAW
+controller = LAW
+add_core = LAW
+is_city = yes
+
+base_tax = 1
+base_production = 1
+base_manpower = 2
+
+culture = lawless
+religion = survivalist
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+

@@ -1,0 +1,52 @@
+# set_variable = { which = province_id value = 19  }
+
+owner = TOU
+controller = TOU
+add_core = TOU
+is_city = yes
+
+base_tax = 3
+base_production = 5
+base_manpower = 3
+
+culture = temple_of_the_union
+religion = american_restorationists
+
+hre = no
+center_of_trade = 1
+trade_goods = prewar_technology
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

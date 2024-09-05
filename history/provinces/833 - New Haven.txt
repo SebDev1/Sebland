@@ -1,0 +1,71 @@
+# set_variable = { which = province_id value = 833  }
+
+owner = BOT
+controller = BOT
+add_core = BOT
+is_city = yes
+
+base_tax = 2
+base_production = 1
+base_manpower = 2
+
+culture = bothi
+religion = islam
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

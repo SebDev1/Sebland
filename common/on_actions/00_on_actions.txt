@@ -1,0 +1,2090 @@
+# country
+on_startup = {
+    update_random_seed = yes
+    
+	emperor = {
+		save_global_event_target_as = Emperor
+	}
+	if = {
+		limit = {
+			is_emperor_of_china = yes
+		}
+		save_global_event_target_as = celestial_emperor
+	}
+    events = {
+        startup.1       # Global flags
+        startup.2       # Country flags
+        processor.1     # Processor assignment for Caravan system		
+        discovery.1     # Initial FoW setup
+		law_setup.1     # Fallback national policy setup
+        pop_setup.1     # Pop setup
+        cults.100       # Initial cult setup
+        immortality.1   # Setup immortal rulers
+        caravans.1      # Initial caravan placement
+        zion.7          # 
+        
+        # Defaults
+        fallout_doctrine.100
+        fallout_bunker_system.100
+        
+        # Caesar's Legion
+        goodsprings.0 	# Courier Flavour 
+        capital_wasteland.1 # Post F3 cleanup 
+        skynet.1 # A Bored AI  - Setup for New Reno-Skynet start situation 
+        
+        # Enclave
+        fallout_mission_enclave.1
+    }
+}
+
+# country
+on_religion_change = {
+    if = {
+		limit = {
+			has_heir = yes
+		}
+		set_heir_religion = ROOT
+	}
+	if = {
+		limit = {
+			has_regency = no
+		}
+		set_ruler_religion = ROOT
+	}
+	if = {
+		limit = {
+			has_dlc = "Rights of Man"
+			has_consort = yes
+		}
+		set_consort_religion = ROOT
+	}
+    add_country_modifier = {
+		name = recently_changed_religion_dummy
+		duration = 10
+		hidden = yes
+	}
+}
+
+# country
+on_secondary_religion_change = {
+	
+}
+
+# country. Spawned when Enforcing Rebel Demands through a Support Rebels-war.
+on_enforce_rebel_demands = {
+    # ROOT = The winning country
+	# FROM = The loosing country
+	set_country_flag = helped_rebels_win_war
+}
+
+# country
+on_colonial_liberation = {
+    
+}
+
+# country
+on_colonial_reintegration = {
+	
+}
+
+# country
+on_peace_actor = {
+	
+}
+
+# country
+on_peace_recipient = {
+
+}
+
+# country
+# root = winning country, from = loser country
+on_war_won = {
+    doctrine_on_war_won_effect = yes
+    
+    # NCR - NCR Authority
+    if = {
+        limit = {
+            has_government_mechanic = ncr_authority_mechanic
+            has_country_flag = war_support_faction_leader
+        }
+        
+        add_government_power = {
+            mechanic_type = ncr_authority_mechanic
+            power_type = ncr_authority
+            value = 20
+        }
+        
+        clr_country_flag = war_support_faction_leader
+    }
+    
+    # Patriotic Spirit
+    if = {
+        limit = {
+            has_government_mechanic = patriotic_spirit_mechanic
+            FROM = {
+                is_tainted_country = yes
+            }
+        }
+        
+        add_government_power = {
+            mechanic_type = patriotic_spirit_mechanic
+            power_type = patriotic_spirit
+            value = 25
+        }
+    }
+    
+    if = {
+        limit = {
+            tag = ENC
+            NOT = { has_country_flag = mission_enclave_war_win }
+        }
+        
+        set_country_flag = mission_enclave_war_win
+    }
+}
+
+# country
+# root = winning country, from = loser country
+on_main_war_won = {
+	
+}
+
+# country
+# root = winning country, from = loser country
+on_separate_war_won = {
+	
+}
+
+# country
+# root = loser country, from = winner country
+on_war_lost = {
+    
+}
+
+on_main_war_lost = {
+	
+}
+
+on_separate_war_lost = {
+}
+
+# country
+# root = winning country, from = loser country
+on_battle_won_country = {
+	random_events = {
+		1000 = 0
+		100 = slavery.1
+		100 = slavery.2
+	}
+}
+
+# country
+# root = loser country, from = winner country
+on_battle_lost_country = {
+    # Cults
+    if = {
+        limit = { has_dlc = "Rights of Man" }
+        
+        if = {
+            limit = {
+                ROOT = {
+                    religion = fetishism
+                    NOT = { has_unlocked_cult = tribal_ancestor_worship }
+                }
+                FROM = {
+                    religion = fetishism
+                    has_unlocked_cult = tribal_ancestor_worship
+                }
+            }
+            ROOT = { country_event = { id = cults.1 } }
+        }
+        if = {
+            limit = {
+                ROOT = {
+                    religion = fetishism
+                    NOT = { has_unlocked_cult = tribal_nature_worship }
+                }
+                FROM = {
+                    religion = fetishism
+                    has_unlocked_cult = tribal_nature_worship
+                }
+            }
+            ROOT = { country_event = { id = cults.2 } }
+        }
+        if = {
+            limit = {
+                ROOT = {
+                    religion = fetishism
+                    NOT = { has_unlocked_cult = tribal_viper_worship }
+                }
+                FROM = {
+                    religion = fetishism
+                    has_unlocked_cult = tribal_viper_worship
+                }
+            }
+            ROOT = { country_event = { id = cults.3 } }
+        }
+        if = {
+            limit = {
+                ROOT = {
+                    religion = fetishism
+                    NOT = { has_unlocked_cult = tribal_technology_worship }
+                }
+                FROM = {
+                    religion = fetishism
+                    has_unlocked_cult = tribal_technology_worship
+                }
+            }
+            ROOT = { country_event = { id = cults.4 } }
+        }
+        if = {
+            limit = {
+                ROOT = {
+                    religion = fetishism
+                    NOT = { has_unlocked_cult = tribal_lovecraftian_worship }
+                }
+                FROM = {
+                    religion = fetishism
+                    has_unlocked_cult = tribal_lovecraftian_worship
+                }
+            }
+            ROOT = { country_event = { id = cults.5 } }
+        }
+        if = {
+            limit = {
+                ROOT = {
+                    religion = fetishism
+                    NOT = { has_unlocked_cult = tribal_fire_worship }
+                }
+                FROM = {
+                    religion = fetishism
+                    has_unlocked_cult = tribal_fire_worship
+                }
+            }
+            ROOT = { country_event = { id = cults.6 } }
+        }
+        if = {
+            limit = {
+                ROOT = {
+                    religion = fetishism
+                    NOT = { has_unlocked_cult = tribal_cannibalism_worship }
+                }
+                FROM = {
+                    religion = fetishism
+                    has_unlocked_cult = tribal_cannibalism_worship
+                }
+            }
+            ROOT = { country_event = { id = cults.7 } }
+        }
+        if = {
+            limit = {
+                ROOT = {
+                    religion = fetishism
+                    NOT = { has_unlocked_cult = tribal_radiation_worship }
+                }
+                FROM = {
+                    religion = fetishism
+                    has_unlocked_cult = tribal_radiation_worship
+                }
+            }
+            ROOT = { country_event = { id = cults.8 } }
+        }
+        # Special
+        if = {
+            limit = {
+                ROOT = {
+                    religion = fetishism
+                    NOT = { has_unlocked_cult = tribal_mormon_worship }
+                }
+                FROM = {
+                    religion = mormon
+                }
+            }
+            ROOT = { country_event = { id = cults.9 } }
+        }
+    }
+    
+    ideagroups_on_battle_lost_country_effect = yes
+}
+
+# province
+# root = location, from = loser country
+on_battle_won_province = {
+}
+
+#Unit Scope OnAction for Battle Won
+on_battle_won_unit = {
+	if = {
+		limit = {
+			unit_owner = { ai = no } #Scopes to Unit Owner from Unit Scope
+			general_with_steam_name = yes #Unit Scope Trigger
+		}
+		unit_owner = { set_country_flag = general_with_steam_name_won_battle }
+	}
+}
+
+# #Unit Scope OnAction for Battle Lost
+on_battle_lost_unit = {
+}
+
+# province
+# root = location, from = country doing it
+on_added_to_trade_company ={
+
+}
+
+# province
+# root = location, from = country doing it
+on_removed_from_company ={
+
+}
+
+# province
+# root = location, from = country doing it
+on_company_formed ={
+
+}
+
+# province
+# root = location, from = country doing it
+on_company_disolved ={
+
+}
+
+# province
+# root = location, from = winner country
+on_battle_lost_province = {
+    # Bloodlust - Add power on battle win
+    if = {
+        limit = {
+            FROM = {
+                has_government_mechanic = legion_bloodlust_mechanic
+            }
+        }
+        
+        FROM = {
+            add_government_power = {
+                mechanic_type = legion_bloodlust_mechanic
+                power_type = legion_bloodlust
+                value = 5
+            }
+        }
+    }
+    
+    # Thrill - Add power on battle win
+    if = {
+        limit = {
+            FROM = {
+                has_government_mechanic = raider_thrill_mechanic
+            }
+        }
+        
+        FROM = {
+            add_government_power = {
+                mechanic_type = raider_thrill_mechanic
+                power_type = raider_thrill
+                value = 5
+            }
+        }
+    }
+    
+    # Mutation - Add power on battle win
+    if = {
+        limit = {
+            FROM = {
+                has_government_mechanic = mutation_mechanic
+            }
+        }
+        
+        FROM = {
+            add_government_power = {
+                mechanic_type = mutation_mechanic
+                power_type = mutation
+                value = 5
+            }
+        }
+    }
+}
+
+# country
+# root = winning country, from = location
+on_siege_won_country = {
+    
+}
+
+# country
+# root = losing country, from = location
+on_siege_lost_country = {
+}
+
+# province
+# root = location, from = losing country
+on_siege_won_province = {
+    homeland_doctrine_effect = yes
+    rebel_doctrine_effect = yes
+}
+
+# province
+# root = location, from = winning country
+on_siege_lost_province =  {
+    # Bloodlust
+    if = {
+        limit = {
+            FROM = {
+                has_country_modifier = bloodlust_scorch_the_earth
+            }
+        }
+            
+        add_devastation = 25
+    }
+    
+    siege_doctrine_effect = yes
+}
+
+# province
+# root = location, from = country that abandons colony
+# Fired right before the colony is abandoned.
+on_abandon_colony = {
+}
+
+# province
+# root = location, from = country that owns it
+# Fired right after the great project is constructed
+on_great_project_constructed = {
+}
+
+# OBS: Consider that the following on_actions can be called for Personal Union juniors as well.
+# country
+on_new_monarch = {
+    
+    if = {
+        limit = {
+            OR = {
+                tag = NVG
+                tag = X02
+                has_reform = think_tank_reform
+            }
+        }
+        add_ruler_modifier = {
+            name = immortality
+            duration = -1
+        }
+    }
+}
+
+on_new_consort = {
+	
+}
+
+# country
+on_monarch_death = { 
+    # Succession
+    # The 'skip_next_succession_event' flag is used so these events only fire on the initial triggering death, and not for the 'fake' death when the temp ruler is replaced.
+    if = {
+        limit = {
+            NOT = { has_country_flag = skip_next_succession_event }
+        }
+        
+        # Monarchy
+        country_event = { id = fallout_government_succession.1 } # Autocratic Succession
+        country_event = { id = fallout_government_succession.2 } # Succession of the Caesar (Caesar's Death)
+        country_event = { id = fallout_government_succession.3 } # Succession of the Caesar (Default)
+        country_event = { id = fallout_government_succession.4 } # Ruler of the Strip (Mr. House Death)
+        country_event = { id = fallout_government_succession.5 } # Ruler of the Strip (Default)
+        country_event = { id = fallout_government_succession.6 } # Mechanical Reconfiguration
+        country_event = { id = fallout_government_succession.7 } # Head Advisor to the Shi Emperor
+        country_event = { id = fallout_government_succession.8 } # Family Games
+        country_event = { id = fallout_government_succession.9 } # NCR Politics
+        
+        # Theocracy
+        country_event = { id = fallout_government_succession.10 } # Cult Succession
+        country_event = { id = fallout_government_succession.11 } # Elder Succession
+        
+        # Tribal
+        country_event = { id = fallout_government_succession.12 } # Tribal Succession
+    }
+    else = {
+        clr_country_flag = skip_next_succession_event
+    }
+}
+
+# country 
+on_regent = {
+    
+}
+
+# country
+on_extend_regency = {
+	add_legitimacy = -10
+}
+
+# country 
+on_new_term_election = {
+    events = {
+        fallout_government_election.1 # Standard Election
+        fallout_government_election.2  # Vault Election
+    }
+}
+
+# country 
+on_death_election = {
+    events = {
+        fallout_government_election.10 # Standard Election
+        fallout_government_election.11 # Vault Election
+    }
+}
+
+# country
+on_death_foreign_slave_ruler = {
+    
+}
+
+# country 
+on_replace_governor = {
+    
+}
+
+# country
+on_bankruptcy = {
+}
+
+# country (country annexing, root = target)
+on_diplomatic_annex = {
+    add_country_modifier = {
+        name = annexers_legacy
+        duration = 3650
+    }
+}
+
+#country
+on_heir_death = {
+    
+
+}
+
+# country
+on_queen_death = {
+
+}
+
+
+
+# country
+on_new_heir = {
+    
+}
+
+# country 
+on_weak_heir_claim = {
+    # Weak Heir - Spawn Pretenders
+    if = {
+        limit = {
+            has_government_attribute = heir
+        }
+        
+        capital_scope = {
+            spawn_rebels = {
+                type = pretender_rebels
+                size = 3
+            }
+        }
+    }
+}
+
+on_heir_needed_theocracy = {
+    
+}
+
+# Emperor from same dynasty
+on_successive_emperor = {
+    
+}
+
+on_emperor_elected = {
+
+}
+
+# HRE Prince released by the emperor
+on_released_hre_member = {
+    
+}
+
+# HRE Prince converts to non-Emperor religion
+on_hre_member_false_religion = {
+}
+
+# HRE Prince converts to Emperor religion
+on_hre_member_true_religion = {
+}
+
+# Emperor wins HRE defensive war
+on_hre_wins_defensive_war = {
+    
+}
+
+# HRE member annexed by non-HRE country
+on_hre_member_annexed = {
+    
+}
+
+# HRE member released from non-HRE vassalage
+on_hre_released_vassal = {
+}
+
+# HRE member transferred from non-HRE vassalage to Emperor
+on_hre_transfered_vassal = {
+}
+
+# Emperor coming to the defense of a HRE member
+on_hre_defense = {
+    
+}
+
+# Emperor NOT coming to the defense of a HRE member
+on_hre_non_defense = {
+    
+}
+
+# HRE Member takes a HRE province from an outs100e country in a peace (province scope)
+on_hre_province_reconquest = {
+}
+
+on_lock_hre_religion = {
+}
+
+on_change_hre_religion = {
+}
+
+on_hre_religion_white_peace = {
+}
+
+# When a non-native changes government type
+on_government_change = {
+
+}
+
+# When a native changes government after filling all their advancement groups.
+on_native_change_government = {
+}
+
+# Nation is integrated after being in union
+on_integrate = {
+    add_country_modifier = {
+        name = annexers_legacy
+        duration = 3650
+    }
+}
+
+# Nation annexed.
+# FROM is the nation being annexed
+on_annexed = {
+    transfer_schematics = yes
+}
+
+# When the chinese empire gets dismantled (e.g. when the emperor is annexed)
+# FROM = Emperor, ROOT = Current Nation
+on_chinese_empire_dismantled = {
+	clear_global_event_target = celestial_emperor
+}
+
+# When a nation gains the Mandate of Heaven (becomes the Emperor of China)
+# FROM = Old Emperor, ROOT = New Emperor
+on_mandate_of_heaven_gained = {
+	save_global_event_target_as = celestial_emperor
+    
+	set_mandate = 60
+	set_meritocracy = 60
+}
+
+# When a nation loses the Mandate of Heaven
+# FROM = New Emperor, ROOT = Old Emperor
+on_mandate_of_heaven_lost = {
+    add_stability = -2
+}
+
+on_embrace_revolution = {
+
+}
+
+on_dismantle_revolution = {
+    
+}
+
+# province
+on_adm_development = {
+    owner = { subtract_variable = { which = civil_unrest value = 1 } }
+    
+    if = {
+        limit = {
+            owner = {
+                has_idea = fallout_administrative_ideas_7
+            }
+        }
+            
+        add_province_modifier = {
+            name = local_prosperity
+            duration = 3650
+        }
+    }
+    
+    if = {
+        limit = {
+            owner = {
+                has_idea = fallout_development_ideas_1
+            }
+        }
+        random_list = {
+            25 = {
+                add_base_tax = 1
+            }
+            75 = { }
+        }
+    }
+}
+
+# province
+on_dip_development = {  
+    owner = { subtract_variable = { which = civil_unrest value = 1 } }
+    
+    if = {
+        limit = {
+            owner = {
+                has_idea = fallout_administrative_ideas_7
+            }
+        }
+        
+        add_province_modifier = {
+            name = local_prosperity
+            duration = 3650
+        }
+    }
+    
+    if = {
+        limit = {
+            owner = {
+                has_idea = fallout_development_ideas_1
+            }
+        }
+        random_list = {
+            25 = {
+                add_base_production = 1
+            }
+            75 = { }
+        }
+    }
+}
+
+# province
+on_mil_development = {
+    owner = { subtract_variable = { which = civil_unrest value = 1 } }
+    
+    if = {
+        limit = {
+            owner = {
+                has_idea = fallout_administrative_ideas_7
+            }
+        }
+        
+        add_province_modifier = {
+            name = local_prosperity
+            duration = 3650
+        }
+    }
+    
+    if = {
+        limit = {
+            owner = {
+                has_idea = fallout_development_ideas_1
+            }
+        }
+        random_list = {
+            25 = {
+                add_base_manpower = 1
+            }
+            75 = { }
+        }
+    }
+}
+
+on_overextension_pulse = {
+    
+    random_events = {
+		100 = overextension.1
+		100 = overextension.2
+		100 = overextension.3
+		100 = overextension.4
+		100 = overextension.5
+		100 = overextension.6
+		100 = overextension.7
+		100 = overextension.8
+		100 = overextension.9
+        # 100% any event will be picked per pulse
+	}
+}
+
+on_colonial_pulse = {
+    
+    random_events = {
+		10 = colonial_pulse.1 # "Settlement founded"
+		10 = colonial_pulse.2 # "Attracting Ghouls"
+		10 = colonial_pulse.3 # "Super Mutants!"
+		10 = colonial_pulse.4 # "Raiders!"
+		10 = colonial_pulse.5 # "Colonial Migration"
+		10 = colonial_pulse.6 # "Colonial Expansion"
+        
+        10 = wasteland_discoveries.1
+        10 = wasteland_discoveries.2
+        10 = wasteland_discoveries.3
+        10 = wasteland_discoveries.4
+        10 = wasteland_discoveries.5
+        10 = wasteland_discoveries.6
+        10 = wasteland_discoveries.7
+        10 = wasteland_discoveries.8
+        10 = wasteland_discoveries.9
+        10 = wasteland_discoveries.10
+        10 = wasteland_discoveries.11
+        10 = wasteland_discoveries.12
+        10 = wasteland_discoveries.13
+        10 = wasteland_discoveries.14
+        10 = wasteland_discoveries.15
+		
+        2000 = 0
+        # 10% any event will be picked per pulse
+	}
+}
+
+on_siberian_pulse = {
+    
+    random_events = {
+		10 = colonial_pulse.1 # "Settlement founded"
+		10 = colonial_pulse.2 # "Attracting Ghouls"
+		10 = colonial_pulse.3 # "Super Mutants!"
+		10 = colonial_pulse.4 # "Raiders!"
+		10 = colonial_pulse.5 # "Colonial Migration"
+		10 = colonial_pulse.6 # "Colonial Expansion"
+        
+        10 = wasteland_discoveries.1
+        10 = wasteland_discoveries.2
+        10 = wasteland_discoveries.3
+        10 = wasteland_discoveries.4
+        10 = wasteland_discoveries.5
+        10 = wasteland_discoveries.6
+        10 = wasteland_discoveries.7
+        10 = wasteland_discoveries.8
+        10 = wasteland_discoveries.9
+        10 = wasteland_discoveries.10
+        10 = wasteland_discoveries.11
+        10 = wasteland_discoveries.12
+        10 = wasteland_discoveries.13
+        10 = wasteland_discoveries.14
+        10 = wasteland_discoveries.15
+		
+        2000 = 0
+        # 10% any event will be picked per pulse
+	}
+}
+
+# country random events
+on_monthly_pulse = {
+    update_random_seed = yes
+    
+    #------------------------------
+    # NCR - NCR Authority
+    #------------------------------
+    update_faction_modifier = {
+        FACTION = ncr
+        FACTION_MODIFIER_FLAG = ncr_authority_frontier_diplomacy
+        MODIFIER = frontier_diplomacy
+    }
+    update_faction_modifier = {
+        FACTION = ncr
+        FACTION_MODIFIER_FLAG = ncr_authority_law_and_order
+        MODIFIER = law_and_order
+    }
+    update_faction_modifier = {
+        FACTION = ncr
+        FACTION_MODIFIER_FLAG = ncr_authority_government_support
+        MODIFIER = government_support
+    }
+    update_faction_modifier = {
+        FACTION = ncr
+        FACTION_MODIFIER_FLAG = ncr_authority_common_aspirations
+        MODIFIER = common_aspirations
+    }
+    update_faction_modifier = {
+        FACTION = ncr
+        FACTION_MODIFIER_FLAG = ncr_authority_virtues_of_democracy
+        MODIFIER = virtues_of_democracy
+    }
+    
+    events = {
+        # Scavenging
+        fallout_scavenging.100 # Expedition Reward
+        
+        # Schematic Loss
+        fallout_schematic_loss.1
+        fallout_schematic_loss.2
+        fallout_schematic_loss.3
+        fallout_schematic_loss.4
+        fallout_schematic_loss.5
+        fallout_schematic_loss.6
+        fallout_schematic_loss.7
+        fallout_schematic_loss.8
+        fallout_schematic_loss.9
+        fallout_schematic_loss.10
+        fallout_schematic_loss.11
+        fallout_schematic_loss.12
+        fallout_schematic_loss.13
+        fallout_schematic_loss.14
+        fallout_schematic_loss.15
+        fallout_schematic_loss.16
+        fallout_schematic_loss.17
+        fallout_schematic_loss.18
+        fallout_schematic_loss.19
+        fallout_schematic_loss.20
+        fallout_schematic_loss.21
+        fallout_schematic_loss.22
+        fallout_schematic_loss.23
+        fallout_schematic_loss.24
+        fallout_schematic_loss.25
+        fallout_schematic_loss.26
+        fallout_schematic_loss.27
+        fallout_schematic_loss.28
+        fallout_schematic_loss.29
+        fallout_schematic_loss.30
+        fallout_schematic_loss.31
+        fallout_schematic_loss.32
+        fallout_schematic_loss.33
+        fallout_schematic_loss.34
+        fallout_schematic_loss.35
+        fallout_schematic_loss.36
+        fallout_schematic_loss.37
+        fallout_schematic_loss.38
+        fallout_schematic_loss.39
+        fallout_schematic_loss.40
+        fallout_schematic_loss.41
+        fallout_schematic_loss.42
+        fallout_schematic_loss.43
+        fallout_schematic_loss.44
+        fallout_schematic_loss.45
+        fallout_schematic_loss.46
+        fallout_schematic_loss.47
+        fallout_schematic_loss.48
+        fallout_schematic_loss.49
+        fallout_schematic_loss.50
+        fallout_schematic_loss.51
+        fallout_schematic_loss.52
+        fallout_schematic_loss.53
+        
+        # Doctrines
+        fallout_doctrine.60
+        fallout_doctrine.61
+        fallout_doctrine.62
+        fallout_doctrine.63
+        fallout_doctrine.64
+        fallout_doctrine.65
+        fallout_doctrine.66
+        fallout_doctrine.67
+        fallout_doctrine.68
+        
+        # Bunker System
+        fallout_bunker_system.101
+        fallout_bunker_system.110
+    }
+}
+
+on_yearly_pulse = {
+	# --- Trade Good Price Swing
+    # Only do this for the player so it occurs once
+    if = {
+        limit = {
+            ai = no
+        }
+        
+        randomise_goods_price = yes
+    }
+    
+    # Add "Aliens!" opinion debuff
+    if = {
+        limit = {
+            tag = ZET
+        }
+        
+        every_country = {
+            limit = {
+                NOT = {
+                    has_opinion_modifier = {
+                        modifier = aliens
+                        who = ZET
+                    }
+                }
+            }
+            add_opinion = {
+                who = ZET
+                modifier = aliens
+            }
+            ZET = {
+                add_opinion = {
+                    who = PREV
+                    modifier = aliens
+                }
+            }
+        }
+    }
+    
+    random_events = {
+        100 = fallout_scavenging.10
+        100 = fallout_scavenging.11
+        100 = fallout_scavenging.12
+        100 = fallout_scavenging.13
+        100 = fallout_scavenging.14
+        100 = fallout_scavenging.15
+        100 = fallout_scavenging.16
+        100 = fallout_scavenging.17
+        100 = fallout_scavenging.18
+    }
+    
+    random_events = {
+        1000 = 0
+        
+        # Bunker System
+        100 = fallout_bunker_system.102
+        100 = fallout_bunker_system.10
+        100 = fallout_bunker_system.11
+        100 = fallout_bunker_system.12
+        100 = fallout_bunker_system.13
+        100 = fallout_bunker_system.14
+        100 = fallout_bunker_system.15
+        100 = fallout_bunker_system.16
+    }
+}
+
+on_yearly_pulse_2 = {
+    # Ruler/Heir Death
+    random_events = {
+        1 = fallout_ruler.1 # Mortal Ruler - Death
+        
+        99 = 0
+    }
+}
+on_yearly_pulse_3 = {
+    # Ruler Change
+    random_events = {
+        1 = fallout_ruler.10 # Immortal Ruler - Growth
+        1 = fallout_ruler.11 # Immortal Ruler - Regression
+        98 = 0
+    }
+}
+on_yearly_pulse_4 = {
+    # --- Nuclear Weapons Programme
+    random_events = {
+        100 = fallout_nuclear_program.1 # Protests against Nuclear Armament
+        100 = fallout_nuclear_program.2 # Nuclear Accident
+        100 = fallout_nuclear_program.3 # More Investment is Needed
+        100 = fallout_nuclear_program.4 # Lack of Scientists
+        100 = fallout_nuclear_program.5 # Warhead Failure
+        500 = fallout_nuclear_program.10 # Nuclear Warhead
+    }
+}
+on_yearly_pulse_5 = {
+}
+
+# country random events
+on_bi_yearly_pulse = {
+    random_events = {
+        # Agenda from the Estates
+		1000 = estate_system.1
+        
+		3000 = 0
+	}
+}
+
+on_bi_yearly_pulse_2 = {
+    
+}
+
+on_bi_yearly_pulse_3 = {
+    
+    random_events = {
+        10 = fallout_institutions.1
+        10 = fallout_institutions.2
+        10 = fallout_institutions.3
+        10 = fallout_institutions.4
+        10 = fallout_institutions.5
+        10 = fallout_institutions.6
+        10 = fallout_institutions.7
+        1400 = 0
+        # 5% any event will be picked per pulse
+    }
+}
+
+on_bi_yearly_pulse_4 = {
+    
+    random_events = {
+        10 = warlust.1
+        10 = warlust.2
+        10 = warlust.3
+        
+        1200 = 0
+        # 5% any event will be picked per pulse
+    }
+}
+
+on_bi_yearly_pulse_5 = {
+
+}
+
+# country random events
+on_thri_yearly_pulse = {
+    
+    random_events = {
+        1000 = legion_turmoil.1
+        1000 = 0
+    }
+}
+
+on_thri_yearly_pulse_2 = {
+    
+    
+}
+
+on_thri_yearly_pulse_3 = {
+    
+}
+
+on_thri_yearly_pulse_4 = {
+    
+}
+
+on_four_year_pulse = {
+    
+}
+
+on_four_year_pulse_2 = {
+    
+    
+    random_events = {
+		10 = new_vegas.1 # Profits at the Gomorrah
+		10 = new_vegas.2 # Top profits at the Tops
+		10 = new_vegas.3 # Elegance at the Ultra-Luxe
+		10 = new_vegas.4 # Family Disputes 
+		80 = 0
+        # 50% any event will be picked per pulse
+	}
+}
+
+on_four_year_pulse_3 = {
+    
+     random_events = {
+        10 = subject_nations.1		# Discontent on the Frontier
+        10 = fallout_implants.1
+        160 = 0
+        # 25% any event will be picked per pulse
+     }
+}
+
+on_four_year_pulse_4 = {
+    
+    random_events = {
+        10 = fallout_legitimacy.1
+        10 = fallout_legitimacy.2
+        10 = brotherhood_of_steel.1
+        10 = brotherhood_of_steel.2
+        10 = brotherhood_of_steel.3
+        10 = brotherhood_of_steel.4
+        10 = brotherhood_of_steel.5
+        1400 = 0
+    }
+}
+
+on_four_year_pulse_5 = {
+    
+    random_events = {
+        10 = shi.18
+        10 = shi.19
+        10 = shi.20
+        10 = shi.22
+        80 = 0
+        # 50% any event will be picked per pulse
+    }
+}
+
+on_five_year_pulse = {
+    
+    random_events = {
+		10 = tribal_flavour.1
+		10 = tribal_flavour.2
+		10 = tribal_flavour.3
+		10 = tribal_flavour.4
+		10 = tribal_flavour.5
+		10 = tribal_flavour.6
+		10 = tribal_flavour.7
+		10 = tribal_flavour.8
+		10 = tribal_flavour.13
+		10 = tribal_flavour.14
+		10 = tribal_flavour.15
+		10 = tribal_flavour.16
+		10 = tribal_flavour.17
+		10 = tribal_flavour.18
+		10 = tribal_flavour.19
+		10 = tribal_flavour.20
+		10 = tribal_flavour.21
+		10 = tribal_flavour.22
+		10 = tribal_flavour.23
+		10 = tribal_flavour.24
+        1000 = 0
+    }
+}
+
+on_five_year_pulse_2 = {
+    
+    random_events = {
+		10 = adherence.1
+		10 = adherence.2
+		10 = adherence.3
+        10 = adherence.4
+        10 = adherence.5
+        100 = 0
+    }
+}
+
+on_five_year_pulse_3 = {
+    # Pop Influx - Free pop if ROOT has the pop administration or a friendly neighbor has it
+    random_owned_province = {
+        random_list = {
+            1 = { province_event = { id = pop_influx.1 } }
+            1 = { province_event = { id = pop_influx.2 } }
+            1 = { province_event = { id = pop_influx.3 } }
+            1 = { province_event = { id = pop_influx.4 } }
+            1 = { province_event = { id = pop_influx.5 } }
+            1 = { province_event = { id = pop_influx.6 } }
+            1 = { province_event = { id = pop_influx.7 } }
+            1 = { province_event = { id = pop_influx.8 } }
+            1 = { province_event = { id = pop_influx.9 } }
+            1 = { province_event = { id = pop_influx.10 } }
+            1 = { province_event = { id = pop_influx.11 } }
+            1 = { province_event = { id = pop_influx.12 } }
+            1 = { province_event = { id = pop_influx.13 } }
+            1 = { province_event = { id = pop_influx.14 } }
+            1 = { province_event = { id = pop_influx.15 } }
+            1 = { province_event = { id = pop_influx.16 } }
+            1 = { province_event = { id = pop_influx.17 } }
+            1 = { province_event = { id = pop_influx.18 } }
+            1 = { province_event = { id = pop_influx.19 } }
+            1 = { province_event = { id = pop_influx.20 } }
+            1 = { province_event = { id = pop_influx.21 } }
+        }
+    }
+}
+
+on_five_year_pulse_4 = {
+    # Spawn the Pop Control events for the AI here, as AI construction priority is too random to allow them to use the building system to do so.
+    # This also allows for greater control over how the events are fired for the AI
+    
+    # Citizenship Boost
+    if = {
+        limit = {
+            has_idea = fallout_citizenship_ideas_7
+        }
+        random_list = {
+            70 = {
+                # Pop Attraction
+                random_owned_province = {
+                    limit = {
+                        OR = {
+                            has_any_med_pop = yes
+                            has_any_low_pop = yes
+                        }
+                    }
+                    province_event = { id = pop_attraction.1 }
+                }
+            }
+            30 = {
+                # Pop Expulsion
+                random_owned_province = {
+                    limit = {
+                        has_any_pop = yes
+                    }
+                    province_event = { id = pop_expulsion.1 }
+                }
+            }
+            5 = {
+                # Pop Decimation
+                random_owned_province = {
+                    limit = {
+                        has_any_pop = yes
+                    }
+                    province_event = { id = pop_decimation.1 }
+                }
+            }
+            5 = {
+                # Nothing
+            }
+        }
+    }
+    # Default
+    else = { 
+        random_list = {
+            50 = {
+                # Pop Attraction
+                random_owned_province = {
+                    limit = {
+                        OR = {
+                            has_any_med_pop = yes
+                            has_any_low_pop = yes
+                        }
+                    }
+                    province_event = { id = pop_attraction.1 }
+                }
+            }
+            30 = {
+                # Pop Expulsion
+                random_owned_province = {
+                    limit = {
+                        has_any_pop = yes
+                    }
+                    province_event = { id = pop_expulsion.1 }
+                }
+            }
+            10 = {
+                # Pop Decimation
+                random_owned_province = {
+                    limit = {
+                        has_any_pop = yes
+                    }
+                    province_event = { id = pop_decimation.1 }
+                }
+            }
+            10 = {
+                # Nothing
+            }
+        }
+    }
+    
+    # Pop Flavour
+    random_events = {
+        100 = pop_flavour.1     # Wastelander Ingenuity
+        100 = pop_flavour.2     # Wastelander Representation
+        1000 = 0
+    }
+}
+
+# El Dorado
+on_explore_coast = {
+    
+}
+
+on_conquistador_empty = {
+    
+}
+
+on_conquistador_native = {
+    
+}
+
+on_buy_religious_reform = {
+    
+    add_authority = -100 
+    add_stability = -2
+    
+    capital_scope = {
+        spawn_rebels = {
+            type = pretender_rebels
+            size = 1
+        }
+    }
+}
+
+on_circumnavigation = {
+    
+}
+
+on_become_free_city = {
+    
+}
+
+on_remove_free_city = {
+    
+}
+
+on_revoke_estate_land_ai = {
+	add_province_modifier = {
+		name = revoked_estate_modifier
+		duration = 5475 #15 years
+	}
+}
+
+on_revoke_estate_land = {
+	add_province_modifier = {
+		name = revoked_estate_modifier
+		duration = 5475 #15 years
+	}
+}
+
+on_revoke_estate_land_ai_post = {
+	add_local_autonomy = 25
+}
+on_revoke_estate_land_post = {
+	add_local_autonomy = 25
+}
+
+on_grant_estate_land = {
+	if = {
+		limit = {
+			has_province_modifier = revoked_estate_modifier
+		}
+		remove_province_modifier = revoked_estate_modifier
+	}
+}
+
+on_death_has_harem = {
+}
+
+on_select_heir_from_harem = {
+}
+
+on_fetishist_cult_change = {
+}
+
+# country
+on_gain_great_power_status = {
+	if = {
+		limit = {
+			NOT = { has_country_flag = became_great_power_flag }
+		}
+		set_country_flag = became_great_power_flag
+	}
+}
+
+# country
+on_lose_great_power_status = {
+}
+
+# province
+on_province_religion_converted = {
+    
+}
+
+on_province_religion_changed = {
+
+}
+
+# province
+on_province_culture_converted = {
+    
+}
+
+# province, general conversion through effects
+on_province_culture_changed = {
+
+}
+
+# THIS = Province, FROM = Country who Propogated
+on_convert_by_trade_policy = {
+}
+
+# province
+# FROM = old owner
+on_province_owner_change = {
+    
+}
+
+# country
+on_parliament_debate_reset = {
+
+}
+
+#province
+on_parliament_seat_given = {
+
+}
+
+#province
+on_parliament_seat_lost = {
+
+}
+
+# country
+on_parliament_debate_failed = {
+
+}
+
+# country
+on_parliament_debate_succeeded = {
+
+}
+
+# province
+on_consecrate_patriarch = {
+}
+
+# country. from = overlord
+on_accept_tribute = {
+}
+
+# country. from = overlord
+on_refuse_tribute = {
+}
+
+# country
+on_leader_recruited = {
+}
+
+# country
+on_general_recruited = {
+	add_army_professionalism = 0.02
+    
+    if = {
+        limit = {
+            has_idea = fallout_innovation_ideas_7
+        }
+        
+        add_army_professionalism = 0.01
+    }
+}
+
+# country
+on_admiral_recruited = {
+}
+
+# country
+on_conquistador_recruited = {
+}
+
+# country
+on_explorer_recruited = {
+}
+
+# THIS = Province, FROM = Country
+on_regiment_recruited = {
+
+}
+
+# THIS = Province, FROM = Country
+on_mercenary_recruited = {
+	FROM = {
+		add_army_professionalism = -0.01
+	}
+}
+
+# THIS = One province in the state
+on_add_pasha = {
+}
+
+# THIS = One province in the state
+on_remove_pasha = {
+	hidden_effect = {
+		owner = {
+			save_event_target_as = province_owner
+		}
+		remove_province_modifier = pasha_removed_modifier
+	}
+
+	area = {
+		limit = { owned_by = event_target:province_owner }
+		add_or_extend_province_modifier_effect = { MODIFIER = pasha_removed_modifier DURATION = 3650 }
+	}
+}
+
+# THIS = Province
+on_janissaries_raised = {
+}
+
+on_cawa_raised = {
+}
+
+on_carolean_raised = {
+}
+
+on_hussars_raised = {
+}
+
+on_revolutionary_guard_raised = {
+}
+
+on_banner_raised = {
+	owner = { 
+		if = { 
+			limit = { has_country_flag = refund_partial_corruption_on_banner_recruited_flag }
+			add_corruption = -0.1
+		}
+	}
+}
+
+on_cossack_raised = {
+}
+
+on_marine_raised = {
+}
+
+on_rajput_raised = {
+}
+
+on_streltsy_raised = {
+}
+
+on_tercio_raised = {
+}
+
+on_musketeer_raised = {
+}
+
+on_samurai_raised = {
+}
+
+on_qizilbash_raised = {
+}
+
+on_mamluks_raised = {
+}
+
+on_geobukseon_raised = {
+}
+
+on_man_of_war_raised = {
+}
+
+on_galleon_raised = {
+}
+
+on_galleass_raised = {
+}
+
+on_caravel_raised = {
+}
+
+on_voc_indiamen_raised = {
+}
+
+on_hre_reform_passed = {
+}
+
+on_mandate_reform_passed = {
+	
+}
+
+on_reform_enacted = {
+}
+
+on_reform_changed = {
+}
+
+on_trade_company_investment = {
+}
+
+on_center_of_trade_upgrade = {
+	
+}
+
+on_center_of_trade_downgrade = {
+	
+}
+
+on_culture_promoted = {
+	
+}
+
+on_culture_demoted = {
+	
+}
+
+on_primary_culture_changed = {
+	
+}
+
+# FROM = Previous Country, ROOT = Province
+on_company_chartered = {
+	
+}
+
+# ROOT = Overlord, FROM = Minor
+on_dependency_gained = {
+	
+}
+
+# ROOT = Overlord, FROM = Minor
+on_dependency_lost = {
+	
+}
+
+# ROOT = New vassal, FROM = Overlord
+on_create_vassal = {
+	
+}
+
+# ROOT = Country establishing it
+# First province in state is set
+on_holy_order_established = {
+
+}
+
+# When a minority is expelled to a colony
+# THIS = Colony, ROOT = Colony, FROM = Home province
+on_minority_expelled = {
+	FROM = {
+		remove_province_modifier = religious_zeal_at_conv
+		add_permanent_province_modifier = {
+			name = expelled_minority_home
+			duration = 7300
+		}
+	}
+}
+
+# THIS = Raiding country, FROM = Sea province
+on_raid_coast = {
+	
+}
+
+# ROOT = Tag that captured the flagship, FROM = Tag that lost the flagship
+on_flagship_captured = {
+	FROM = {
+		set_country_flag = captured_flagship_country_flag
+	}
+}
+
+# ROOT = Tag that destroyed the flagship, FROM = Tag that lost the flagship
+on_flagship_destroyed = {
+	FROM = {
+		set_country_flag = sunk_flagship_country_flag
+	}
+}
+
+# this = Released country, FROM = Releasing country
+on_country_released = { 
+    
+}
+
+# ROOT = province, FROM = country
+on_trade_good_changed = {
+	on_trade_good_changed_estate_privileges_effect = yes
+}
+
+# this = country
+on_loan_repaid = {
+	on_loan_repaid_estate_privileges_effect = yes
+}
+
+# this = country
+on_rebels_break_country = {
+	add_country_modifier = {
+		name = just_lost_to_rebels
+		duration = 10
+		hidden = yes
+	}
+}
+
+# this = country
+## Fires when you fire or replace your ADM advisor, in the moment before they are actually removed from their post.
+## Note: Defining a new advisor here will result in the shortest appointment in history. Use on_post_adm_advisor_fired instead :)
+on_pre_adm_advisor_fired = {
+	if = {
+		limit = {
+			has_country_flag = need_to_fire_adm_advisor
+		}
+		set_country_flag = just_fired_adm_advisor
+		remove_advisor_by_category_no_action = ADM
+	}
+}
+
+# this = country
+on_pre_dip_advisor_fired = {
+	if = {
+		limit = {
+			has_country_flag = need_to_fire_dip_advisor
+		}
+		set_country_flag = just_fired_dip_advisor
+		remove_advisor_by_category_no_action = DIP
+	}
+}
+
+# this = country
+on_pre_mil_advisor_fired = {
+	if = {
+		limit = {
+			has_country_flag = need_to_fire_mil_advisor
+		}
+		set_country_flag = just_fired_mil_advisor
+		remove_advisor_by_category_no_action = MIL
+	}
+}
+
+# this = country
+on_post_adm_advisor_fired = {
+
+}
+
+# this = country
+on_post_dip_advisor_fired = {
+	
+}
+
+# this = country
+on_post_mil_advisor_fired = {
+	
+}
+
+# this = new client state, from = parent country
+on_create_client_state = {
+	
+}
+
+# this = new target, from = previous target (both can be non-existent tag)
+on_change_revolution_target = {
+	
+}
+
+# this = curia controller (enactor of the bull)
+on_golden_bull_enacted = {
+	
+}
+
+
+# province:  spawned whenever a new owner takes over the province
+# FROM = The previous owner.
+on_conquest = {
+	
+}
+
+on_country_creation = {
+    # Default variables
+    set_default_variables = yes
+    
+    events = {
+        pop_setup.1     # Pop setup
+    }
+}
+
+on_federation_leader_change = {
+	if = {
+		limit = { tag = FROM }
+		disband_federation = THIS
+	}
+	else = {
+		# New strongest member becomes the new federation leader
+		set_federation_leader = THIS
+	}
+}
+
+#FROM = country pillaged, ROOT = country doing the pillaging
+on_pillaged_capital = {
+	
+}
+
+#FROM = country dev was transferred from, ROOT = country doing the transferring. It is triggered by normal concentrate too though FROM isn't set in that case
+on_transfer_development = {
+}
+#FROM = overlord, ROOT - colony
+on_colonial_type_change = {
+	
+}
+
+on_estate_led_regency = {
+	
+}
+
+on_estate_led_regency_surpassed = {
+	
+}
+
+on_extended_regency = {
+	
+}
+
+on_estate_removed = {
+	
+}
+
+##scope = colony province, FROM = owner country or province if there's a minority expulsion source, fires when the colony is created
+on_colony_established = {
+}
+
+#scope = new country, FROM = parent country
+on_colonial_nation_established = {
+}
+
+##scope = colony province, FROM = owner country or province if there's a minority expulsion source
+on_colonist_boosting_colony = {
+	
+}
+
+#ROOT = converted country, FROM = country which force converts ROOT, on_action gets called on Force religion peace and Enforce Religion subject interaction
+on_force_conversion = {
+	
+}
+
+on_institution_embracement = {
+	
+}
+on_national_focus_change = {}
+on_capital_moved = {}
+
+#ROOT = province that was expanded in, FROM = country that did it
+on_expanded_infrastructure = {
+}
+
+#ROOT = province that was centralized in
+on_centralized_state = {
+	if = {
+        limit = {
+            owner = {
+                has_idea = fallout_economic_ideas_5
+            }
+        }
+        area = {
+            add_base_tax = 1
+            add_base_production = 1
+            add_base_manpower = 1
+        }
+    }
+}
+
+#ROOT = country
+monarch_on_shipwreck = {
+}
+heir_on_shipwreck = {
+}
+consort_on_shipwreck = {
+}
+
+#ROOT = country
+on_defender_of_faith_loss = {
+	
+}
+on_defender_of_faith_claim = {
+	
+}
+on_hre_dismantled = {
+	
+}
+on_new_age = {
+	
+}
+
+#ROOT = province
+on_adm_exploited = {
+	
+}
+on_dip_exploited = {
+}
+on_mil_exploited = {
+}
+on_raze = {
+	add_permanent_province_modifier = {
+		name = province_razed
+		duration = 7300
+	}
+}
+on_concentrate_development = {
+	
+}
+
+on_slacken_start = {
+	add_country_modifier = {
+		name = slackening_modifier
+		duration = -1
+	}
+}
+on_slacken_stop = {
+	remove_country_modifier = slackening_modifier
+}
+
+on_colony_finished = { #ROOT - Province
+	if = {
+        limit = {
+            owner = {
+                has_idea = fallout_exploration_ideas_7
+            }
+        }
+            
+        change_culture = owner
+        change_religion = owner
+    }
+}
+
+on_advisor_hired = { #ROOT - Country
+
+}
+
+on_adm_advisor_hired = { #ROOT - Country, executed after on_advisor_hired!
+
+}
+
+on_dip_advisor_hired = { #ROOT - Country, executed after on_advisor_hired!
+
+}
+
+on_mil_advisor_hired = { #ROOT - Country, executed after on_advisor_hired!
+
+}
+
+on_core = { #ROOT - Province, #FROM - Country that gets the core
+
+}
+
+on_tech_taken = { #ROOT - Country
+
+}
+
+on_adm_tech_taken = { #ROOT - Country, executed after on_tech_taken!
+
+}
+
+on_dip_tech_taken = { #ROOT - Country, executed after on_tech_taken!
+
+}
+
+on_mil_tech_taken = { #ROOT - Country, executed after on_tech_taken!
+
+} 
+
+on_barrage = { #ROOT - barraging country, FROM - barraged province 
+
+}
+
+on_naval_barrage = { #ROOT - barraging country, FROM - barraged province 
+
+}
+
+on_scorch_earth  = { #ROOT - scorching country, FROM - scorched province
+
+}
+
+on_war_ended = { #ROOT - Winer FROM - Loser
+	
+}
+
+on_alliance_broken = { #ROOT - Original alliance creator, FROM - Alliance accepter
+	
+}
+
+on_royal_marriage_broken = { #ROOT - Original marriage creator, FROM - Marriage accepter
+
+}
+
+on_alliance_created = { #ROOT - Alliance sender, FROM - Alliance accepter
+
+}
+
+on_royal_marriage = { #ROOT - Marraige sender, FROM - marriage accepter
+
+}
+
+on_heir_disinherited = {
+}
+
+on_overrun = { #ROOT - winner, FROM - loser, on stackwipe
+
+}
+
+# Vanilla leftovers
+on_harmonized_pagan = { }
+on_harmonized_christian = { }
+on_harmonized_muslim = { }
+on_harmonized_jewish_group = { }
+on_harmonized_zoroastrian_group = { }
+on_harmonized_dharmic = { }
+on_harmonized_mahayana = { }
+on_harmonized_buddhism = { }
+on_harmonized_shinto = { }
+on_harmonized_vajrayana = { }

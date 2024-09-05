@@ -1,0 +1,21 @@
+
+#Den Chapter
+
+new_world_order = {
+land_morale = 0.10
+land_forcelimit = 5
+}
+
+repurposed_meds = {
+
+trade_goods_size = 1.0
+
+}
+drug_freezone = {
+prestige = 1
+devotion = 1
+}
+
+bunker_upgrades = {
+local_development_cost = -0.30
+}

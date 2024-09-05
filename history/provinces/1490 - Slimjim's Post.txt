@@ -1,0 +1,17 @@
+
+owner = KAI
+controller = KAI
+add_core = KAI
+
+is_city = yes
+base_tax = 1
+base_production = 1
+base_manpower = 1
+
+culture = kaibab
+religion = animism
+
+trade_goods = prewar_technology
+hre = no
+center_of_trade = 1
+

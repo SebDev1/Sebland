@@ -1,0 +1,21 @@
+# set_variable = { which = province_id value = 576  }
+
+owner = YOK
+controller = YOK
+add_core = YOK
+is_city = yes
+
+base_tax = 1
+base_production = 1
+base_manpower = 2
+
+culture = yokmuth
+religion = animism
+
+trade_goods = unknown
+
+
+
+
+hre = no
+center_of_trade = 1

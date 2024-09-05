@@ -1,0 +1,53 @@
+namespace = fallout_disrupt_alliance
+
+# Disrupt Alliance
+country_event = {
+	id = fallout_disrupt_alliance.1
+	title = fallout_disrupt_alliance.1.title
+    desc = fallout_disrupt_alliance.1.desc
+	picture = TERMINAL_eventPicture
+
+    is_triggered_only = yes
+    
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = fallout_disrupt_alliance.1.option.a
+        
+        event_target:disrupted_ally = {
+            country_event = { id = fallout_disrupt_alliance.2 }
+        }
+	}
+}
+
+# Engineered Upset
+country_event = {
+	id = fallout_disrupt_alliance.2
+	title = fallout_disrupt_alliance.2.title
+    desc = fallout_disrupt_alliance.2.desc
+	picture = TERMINAL_eventPicture
+
+    is_triggered_only = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = fallout_disrupt_alliance.2.option.a
+		
+        event_target:disrupt_target = {
+            add_opinion = {
+                who = ROOT
+                modifier = alliance_disrupted
+            }
+        }
+        
+        add_opinion = {
+            who = event_target:disrupt_target
+            modifier = alliance_disrupted
+        }
+	}
+}

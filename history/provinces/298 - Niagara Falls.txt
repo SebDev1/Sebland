@@ -1,0 +1,53 @@
+# set_variable = { which = province_id value = 298  }
+
+owner = RON
+controller = RON
+add_core = RON
+is_city = yes
+
+base_tax = 1
+base_production = 1
+base_manpower = 2
+
+culture = raider
+religion = survivalist
+
+hre = no
+center_of_trade = 1
+trade_goods = unknown
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

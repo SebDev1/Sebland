@@ -1,0 +1,61 @@
+# Modifiers
+mission_patriotic_spirit = {
+    monthly_patriotic_spirit = 0.25
+}
+
+mission_restored_base_replicator_units = {
+    production_efficiency = 0.1
+}
+
+mission_engine_of_war = {
+    land_morale = 0.1
+    core_creation = -0.1
+}
+
+mission_purist_ideology = {
+    province_warscore_cost = -0.1
+    ae_impact = 0.1
+}
+
+mission_reformist_ideology = {
+    diplomatic_reputation = 1
+}
+
+mission_loyalty_of_the_high_command = {
+    all_estate_loyalty_equilibrium = 0.1
+}
+
+# Purist
+mission_purification_refinement = {
+    core_creation = -0.1
+}
+
+mission_enclave_skynet = {
+    all_power_cost = -0.05
+}
+
+mission_robco_technologies = {
+    technology_cost = -0.05
+    fire_damage = 0.1
+}
+
+mission_pure_american_democracy = {
+    republican_tradition = 1.0
+    monthly_patriotic_spirit = 1.0
+}
+
+mission_enclave_domination = {
+    administrative_efficiency = 0.05
+    global_unrest = -3
+}
+
+mission_tribal_purification = {
+    province_warscore_cost = -0.1
+    years_of_nationalism = -5
+}
+
+mission_enclave_hegemony = {
+    yearly_corruption = -0.05
+    administrative_efficiency = 0.05
+    max_absolutism = 25
+}

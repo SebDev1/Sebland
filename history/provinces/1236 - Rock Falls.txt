@@ -1,0 +1,37 @@
+# set_variable = { which = province_id value = 2992  }
+
+owner = TMF
+controller = TMF
+add_core = TMF
+is_city = yes
+
+base_tax = 3
+base_production = 4
+base_manpower = 7
+
+culture = the_main_faction
+religion = survivalist
+
+trade_goods = weaponry
+hre = no
+center_of_trade = 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

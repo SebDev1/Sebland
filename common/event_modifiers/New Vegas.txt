@@ -1,0 +1,32 @@
+#-------------------------------------
+# Decision
+#-------------------------------------
+securitron_bunker = {
+    global_manpower_modifier = 0.1
+    discipline = 0.05
+    land_forcelimit_modifier = 0.1
+}
+
+limited_securitrons = {
+    global_manpower_modifier = -0.5
+    manpower_recovery_speed = -0.8
+}
+
+#-------------------------------------
+# Event
+#-------------------------------------
+nvg_street_vendor_hike = {
+    local_tax_modifier = 0.1
+}
+
+nvg_street_vendor_lower = {
+    local_tax_modifier = -0.1
+}
+
+nvg_shady_profit = {
+    local_tax_modifier = 0.1
+}
+
+new_vegas_empty_casinos = {
+    global_tax_modifier = -0.5
+}

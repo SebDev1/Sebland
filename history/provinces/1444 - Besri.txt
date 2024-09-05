@@ -1,0 +1,17 @@
+
+owner = TWH
+controller = TWH
+add_core = TWH
+
+is_city = yes
+base_tax = 1
+base_production = 1
+base_manpower = 2
+
+culture = twisted_hair
+religion = animism
+
+trade_goods = rare_metals
+hre = no
+center_of_trade = 1
+

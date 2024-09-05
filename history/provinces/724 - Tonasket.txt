@@ -1,0 +1,18 @@
+# set_variable = { which = province_id value = 724  }
+
+owner = SNF
+controller = SNF
+add_core = SNF
+is_city = yes
+
+base_tax = 6
+base_production = 3
+base_manpower = 3
+
+culture = snowfoot
+religion = animism
+
+hre = no
+center_of_trade = 1
+trade_goods = munitions
+

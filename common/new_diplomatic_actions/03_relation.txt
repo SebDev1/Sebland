@@ -1,0 +1,388 @@
+#---------------------------------------
+# Administrate Subject
+#---------------------------------------
+manage_subject = {
+	category = relation
+	alert_index = 3
+	alert_tooltip = manage_vassal_tooltip
+	
+	require_acceptance = no
+	
+	is_visible = {
+        FROM = { 
+            is_subject_of = ROOT
+            OR = {
+                is_subject_of_type = vassal
+                is_subject_of_type = march
+                is_subject_of_type = client_march
+                is_subject_of_type = client_vassal
+                is_subject_of_type = hegemonic_vassal
+            }
+        }
+	}
+    
+	is_allowed = {
+        always = yes
+	}
+	on_accept = {
+        hidden_effect = {
+            FROM = {
+                save_event_target_as = current_subject
+            }
+        }
+        country_event = { id = fallout_subject_management.1 }
+	}
+    
+	on_decline = {
+        
+	}
+	
+	ai_acceptance = {
+        
+	}
+	ai_will_do = {
+        always = no
+	}
+}
+
+#---------------------------------------
+# Abandon Subject
+#---------------------------------------
+abandon_subject = {
+	category = relation
+	alert_index = 3
+	alert_tooltip = abandon_subject_tooltip
+	
+	require_acceptance = no
+	
+	is_visible = {
+        overlord_of = FROM
+        FROM = {
+            is_subject_of = ROOT
+            
+            # Already covered by vanilla actions
+            NOT = { is_subject_of_type = vassal }
+            NOT = { is_subject_of_type = march }
+            NOT = { is_subject_of_type = personal_union }
+            NOT = { is_subject_of_type = client_vassal }
+            NOT = { is_subject_of_type = client_march }
+        }
+	}
+    
+	is_allowed = {
+        overlord_of = FROM
+        FROM = {
+            is_subject_of = ROOT
+        }
+	}
+	on_accept = {
+        FROM = {
+            grant_independence = yes
+        }
+	}
+	on_decline = {
+        
+	}
+	
+	ai_acceptance = {
+        add_entry = {
+			name = BASE
+			export_to_variable = {
+				which = ai_value
+				value = -1000
+			}
+		}
+	}
+	ai_will_do = {
+        always = no
+	}
+}
+
+#---------------------------------------
+# Control Subject
+#---------------------------------------
+control_subject = {
+	category = relation
+	alert_index = 3
+	alert_tooltip = control_subject_tooltip
+	
+	require_acceptance = no
+	
+	is_visible = {
+        ai = no
+        FROM = {
+            is_subject_of = ROOT
+        }
+	}
+    
+	is_allowed = {
+        ai = no
+        FROM = {
+            is_subject_of = ROOT
+        }
+	}
+	on_accept = {
+        switch_tag = FROM
+	}
+	on_decline = {
+        switch_tag = FROM
+	}
+	
+	ai_acceptance = {
+        add_entry = {
+			name = BASE
+			export_to_variable = {
+				which = ai_value
+				value = -1000
+			}
+		}
+	}
+	ai_will_do = {
+        always = no
+	}
+}
+
+#---------------------------------------
+# Return to Overlord
+#---------------------------------------
+return_to_overlord = {
+	category = relation
+	alert_index = 3
+	alert_tooltip = return_to_overlord_tooltip
+	
+	require_acceptance = no
+	
+	is_visible = {
+        ai = no
+        FROM = {
+            overlord_of = ROOT
+        }
+	}
+    
+	is_allowed = {
+        ai = no
+        FROM = {
+            overlord_of = ROOT
+        }
+	}
+	on_accept = {
+        switch_tag = FROM
+	}
+	on_decline = {
+        switch_tag = FROM
+	}
+	
+	ai_acceptance = {
+        add_entry = {
+			name = BASE
+			export_to_variable = {
+				which = ai_value
+				value = -1000
+			}
+		}
+	}
+	ai_will_do = {
+        always = no
+	}
+}
+
+#---------------------------------------
+# Bequeath Gold
+#---------------------------------------
+bequeath_gold = {
+	category = relation
+	alert_index = 3
+	alert_tooltip = bequeath_gold_tooltip
+	
+	require_acceptance = no
+	
+	is_visible = {
+        has_country_modifier = head_of_ncr
+        FROM = {
+            has_country_modifier = member_of_ncr
+        }
+	}
+    
+	is_allowed = {
+        treasury = 100
+        NOT = {
+            has_country_modifier = faction_gold_boost_cooldown
+        }
+	}
+	on_accept = {
+        add_treasury = -100
+        
+        hidden_effect = {
+            add_country_modifier = {
+                name = faction_gold_boost_cooldown
+                duration = 365
+                hidden = yes
+            }
+        }
+        
+        if = {
+            limit = {
+                has_government_mechanic = ncr_authority_mechanic
+            }
+            
+            add_government_power = {
+                mechanic_type = ncr_authority_mechanic
+                power_type = ncr_authority
+                value = 10
+            }
+        }
+        
+        FROM = {
+            add_treasury = 100
+        }
+	}
+	on_decline = { }
+	
+	ai_acceptance = {
+        add_entry = {
+			name = BASE
+			export_to_variable = {
+				which = ai_value
+				value = -1000
+			}
+		}
+	}
+	ai_will_do = {
+        always = no
+	}
+}
+
+#---------------------------------------
+# Bequeath Sailors
+#---------------------------------------
+bequeath_sailors = {
+	category = relation
+	alert_index = 3
+	alert_tooltip = bequeath_sailors_tooltip
+	
+	require_acceptance = no
+	
+	is_visible = {
+        has_country_modifier = head_of_ncr
+        FROM = {
+            any_owned_province = {
+                has_port = yes
+            }
+            has_country_modifier = member_of_ncr
+        }
+	}
+    
+	is_allowed = {
+        sailors = 1000
+        NOT = {
+            has_country_modifier = faction_sailor_boost_cooldown
+        }
+	}
+	on_accept = {
+        add_sailors = -1000
+        
+        hidden_effect = {
+            add_country_modifier = {
+                name = faction_sailor_boost_cooldown
+                duration = 365
+                hidden = yes
+            }
+        }
+        
+        if = {
+            limit = {
+                has_government_mechanic = ncr_authority_mechanic
+            }
+            
+            add_government_power = {
+                mechanic_type = ncr_authority_mechanic
+                power_type = ncr_authority
+                value = 10
+            }
+        }
+        
+        FROM = {
+            add_sailors = 1000
+        }
+	}
+	on_decline = { }
+	
+	ai_acceptance = {
+        add_entry = {
+			name = BASE
+			export_to_variable = {
+				which = ai_value
+				value = -1000
+			}
+		}
+	}
+	ai_will_do = {
+        always = no
+	}
+}
+
+#---------------------------------------
+# Bequeath Soldiers
+#---------------------------------------
+bequeath_soliders = {
+	category = relation
+	alert_index = 3
+	alert_tooltip = bequeath_soliders_tooltip
+	
+	require_acceptance = no
+	
+	is_visible = {
+        has_country_modifier = head_of_ncr
+        FROM = {
+            has_country_modifier = member_of_ncr
+        }
+	}
+    
+	is_allowed = {
+        manpower = 3
+        NOT = {
+            has_country_modifier = faction_manpower_boost_cooldown
+        }
+	}
+	on_accept = {
+        add_manpower = -3
+        
+        hidden_effect = {
+            add_country_modifier = {
+                name = faction_manpower_boost_cooldown
+                duration = 365
+                hidden = yes
+            }
+        }
+        
+        if = {
+            limit = {
+                has_government_mechanic = ncr_authority_mechanic
+            }
+            
+            add_government_power = {
+                mechanic_type = ncr_authority_mechanic
+                power_type = ncr_authority
+                value = 10
+            }
+        }
+        
+        FROM = {
+            add_manpower = 3
+        }
+	}
+	on_decline = { }
+	
+	ai_acceptance = {
+        add_entry = {
+			name = BASE
+			export_to_variable = {
+				which = ai_value
+				value = -1000
+			}
+		}
+	}
+	ai_will_do = {
+        always = no
+	}
+}

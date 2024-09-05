@@ -1,0 +1,142 @@
+#--------------------------------------------
+# Theocracy
+#--------------------------------------------
+# Generic
+theocracy_reform = {
+    icon                        = "church"
+    legacy_equivalent           = theocracy_legacy
+    valid_for_new_country       = yes 
+    allow_normal_conversion     = yes 
+	allow_convert               = yes 
+    valid_for_nation_designer   = yes
+	nation_designer_cost        = 0
+    lock_level_when_selected    = yes
+    
+    different_religion_acceptance = -50
+	different_religion_group_acceptance = -50
+
+    modifiers = {
+        tolerance_own = 1
+        missionaries = 1
+    }
+    
+    custom_attributes = {
+		cult_succession = yes
+	}
+    
+    potential = {
+        NOT = { has_government_attribute = locked_government_type }
+    }
+    
+    ai = { factor = 1 }
+}
+
+# Brotherhood of Steel
+brotherhood_reform = {
+    icon                        = "power_armor"
+    legacy_equivalent           = brotherhood_legacy
+    valid_for_new_country       = no 
+    allow_normal_conversion     = no 
+	allow_convert               = no 
+    valid_for_nation_designer   = yes
+	nation_designer_cost        = 0
+    lock_level_when_selected    = yes
+    
+    different_religion_acceptance = -50
+	different_religion_group_acceptance = -50
+    
+    modifiers = {
+        technology_cost = -0.05
+        free_mil_policy = 1
+        
+        land_forcelimit = -3
+        naval_forcelimit = -3
+        
+        governing_capacity = -100
+        
+        max_absolutism = 20
+    }
+    
+    custom_attributes = {
+		bos_succession = yes
+        locked_government_type = yes
+	}
+    
+    potential = {
+        have_had_reform = brotherhood_reform
+    }
+    
+    ai = { factor = 1 }
+}
+reformed_brotherhood = {
+    icon                        = "power_armor"
+    valid_for_new_country       = no 
+    allow_normal_conversion     = no 
+	allow_convert               = no 
+    valid_for_nation_designer   = yes
+	nation_designer_cost        = 0
+    lock_level_when_selected    = yes
+    rulers_can_be_generals = yes
+    different_religion_acceptance = -50
+	different_religion_group_acceptance = -50
+    
+    modifiers = {
+        technology_cost = -0.05
+        free_mil_policy = 1
+        leader_land_shock = 1
+        land_forcelimit = -3
+        naval_forcelimit = -3
+        
+        governing_capacity = -100
+        
+        max_absolutism = 20
+    }
+    
+    custom_attributes = {
+		bos_succession = yes
+        locked_government_type = yes
+	}
+    
+    potential = {
+        tag = VB1
+    }
+    
+    ai = { factor = 1 }
+}
+
+# Cult
+cult_reform = {
+    icon                        = "graveyard"
+    legacy_equivalent           = cult_legacy
+    valid_for_new_country       = no 
+    allow_normal_conversion     = no 
+	allow_convert               = no 
+    valid_for_nation_designer   = yes
+	nation_designer_cost        = 0
+    lock_level_when_selected    = yes
+    
+    different_religion_acceptance = -50
+	different_religion_group_acceptance = -50
+    
+    modifiers = {
+        global_missionary_strength = 0.03
+        yearly_corruption = -0.05
+        
+        land_forcelimit = -3
+        naval_forcelimit = -3
+        
+        governing_capacity = -100
+        
+        max_absolutism = 5
+    }
+    
+    custom_attributes = {
+		cult_succession = yes
+	}
+    
+    potential = {
+        have_had_reform = cult_reform
+    }
+    
+    ai = { factor = 1 }
+}
